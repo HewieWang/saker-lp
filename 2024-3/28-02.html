@@ -1,0 +1,395 @@
+<style>
+.announcement-bar { background-color: #000!important; }
+  .kore-special-promo, .kore-special-promo h2, .kore-special-promo h3 { color: #fff!important; }
+  .kore-special-promo h2 span{ background: linear-gradient(transparent 71%,#6b8725 15%,#6b8725 90%,transparent 80%)!important;}
+  .kore-inner h3 { font-size: 18px!important; }
+  .kore-inner h3, .kore-inner h4 {background-color: #f8f8f8!important;}
+  /*.kore-inner .variant select, .variant-show select {width: 170px!important;}*/
+  @media (min-width: 992px){
+    .kore-advantage-block h2 { font-size: 34px!important; }
+  }
+  @media (max-width: 480px){
+    .kore-wysiwyg-content p { font-size: 16px!important; }
+    .new-chamfer {
+      display: flex;
+      flex-direction: column;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(1) {
+      order: 3;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(2) {
+      order: 1;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(3) {
+      order: 2;
+    } 
+  }
+  .each-pair {
+    font-size: 14px!important;
+    font-weight: 400!important;
+    color: #d51010!important;
+}
+@media (min-width: 768px){
+  .kore-advantage-item img {
+    max-width: 115px;
+}
+}
+.announcement-bar{display:block;text-align:center;position:relative;text-decoration:none;}
+.announcement-bar__message{display:block;font-weight:400;padding:5px 30px;margin:0;}
+.announcement-bar{background-color:#222222;}
+.announcement-bar__message{color:#ffffff;font-size:14px;}
+.kore-advantage-block h5 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+@media (max-width: 768px){
+  .offersWrapper{text-align:center;}
+.offerbox{display:flex;align-items:center;justify-content:left;margin:15px 0;padding:15px;border:1px solid rgba(0,0,0,.1);border-radius:5px;background:white;position:relative;overflow:hidden;}
+.offerbox-info{display:block;padding-left:15px;text-align:left;width:calc(100% - 125px);}
+.offerbox-info h1{font-size:16px;padding-bottom:5px;font-weight:bold;}
+.offerbox-info p{font-size:14px;color:#c82f31;}
+.offerbox-info p span{display:block;color:#333;padding-top:5px;padding-bottom:5px;}
+.offerbox-info p del{color:rgb(136,136,136);padding-left:5px;}
+.offerbox figure{width:100px;}
+.ribbon{color:#fff;font-size:11px;width:150px;text-align:center;background:#d32020;letter-spacing:1px;transform:rotate(55deg);box-shadow:0px 0px 8px rgba(0,0,0,0.3);position:absolute;z-index:90;top:25px;right:-45px;padding:5px 0!important;}
+.offersWrapper .ribbon.green{background:#2dad57;}
+input.offer-checked[type="checkbox"]{-webkit-appearance:none;width:30px;height:25px;border:2px solid #ced8dd;background:#f2f9fd;position:relative;margin-right:10px!important;outline:none;}
+input.offer-checked[type="checkbox"]:checked{width:30px;height:25px;background:url(https://cdn.shopifycdn.net/s/files/1/0518/4625/0673/files/checkmark.svg?v=1619337294) #f2f9fd center center / 18px 18px no-repeat;border:2px solid #ced8dd;}
+.box-checked{transform:scale(1.03);background:#d9f6ff;border-color:#0071a8;}
+.kore-minus-btn{width:35px;height:35px;border:1px solid #d7dbdb;border-right:none;border-radius:13px 0px 0px 13px;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png') #fff no-repeat center center;float:left;cursor:pointer;}
+.kore-plus-btn{width:35px;height:35px;border:1px solid #d7dbdb;text-align:center;border-radius:0px 13px 13px 0;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png') #fff no-repeat center center;float:left;border-left:none;cursor:pointer;}
+.kore-qty-box{display:flex;align-items:center;margin-top:5px;}
+.box-txtbox{width:50px;height:30px!important;border:1px solid #d7dbdb;text-align:center;font-size:14px;color:#333232;padding:0 5px;font-weight:900;float:left;display:block;}
+.offerbox-info .kore-minus-btn,.offerbox-info .kore-plus-btn{height:30px;}
+/*! CSS Used keyframes */
+@keyframes bounce{15%{transform:translateY(0);box-shadow:0px 0px 0px 0px transparent;}35%{transform:translateY(-35%);box-shadow:0px 8px 5px -5px rgba(0,0,0,0.25);}45%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}55%{transform:translateY(-20%);box-shadow:0px 5px 4px -4px rgba(0,0,0,0.25);}70%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}80%{transform:translateY(-10%);box-shadow:0px 4px 3px -3px rgba(0,0,0,0.25);}90%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}95%{transform:translateY(-2%);box-shadow:0px 2px 3px -3px rgba(0,0,0,0.25);}99%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}100%{transform:translateY(0);box-shadow:0px 0px 0px 0px transparent;}}
+}
+.kore-order-now{
+  border: none;
+}
+@media (max-width: 767px){
+  .kore-advantage-block h2{
+     font-size: larger !important;
+  }
+  .kore-advantage-block h5{
+        line-height: inherit !important;
+       font-size: initial !important;
+  }
+  .kore-advantage-item h3{
+        word-break: break-all;
+  }
+}
+@media (min-width: 767px){
+.right-content img{
+      width: 50% !important;
+}
+}
+
+.common-head{font-size:32px;text-align:center;line-height:52px;color:#191919;font-weight:bold;}
+.comon-bdr{background:#191919;width:75px;height:5px;border-radius:20px;margin:0 auto;margin-top:25px;}
+@media (max-width:768px){
+.common-head{font-size:24px;line-height:30px;}
+}
+.reviewblk{display:inline-block;vertical-align:middle;width:100%;max-width:800px;background:#f9f9f9;border:1px solid #e6e6e6;border-radius:10px;padding:25px;margin-top:50px;text-align:center;}
+.ratingBox{display:inline-block;vertical-align:middle;width:16%;background:#56a5dd;color:#fff;}
+.ratingBox p{float:left;width:100%;font-size:40px;font-weight:bold;line-height:70px;}
+.ratingBox span{float:left;width:100%;font-size:16px;background:#2b73a7;padding:3px 0;}
+.ratingImg{display:inline-block;vertical-align:middle;margin:0 20px;}
+.overall-rating{display:inline-block;vertical-align:middle;width:17%;color:#393737;font-size:22px;line-height:26px;font-weight:500;margin:0 13px;}
+.overall-rating img{width:100px;display:inline-block;vertical-align:middle;margin-top:7px;}
+.cs-percent{display:inline-block;vertical-align:middle;width:21%;margin:0px 12px;color:#393737;font-size:12px;line-height:16px;}
+.cs-percent span{font-size:24px;font-weight:bold;margin-bottom:12px;float:left;width:100%;}
+.testiBox{width:100%;padding:0 70px;margin-top:40px;}
+.testi-row{display:inline-block;vertical-align:middle;width:100%;padding-left:105px;position:relative;text-align:left;margin-bottom:45px;}
+.testi-imgs{position:absolute;left:2px;top:10px;max-width:85px;}
+.clearall{clear:both;font-size:1px;line-height:1px;height:1px;}
+.testi-para{float:left;width:100%;font-size:18px;line-height:26px;color:#000;font-style:italic;margin-top:15px;}
+.usr-name{float:left;width:100%;font-size:18px;line-height:18px;color:#000;margin-top:20px;}
+@media (min-width: 768px){
+.reviewblk{display:flex;margin:0 auto;margin-top:30px;align-items:center;}
+}
+@media (max-width:480px){
+.reviewblk{max-width:100%;padding:0 0 15px;margin-top:10px;border-radius:0;}
+.ratingBox{width:100%;}
+.ratingImg{margin:22px 0;}
+.overall-rating{width:100%;margin:0;}
+.overall-rating img{margin:-10px 0 0;width:90px;}
+.cs-percent{width:90%;margin-top:20px;padding:0 20px;}
+.testiBox{margin-top:30px;padding:0;}
+.testi-row{padding-left:85px;margin-bottom:30px;}
+.testi-imgs{width:75px;}
+.testi-para{font-size:17px;line-height:25px;margin-top:12px;}
+.usr-name{margin-top:15px;}
+}
+.section6{background:#fff;width:100%;padding:30px 0 30px;}
+@media (min-width: 768px){
+    .new-chamfer {
+    display: flex;
+    justify-content: center;
+}
+}
+</style>
+<div class="kore">
+<div class="kore-body">
+<div class="announcement-bar">
+<p class="announcement-bar__message">🎈Flash Sale🧡</p>
+</div>
+<a href="#kore-product"> <img src="https://cdn.shopify.com/s/files/1/0637/8520/5972/files/1_d89c4579-359b-4b7c-a247-79315e165a8e.jpg?v=1711529780" style="width: 100%;" class="img-responsive center-block hidden-xs"> <img src="https://cdn.shopify.com/s/files/1/0637/8520/5972/files/2_988c0d11-a88c-4f7d-b57f-832c26a87172.jpg?v=1711529780" style="width: 100%;" class="img-responsive center-block visible-xs"> </a>
+<div style="background: #000;" class="kore-wysiwyg-content">
+<div class="container"><img src="https://cdn.shopify.com/s/files/1/0225/4818/5162/files/ia_33.png?v=1618388544" class="img-responsive center-block">
+<p style="color: #fff;">"Det sparer mig for en masse tid og energi til grillfester! Jeg føler, at jeg er blevet professionel grillmester på et øjeblik. </p>
+<p><span style="color: #fff;">-- Jimmy L</span></p>
+</div>
+</div>
+<div class="kore-advantage-block">
+<div class="container">
+<h2>PERFEKT GRILL-PARTNER TIL DIN GRILLFEST</h2>
+<h5>BLIV PROFF PÅ FÅ SEKUNDER!</h5>
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/6_6d983ee9-4546-4917-b016-d1ebd9f47704.png?v=1680081573" class="img-responsive center-block">
+<h3>360° ROTATION</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/7_dd8645a2-56dd-481b-a461-824fe4f36586.png?v=1680081573" class="img-responsive center-block">
+<h3>FRIE HÆNDER</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/8_f0c7d55f-a5aa-42c9-8285-1ed56349de38.png?v=1680081573" class="img-responsive center-block">
+<h3>MULTIFUNKTIONEL</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/9_d04a4d73-f474-4eb5-aba1-ac86d3310358.png?v=1680081573" class="img-responsive center-block">
+<h3>HØJ KVALITET</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row kore-product-info">
+<div class="col-xs-12 col-sm-6 kore-product-left">
+<div id="gallery">
+<div id="gallery_output"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/FM-1_e354b20c-70b2-4b93-ba0b-0fda8a0fce36.jpg?v=1679996366" class="img-responsive" id="img1"></div>
+<div id="gallery_nav"><a class="on" rel="img1"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/FM-1_e354b20c-70b2-4b93-ba0b-0fda8a0fce36.jpg?v=1679996366" class="img-responsive"></a> <a rel="img2"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/5_926a4a5b-7ef0-4928-b5af-171cb227c18c.jpg?v=1679996366" class="img-responsive"></a> <a rel="img3"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/2_4efcbbfd-3a16-4fe8-a405-842601a77034.jpg?v=1679996366" class="img-responsive"></a> <a rel="img4"><img src="https://cdn.shopify.com/s/files/1/0556/2348/3564/files/6_5839df01-8df2-44d0-9296-846ce2c33f9c.jpg?v=1679996366" class="img-responsive"></a> <a rel="img5"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_c7ea43f0-fca7-409a-8d2c-f81a98817f95.jpg?v=1679996366" class="img-responsive"></a> <a rel="img6"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/4_25693613-f76d-42fb-9f66-ca1b84a09c8b.jpg?v=1679996366" class="img-responsive"></a> <a rel="img7"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/7_3ace8e9e-140a-4abb-b178-1139dea98eeb.jpg?v=1679996366" class="img-responsive"></a> <a rel="img8"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/3_94a5e8a1-4a4e-4afc-b889-eb65cb32797a.jpg?v=1679996366" class="img-responsive"></a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 kore-product-right">
+<div>
+<h1 style="font-family: 'helveticaneue-light';" class="kore-product-name"><strong><a>BBQ Grillkurv</a></strong></h1>
+<div class="kore-product-prices"><span class="kore-product-compare-price">429 kr</span><span class="kore-product-price">219 kr</span><span class="kore-discount"><span class="kore-percent">OP TIL 54% RABAT</span></span></div>
+<div class="clearfix"></div>
+<a style="background: #edba3b;" href="#kore-product" class="kore-product-button">SÅDAN! JEG VIL GERNE BESTILLE NU</a></div>
+<!-- <h1 class="alt-2"><time class="countdown" datetime="PT01H32M45S"><span class="item item-hh"><span class="hh-1">0</span><span class="hh-2">1</span><span class="label label-hh">Timer</span></span><span class="separator">:</span><span class="item item-mm"><span class="mm-1">3</span><span class="mm-2">2</span><span class="label label-mm">Minutter</span></span><span class="separator">:</span><span class="item item-ss"><span class="ss-1">4</span><span class="ss-2">5</span><span class="label label-ss">Sekunder</span></span></time></h1>
+<p class="kore-text-sale">Salgspris Tilbake til 320.96 kr Etter At Salget Avsluttes</p> -->
+<p class="kore-text-tip">🔒 Sikker handel<br>✉️ 24/7 kundeservice</p>
+<div class="right-content"><img src="https://cdn.shopify.com/s/files/1/0637/8520/5972/files/3_8e9552d8-0055-4b89-b20a-eb486951a8fd.gif?v=1711530766" class="img-responsive center-block">
+<ul>
+<li><b>Designet til at rotere 360 grader - </b>  Kurven opvarmer maden mere jævnt og får den til at smage bedre. Vores kurv i rustfrit stål er perfekt til at stege og grille dine yndlingsgrøntsager. Denne kurv kan også blive en slags wok til at tilberede en sund wok med rejer, kammuslinger, hakket kylling eller svinekød. Den kan endda bruges til at ryge kød, hvilket gør den til en vigtig tilføjelse til dit køkkengrej.</li>
+<li><b>Konstruktion i rustfrit stål - </b> Disse grillkurve er udelukkende fremstillede i rustfrit stål, hvilket gør dem sikre at placere på grillen og nemme at rengøre. Du mister ikke mad mellem ristene og den kan bruges som wok, ryger eller grillkurv. Den tåler opvaskemaskine, hvilket gør den utrolig nem at genbruge. Uanset om du har en gasgrill eller en kulgrill, vil denne kurv fungere.</li>
+<li><b>Nem at bruge - </b> Med den bevægelige låge er det mere bekvemt at åbne, lukke og tage maden ud. Nem at åbne og lukke med den unikke låge, den passer perfekt til dit originale rotisseri, når du bruger kurven i et rotisseri.</li>
+<li><b>Grill som en proff - </b> Med denne grillkurv kan du nemt grille grøntsager og andre fødevarer som asparges, svampe, rosenkål, fersken i skiver, løg, peberfrugt og en masse lækkert kød. Uanset hvilken mad du vil grille eller ryge, vil dette praktiske grillværktøj gøre arbejdet lettere. Når du først har brugt dette fantastiske grillværktøj, er der ingen vej tilbage.</li>
+<li><b>Ingen grund til at vende maden i hånden - </b> Dette grilltilbehør er vigtigt, fordi det sparer dig for at skulle vende maden i hånden. Det kan være besværligt at skulle vende store mængder mad under madlavningen. Dette grillværktøj gør grillrutinen nem og effektiv. Du skal blot fylde kurven, lukke den, placere den under grilllåget og vende maden hyppigt med vores varmebestandige handsker eller tang.</li>
+</ul>
+</div>
+<div class="kore-payment-image"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/pay.png?v=1640316601" class="img-responsive center-block"></div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="gc-headline-divider-container">
+<div class="gc-divider-style-solid"></div>
+<div class="headline-divider-block">
+<h4>SOM SETT I</h4>
+</div>
+<div class="gc-divider-style-solid"></div>
+</div>
+<div class="row gc-brand-list">
+<div class="col-xs-12"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/347c36125467736ffed54ecdc6db883b_1.jpg?v=1657075917" class="img-responsive center-block"></div>
+</div>
+</div>
+<div class="container">
+<div style="margin-bottom: 30px;" class="row"><img src="https://cdn.shopify.com/s/files/1/0637/8520/5972/files/agjhb-8szew.gif?v=1711529834" class="img-responsive center-block hidden-xs"><img src="https://cdn.shopify.com/s/files/1/0637/8520/5972/files/4_fc9e3c97-4407-4130-b464-a44c4f984430.gif?v=1711530855" class="img-responsive center-block visible-xs"></div>
+</div>
+<div class="kore-buy" id="kore-product">
+<div class="container">
+<h3 style="font-weight: 600;" class="kore-product-title">KØB MERE, SPAR MERE!</h3>
+<div class="row new-chamfer  hidden-xs">
+<!-- <div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #6b8725;">OPPDAGELSES PAKKE</h2>
+<h3>1 STK</h3>
+<h4 style="color: #000000;">41% RABAT</h4>
+<figure><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_6d9f91cf-2ac7-49dc-bbd1-6b6a1942f00e.jpg?v=1680081574" class="img-responsive center-block"></figure>
+<p><img>21.4K anmeldelser</p>
+<h5 class="price"><del>337kr</del><span>199kr</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="42584360386731"> <a class="kore-plus_btn"></a></div>
+<button style="background: #6b8725;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('42584360386731')">Bestil nu</button>
+<div class="kore-lock">Sikkert og krypteret<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div> -->
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #edba3b;">Bedste sælgende</h2>
+<h3>2 STK</h3>
+<h4 style="color: #455d89;">49% RABAT</h4>
+<figure><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/2_c9c7276f-11eb-4977-b675-1b52d9c940fa.jpg?v=1680081573" class="img-responsive center-block"></figure>
+<p><img>31.1K anmeldelser</p>
+<h5 class="price"><del>429 kr</del><span>219 kr</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="43685638799572"> <a class="kore-plus_btn"></a></div>
+<button style="background: #edba3b;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('43685638799572')">Bestil nu</button>
+<div class="kore-lock">Sikkert og krypteret<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #edba3b;"> Bedste værdi</h2>
+<h3>3 STK</h3>
+<h4 style="color: #000000;">54% RABAT</h4>
+<figure><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/3_df400f07-3f3e-4033-981c-fc35ead86d77.jpg?v=1680081573" class="img-responsive center-block"></figure>
+<p><img>25.6K anmeldelser</p>
+<h5 class="price"><del>628 kr</del><span>289 kr</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="43685638832340"> <a class="kore-plus_btn"></a></div>
+<button style="background: #edba3b;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('43685638832340')">Bestil nu</button>
+<div class="kore-lock">Sikkert og krypteret<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offersWrapper  visible-xs">
+<!-- <div class="offerbox"><input data-type="shopify" value="42584360386731" data-id="42584360386731" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_6d9f91cf-2ac7-49dc-bbd1-6b6a1942f00e.jpg?v=1680081574" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>1 STK</h1>
+<p><span>41% RABAT</span><b>199kr</b><del>337kr</del></p>
+<input value="42584360386731" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div> -->
+<div class="offerbox box-checked"><input data-type="shopify" value="43685638799572" data-id="43685638799572" checked="checked" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/2_c9c7276f-11eb-4977-b675-1b52d9c940fa.jpg?v=1680081573" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>2 STK</h1>
+<p><span>49% RABAT</span><b>219 kr</b><del>429 kr</del></p>
+<input value="43685638799572" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="43685638832340" data-id="43685638832340" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/3_df400f07-3f3e-4033-981c-fc35ead86d77.jpg?v=1680081573" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>3 STK</h1>
+<p><span>54% RABAT</span><b>289 kr</b><del>628 kr</del></p>
+<input value="43685638832340" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="clearfix"><a style="background: #1d2740;" href="/cart/43685638799572:1" class="kore-order-now kore-buttonBounce kore-mobile-order"> <i class="fa fa-angle-double-right fa_prepended"></i>Bestil nu</a></div>
+</div>
+</div>
+</div>
+<div id="reviews" class="section6">
+<div class="container">
+<p class="common-head">Hjemplus har over 64,000 positive anmeldelser!</p>
+<p style="text-align: center;" class="common-para">Se, hvad kunder har at sige om deres oplevelse med BBQ grillkurven</p>
+<div class="comon-bdr bdr-bg"></div>
+<div class="clearall"></div>
+<div class="reviewblk">
+<div class="ratingBox">
+<p>4.8</p>
+<span>af 5.0</span>
+</div>
+<img class="ratingImg" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/rating-line.png?v=1660804534">
+<div class="overall-rating">Samlet bedømmelse<br><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+</div>
+<div class="cs-percent">
+<span>98%</span><br>af kunderne anbefaler og handler hos hjemplus igen.</div>
+</div>
+<div class="testiBox">
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/11_e60e7f3d-eecf-4e48-ace6-7683935a2924.png?v=1680081574">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">Vi vil virkelig gerne spise mere fisk, og vi kan lide at grille. Så velsmagende og sundt! Den er perfekt! Du kan stoppe den i opvaskemaskinen! Jeg bruger noget køkkenrulle til at overtrække det med olivenolie inden det kommer på grillen, derefter børster jeg fisken med krydderier og olivenolie. Det er skønt at have friskgrillet fisk uden at det lugter i hele huset og super nemt at rydde op. </p>
+<p class="usr-name">--Sarah F</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/12_eff5e055-e863-42c8-8ee2-41fddbf3ae9d.png?v=1680081573">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">Den er dyb nok til at have bøffer indeni eller større grøntsager, som jeg havde ledt efter. Det er nemt at få plads i min mindre dobbelte vask for at lægge i blød og vaske. Jeg bruger altid kurven, og når jeg er færdig med at lave mad, lægger jeg den i blød i lidt tid, før den vaskes grundigt. Så jeg var meget glad for at bruge den på grillen og det var nemt at rydde op efterfølgende. Kan stærkt anbefale! </p>
+<p class="usr-name">--Chucklin</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/10_9524977f-8ef8-4e71-969a-e64e62f9c7b6.png?v=1680081573">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">Dette er et godt køb. Kurven er rigelig stor og jeg kan godt lide hvor meget plads/højde der er i kurven sammenlignet med de mindre, fordi den ikke klemmer maden (som tyk laks). Giver plads til større emner, men det betyder den mindre mademner kan smutte rundt derinde. Denne kurv er fin til at grille. Den holder godt på maden. </p>
+<p class="usr-name">--Bob Chou</p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: url('https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/lp_04_fff1b697-8965-4a56-a9c4-d586458b188a.jpg?v=1680081485') center/cover no-repeat;" class="kore-special-promo">
+<div class="container">
+                <h2><span>SPECIALTILBUD NU!</span></h2>
+                <h3>BESTIL I DAG OG FÅ 54% RABAT</h3>
+                <p>Rabatten er kun tilgængelig i en i en begrænset periode</p>
+                <a class="kore-banner-btn snow-banner-btn" href="#kore-product" style="background: #6b8725;"><i class="fa fa-angle-right"></i>Få din 54% rabat</a>
+                <ul>
+                    <li>
+                        <strong>Garanteret høj kvalitet</strong> Vi tilbyder alle-pengene-retur-garanti på alle vores produkter.
+                    </li>
+                    <li>
+                        <strong>Problemfrie returneringer</strong>Hvis du ikke er 100% tilfreds med dit køb, returner det inden for 30 dage for at få fuld refusion
+                    </li>
+                </ul>
+            </div>
+</div>
+</div>
+<div class="customfooter">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col-4">
+                    <h3 class="">INFORMATION</h3>
+                    <ul>
+                        <li><a href="/pages/om-os">Om os</a></li>
+                        <li><a href="/pages/hvorfor-vaelge-os">Hvorfor vælge os</a></li>
+                        <li><a href="/pages/intellektuel-ejendom-sret">Intellektuel ejendom sret</a></li>
+                        <li><a href="/pages/privatlivspolitik">Privatlivspolitik</a></li>
+                        <li><a href="/pages/vilkar-og-betingelser">Vilkår og betingelser</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3 class="">BETALINGSMETODER</h3>
+                    <div><span> <img class="credit-cards-image" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/8AC6FFC7-600C-4B40-BCAD-DABC12A58802-9136-0000048321E29E9F.png?v=1697770278">
+                        </span></div>
+                </div>
+                <div class="footer-col-4">
+                    <h3 class="">GARANTI</h3>
+                    <p class="footer-guarantee-content">Vi tilbyder en 30-dages pengene-tilbage-garanti</p>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="footer-col-12 footerBottom">
+                    <p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>// <![CDATA[
+function padding(num,length){if((num+"").length>=length){return num;}
+return padding("0"+num,length)}
+setInterval(function(){var s=parseInt($(".ss-1").html()+$(".ss-2").html());var m=parseInt($(".mm-1").html()+$(".mm-2").html());var h=parseInt($(".hh-1").html()+$(".hh-2").html());if(s>0){var ns=padding(s-1,2);$(".ss-1").html(ns.toString().substr(0,1));$(".ss-2").html(ns.toString().substr(-1));}else{$(".ss-1").html(5);$(".ss-2").html(9);var ms=padding(m-1,2);$(".mm-1").html(ms.toString().substr(0,1));$(".mm-2").html(ms.toString().substr(-1));}
+if(m=0){$(".mm-1").html(5);$(".mm-2").html(9);var hs=padding(h-1,2);$(".hh-1").html(hs.toString().substr(0,1));$(".hh-2").html(hs.toString().substr(-1));}},1000);
+// ]]>
+  
+   function add_to_cart(variant_id){
+       
+       
+          var quantity=$("input[variant_id='"+variant_id+"']").val();
+          location.href="/cart/"+variant_id+":"+quantity
+       
+  }
+// ]]></script>
