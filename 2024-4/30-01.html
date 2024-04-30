@@ -175,7 +175,7 @@
        border-color: #fbd98f; 
     } 
     .bgcolor-yellow{
-        background: #ddedfc;
+        background: #fbd98f;
     }
     .bgcolor-blue{
         background-color:#6a9feb;
@@ -186,25 +186,49 @@
     .bgcolor-red{
         background-color:#fd3116;
     }
-    .txt-blue{
+    .bg-blue{
         background-color:#6a9feb;
     }
-    .txt-cheng{
+    .bg-cheng{
         background-color:#fc7b1d;
     }
-    .txt-red{
+    .bg-red{
         background-color:#fd3116;
+    }
+    .text-blue{
+        color:#6a9feb;
+    }
+    .text-cheng{
+        color:#fc7b1d;
+    }
+    .text-red{
+       color:#fd3116;
+    }
+    .text-yellow{
+       color:#f8ea0b;
+    }
+    .bgcolor-yellow.buynow-btn{
+        background: #f8ea0b;color:#000;
+    }
+    .feature-title{margin-top:20px;}
+    @media(max-width:768px) {
+        div.wsmenucontainer.clearfix > div.page-bgcolor.m-0.p-0.lp-section > div:nth-child(4) > div > a{
+                margin-top: 40px;
+        }
+        .section-3 .feature-title{
+                font-size: 14px;
+        }
     }
 </style>
 <div class="page-bgcolor m-0 p-0 lp-section">
 <div class="section-1">
 <div id="promotion" class="fixed z-[9999] top-0 start-0 w-full text-white text-center bg-black">
-<div class="flex items-center justify-center text-sm sm:text-base h-8 max-w-7xl mx-auto px-0 xl:px-20 promotion-row"><span class="text-orange pr-1">★★★★★</span><span>|</span><span class="px-1 text-orange"> Start from $0.99 each </span><span>Monthly sales of 10,000+</span></div>
+<div class="flex items-center justify-center text-sm sm:text-base h-8 max-w-7xl mx-auto px-0 xl:px-20 promotion-row"><span class="text-yellow pr-1">★★★★★</span><span>|</span><span class="px-1 text-yellow"> Start from $0.99 each </span><span>Monthly sales of 10,000+</span></div>
 </div>
 </div>
 <div class="section-header"><nav id="header" class="bg-white w-full fixed z-[9999] top-8 start-0 border-b border-gray-200">
 <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto px-4 xl:px-20 py-2 md:py-4"><a class="flex items-center space-x-3 rtl:space-x-reverse"> <img alt="Acssart Logo" class="h-8" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/acssart_180x.png?v=1713962024"> </a>
-<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"><a class="hidden md:flex text-white text-xl uppercase bgcolor-yellow scaleDrew font-bold text-sm px-4 py-2 text-center items-center justify-center cursor-pointer order-btn buynow-btn" id="menu-link-btn">GET MY Grill <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487" class="ml-2"></a> <button class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" id="menu-open-btn" type="button"> <svg viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 h-5"> <path d="M1 1h15M1 7h15M1 13h15" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"></path> </svg> </button></div>
+<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"><a class="hidden md:flex text-white text-xl uppercase bgcolor-yellow scaleDrew font-bold text-sm px-4 py-2 text-center items-center justify-center cursor-pointer order-btn buynow-btn" id="menu-link-btn" style="max-width: fit-content;">GET MY REMOVER!<img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a> <button class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" id="menu-open-btn" type="button"> <svg viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 h-5"> <path d="M1 1h15M1 7h15M1 13h15" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"></path> </svg> </button></div>
 <div id="navbar-sticky" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
 <li><a data-id="features" class="cursor-pointer block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0 border-b border-gray-100 md:border-0 menu-overview">Features</a></li>
@@ -236,42 +260,52 @@
 </ul>
 </div>
 </div>
-<div class="pt-4 product-bottom-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY Grill <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487" class="ml-2"></a></div>
+<div class="pt-4 product-bottom-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
 </div> -->
 </div>
 <div class="section-3">
 <div class="max-w-7xl mx-auto pt-2 sm:pt-4 px-4 xl:px-20">
 <a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!
-<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487"></a>
-<div class="text-center my-2 line-img">
+<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a>
+<div class="text-center my-2 line-img" style="    visibility: hidden;">
 <div class="imgage-container max-w-2xl mx-auto"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487" class="w-full h-auto lazyload"></div>
 </div>
 <div class="grid grid-cols-12 gap-4 feature-row">
-<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-<div class="imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_44027301-251f-472f-9327-314938b74d33.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_44027301-251f-472f-9327-314938b74d33.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
 <div class="text-center font-medium leading-5 feature-title">Reusable and Washable</div>
 </div>
-<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-<div class="imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_eb5cb9c5-615c-4c28-89fe-ab392921cbd3.png?v=1714441738" class="w-full h-auto lazyload feature-img"></div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_eb5cb9c5-615c-4c28-89fe-ab392921cbd3.png?v=1714441738" class="w-full h-auto lazyload feature-img"></div>
 <div class="text-center font-medium leading-5 feature-title">Ergonomic Handle</div>
 </div>
-<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-<div class="imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_d7b93278-d680-4bf6-bc3f-9ae6543fa248.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_d7b93278-d680-4bf6-bc3f-9ae6543fa248.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
 <div class="text-center font-medium leading-5 feature-title">No Refill, Non-Toxic and Safe</div>
 </div>
-<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-<div class="imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f9d614fb-f872-4589-a3c0-3e536df9ce34.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f9d614fb-f872-4589-a3c0-3e536df9ce34.png?v=1714441739" class="w-full h-auto lazyload feature-img"></div>
 <div class="text-center font-medium leading-5 feature-title">Multi-Purpose Functionality</div>
 </div>
 </div>
 </div>
 </div>
 <div class="section-4">
-    <img class="w-full h-auto ls-is-cached lazyloaded sm:block" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/210bf8caf9178610aa9e6b180ae604eb_f30da264-03dd-4bdd-892d-aa7a4e869926.jpg?v=1714441792">
-    <img class="w-full h-auto ls-is-cached lazyloaded sm:hidden" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/12108b26c17620f29c39715ef7becc87_412e208d-71bc-4367-a059-8258ab138892.jpg?v=1714441890">
+    <div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
+                <div class="banner-3">
+                    <div class="img-pc imgage-container hidden sm:block">
+                        <a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/210bf8caf9178610aa9e6b180ae604eb_f30da264-03dd-4bdd-892d-aa7a4e869926.jpg?v=1714441792" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/210bf8caf9178610aa9e6b180ae604eb_f30da264-03dd-4bdd-892d-aa7a4e869926.jpg?v=1714441792"></a>
+                    </div>
+                    <div class="img-m imgage-container block sm:hidden">
+                        <a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/12108b26c17620f29c39715ef7becc87_412e208d-71bc-4367-a059-8258ab138892.jpg?v=1714441890" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/12108b26c17620f29c39715ef7becc87_412e208d-71bc-4367-a059-8258ab138892.jpg?v=1714441890"></a>
+                    </div>
+                </div>
+            </div>
+
+
 
 <a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!
-<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487"></a>
+<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a>
 
 </div>
 <div class="section-3">
@@ -283,23 +317,23 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-12 gap-4 feature-row">
-                    <div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-                        <div class="imgage-container">
+                    <div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+                        <div class="imgage-containers">
 <img class="w-full h-auto feature-img ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_107060e2-d1db-4da5-81b8-486256bf36d7.png?v=1714441949" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_107060e2-d1db-4da5-81b8-486256bf36d7.png?v=1714441949">
                         </div>
                     </div>
-                    <div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-                        <div class="imgage-container">
+                    <div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+                        <div class="imgage-containers">
 <img class="w-full h-auto feature-img ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_4f26f06c-e45c-4545-97e1-ba8987aa0794.png?v=1714441950" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_4f26f06c-e45c-4545-97e1-ba8987aa0794.png?v=1714441950">
                         </div>
                     </div>
-                    <div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-                        <div class="imgage-container">
+                    <div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+                        <div class="imgage-containers">
 <img class="w-full h-auto feature-img ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_56ae1023-481f-4753-8daa-d1eb51856582.png?v=1714441950" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_56ae1023-481f-4753-8daa-d1eb51856582.png?v=1714441950">
                         </div>
                     </div>
-                    <div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
-                        <div class="imgage-container">
+                    <div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+                        <div class="imgage-containers">
 <img class="w-full h-auto feature-img ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_86bd6aab-bdd6-452a-8fe3-b3861e986912.png?v=1714441949" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_86bd6aab-bdd6-452a-8fe3-b3861e986912.png?v=1714441949">
                         </div>
                     </div>
@@ -307,28 +341,37 @@
             </div>
         </div>
 
-<div style="background: url('https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2e90f055d3d7233f80460e8c3e13c56e.png?v=1712740487') top center;" class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]">
+<div style="background: #6a9feb;" class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]">
 <div class="w-full max-w-7xl mx-auto py-4 px-4 lg:px-40">
 <div class="grid grid-cols-12 gap-4 black-img-section">
 <div class="col-span-12 sm:col-span-12 text-center text-white text-xl xl:text-2xl pl-0 md:pl-4 lg:pl-0 bis-left">ARE YOU READY TO <span class="text-4xl text-gold"> BECOME A PRO </span> ON THE CLEANING?</div>
 <div class="col-span-12 sm:col-span-12 flex justify-center items-center  bis-right">
-<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487" class="ml-2"></a></div>
+<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
 </div>
 </div>
 </div>
 </div>
 
-<div class="section-41">
-    <img class="w-full h-auto ls-is-cached lazyloaded sm:block" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_859a8ce8-6623-44c1-bcab-fc118554ed67.jpg?v=1714442077">
-    <img class="w-full h-auto ls-is-cached lazyloaded sm:hidden" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/829229129ae5d90f597f2b94bc9b2d83_5a974ef3-36e9-4ce1-b21a-cddcc34f2049.jpg?v=1714442012">
+<div class="section-41" style="    background: #fff;padding-bottom: 20px;">
+    <div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
+                <div class="banner-3">
+                    <div class="img-pc imgage-container hidden sm:block">
+                        <a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_859a8ce8-6623-44c1-bcab-fc118554ed67.jpg?v=1714442077" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_859a8ce8-6623-44c1-bcab-fc118554ed67.jpg?v=1714442077"></a>
+                    </div>
+                    <div class="img-m imgage-container block sm:hidden">
+                        <a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/829229129ae5d90f597f2b94bc9b2d83_5a974ef3-36e9-4ce1-b21a-cddcc34f2049.jpg?v=1714442012" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/829229129ae5d90f597f2b94bc9b2d83_5a974ef3-36e9-4ce1-b21a-cddcc34f2049.jpg?v=1714442012"></a>
+                    </div>
+                </div>
+            </div>
+
 
 <a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!
-<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487"></a>
+<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a>
 
 </div>
 
 <div class="section-4">
-            <div class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]" style="background: url('https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2e90f055d3d7233f80460e8c3e13c56e.png?v=1712740487') top center;">
+            <div class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]" style="background: #6a9feb;">
                 <div class="w-full max-w-7xl mx-auto py-4 px-4 lg:px-40">
                     <div class="grid grid-cols-12 gap-4 black-img-section">
                         <div class="col-span-12 sm:col-span-12 text-center text-white text-xl xl:text-2xl pl-0 md:pl-4 lg:pl-0 bis-left">
@@ -338,7 +381,7 @@
                             <div class="w-full">
 <a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET
                                     MY REMOVER!
-                                    <img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487"></a>
+                                    <img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a>
                             </div>
                         </div>
                     </div>
@@ -350,16 +393,16 @@
 <div class="max-w-7xl mx-auto px-4 py-0 md:py-4 xl:px-20">
 <div class="grid grid-cols-12 gap-4 md:gap-8 black-img-section">
 <div class="col-span-12 sm:col-span-12 relative order-1 md:order-1">
-<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_45c9276e-fa6f-4e63-bfac-9a24bcbd38e7.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_29261f32-d19d-49d4-a6fc-4b686a5b1e0d.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
+<div class="w-full imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_45c9276e-fa6f-4e63-bfac-9a24bcbd38e7.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_29261f32-d19d-49d4-a6fc-4b686a5b1e0d.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
 </div>
 <div class="col-span-12 sm:col-span-12 relative order-2 sm:order-2">
-<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_61d8ca82-2913-4c4b-af85-0934d8235155.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_e295bdb1-f5d8-437a-bed6-bdf86f9fc5b9.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
+<div class="w-full imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_61d8ca82-2913-4c4b-af85-0934d8235155.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_e295bdb1-f5d8-437a-bed6-bdf86f9fc5b9.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
 </div>
 <div class="col-span-12 sm:col-span-12 relative order-3 sm:order-3">
-<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_0550e959-e328-4788-a957-a2b60fe1fe85.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_2bb4d307-a84a-49df-a811-2da13a94d3e8.jpg?v=1714441891" class="w-full h-auto lazyload sm:hidden"></div>
+<div class="w-full imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_0550e959-e328-4788-a957-a2b60fe1fe85.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_2bb4d307-a84a-49df-a811-2da13a94d3e8.jpg?v=1714441891" class="w-full h-auto lazyload sm:hidden"></div>
 </div>
 <div class="col-span-12 sm:col-span-12 relative order-4 md:order-4">
-<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f548e51c-cc6e-4da6-bb44-0b55ec06641a.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_afc80893-3e10-4866-9578-ab817367c734.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
+<div class="w-full imgage-containers"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f548e51c-cc6e-4da6-bb44-0b55ec06641a.png?v=1714441792" class="w-full h-auto lazyload sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_afc80893-3e10-4866-9578-ab817367c734.jpg?v=1714441890" class="w-full h-auto lazyload sm:hidden"></div>
 </div>
 </div>
 </div>
@@ -368,7 +411,7 @@
             <div class="w-full max-w-7xl my-8 mx-auto">
                 <div class="day30">
                     <div class="img-pc max-w-xl md:max-w-2xl mx-auto imgage-container hidden sm:block">
-                        <img class="w-full h-auto lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/eed1f6b9be9031c5ff3eb98eb35ac32c_74c8e394-b611-41d5-9b5b-06320ecd28a5.png?v=1714442076">
+                        <img class="w-full h-auto lazyloaded" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/eed1f6b9be9031c5ff3eb98eb35ac32c_74c8e394-b611-41d5-9b5b-06320ecd28a5.png?v=1714442076">
                     </div>
                     <div class="img-m w-80 mx-auto imgage-container block sm:hidden">
                         <img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/eed1f6b9be9031c5ff3eb98eb35ac32c.png?v=1714442011">
@@ -386,7 +429,7 @@
 <div class="text-xl sm:text-2xl">TO BECOME A PRO ON THE GRILL?</div>
 </div>
 <div class="col-span-12 sm:col-span-6 flex justify-center items-center  bis-right">
-<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY Grill <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487" class="ml-2"></a></div>
+<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!<img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
 </div>
 </div>
 </div>
@@ -491,7 +534,7 @@
 <div class="flex justify-center items-center hidden sm:block product-qty-row">
 <div class="flex justify-center items-center w-36 border border-gray-500 rounded-md text-base font-medium bg-white qty-box"><svg class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-minus" aria-hidden="true" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18 12H6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path> </svg> <input class="max-w-full w-16 border-x border-gray-500 py-1.5 text-base leading-5 font-medium text-gray-500 text-center sm:text-sm quantity qty-input" name="quantity" value="1" type="number"> <svg class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-plus" aria-hidden="true" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path> </svg></div>
 </div>
-<div class="w-full py-2 product-order-btn"><a class="flex mx-auto text-xl text-orange justify-center items-center uppercase bg-cheng font-bold uppercase rounded-xl order-btn order-btn-now cursor-pointer" data-type="shopify" data-variant="48220613542233">Order Now</a></div>
+<div class="w-full py-2 product-order-btn"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bg-cheng font-bold uppercase rounded-xl order-btn order-btn-now cursor-pointer" data-type="shopify" data-variant="48220613542233">Order Now</a></div>
 <div class="flex justify-center items-center text-xs product-secure">Secured and encrypted <svg class="w-3 h-3 ml-1 text-green-700" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path clip-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" fill-rule="evenodd"></path> </svg></div>
 </div>
 </div>
@@ -598,8 +641,8 @@
 <div class="section-12">
 <div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
 <div class="banner-3">
-<div class="img-pc imgage-container hidden sm:block"><a class="cursor-pointer buynow-btn"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_81640104-267e-4603-9199-5ab05c3a5ac6.jpg?v=1714442077" class="w-full h-auto lazyload"></a></div>
-<div class="img-m imgage-container block sm:hidden"><a class="cursor-pointer buynow-btn"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/97dfad60776e193c1a71f9ba171f42aa.jpg?v=1714442012" class="w-full h-auto lazyload"></a></div>
+<div class="img-pc imgage-containers hidden sm:block"><a class="cursor-pointer buynow-btn"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_81640104-267e-4603-9199-5ab05c3a5ac6.jpg?v=1714442077" class="w-full h-auto lazyload"></a></div>
+<div class="img-m imgage-containers block sm:hidden"><a class="cursor-pointer buynow-btn"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/97dfad60776e193c1a71f9ba171f42aa.jpg?v=1714442012" class="w-full h-auto lazyload"></a></div>
 </div>
 </div>
 </div>
@@ -633,7 +676,7 @@
 </div>
 <div class="hidden w-full bottom-0 fixed page-bgcolor z-[999] section-float-btn">
 <div class="max-w-7xl mx-auto py-4 px-4 xl:px-20">
-<div class="float-btn-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY Grill <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x.png?v=1712740487" class="ml-2"></a></div>
+<div class="float-btn-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!<img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
 </div>
 </div>
 </div>
