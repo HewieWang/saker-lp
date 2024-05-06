@@ -1,0 +1,981 @@
+<style>
+a:not([disabled]):hover,
+    a:focus {
+        color: #000;
+    }
+
+    .topStrip {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        background-color: #92c753;
+    }
+
+    .jar-banner a.order-btn {
+        width: auto;
+    }
+
+    a.order-btn {
+        background-color: #92c753;
+    }
+
+    .sec1-list li p {
+        word-break: break-word;
+        align-items: flex-start !important;
+    }
+
+    .sec1-list li span {
+        height: 50px;
+    }
+
+    ul.sec1-list li img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    ul.sec1-list li span,
+    ul.s2-list span {
+        font-size: 18px;
+    }
+
+    ul.sec1-list li p,
+    ul.s2-list p {
+        font-size: 16px;
+    }
+
+    ul.s2-list li img {
+        position: relative;
+        max-width: 100%;
+        vertical-align: bottom;
+        height: auto;
+    }
+
+    .strip-bg img {
+        margin-bottom: 0;
+    }
+
+    .kore-inner h3 {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fef4eb;
+        font-size: 16px !important;
+        word-break: break-word !important;
+    }
+
+    .kore-inner h4 {
+        font-size: 30px;
+        background-color: #fef4eb;
+    }
+
+    .overall-rating {
+        width: 21%;
+    }
+
+    .top-fix-bar {
+        margin-bottom: 105px;
+    }
+
+    .top-bar {
+        margin-top: 33px;
+        height: 100px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      #sakerlp > div.top-bar > div > div > div:nth-child(1){
+            display: block;
+      }
+      .mobilemenu{
+            margin-top: 20px;
+      }
+        .overall-rating {
+            width: 100% !important;
+        }
+
+        .vid-sec img {
+            margin-top: 0 !important;
+        }
+
+        .top-bar {
+            height: 73px;
+        }
+
+        .kore-inner h3 {
+            min-height: 50px;
+            font-size: 15px !important;
+        }
+    }
+
+    .es_text {
+        margin-left: 10px;
+    }
+    .topStrip p{
+      width: auto;
+    }
+    .topStrip > .container{
+          display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .kore-inner h4,.kore-inner h3{color: #fff;}
+    .date{
+    position:absolute;
+        top: 0;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+img.man {
+    position: absolute;
+    width: 50px;
+    left: 40%;
+    
+}
+.testi-row{
+    padding-left:0;
+    margin:0 5px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
+}
+p.user{
+        margin-top: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+img.star{
+    margin:0 auto;
+}
+p.testi-para{
+    font-weight:300;padding: 0 10px;padding-bottom:20px;
+}
+ora{
+    color:#ed910a;
+}
+.countdowns{
+    font-size:14px;padding:0;
+}
+.countdowns .label{
+    display:none;
+}
+.countdowns .item{
+    background:#fff;    color: #000;
+    
+}
+.countdowns .item span{
+    color:#000;
+}
+@media only screen and (max-width: 767px){
+  img.man{
+  top: 200px;
+}
+}
+.countdowns .item{
+        padding: 8px 10px 8px;
+    border-radius: 5px;font-size: 20px;
+}
+.countdowns{
+    padding:5px 0;
+}
+.topStrip{
+    padding-top:10px;
+}
+.jar-header{
+        padding-top: 18px;
+}
+.slick-list{
+  overflow: inherit !important;
+}
+@media only screen and (max-width: 767px){
+    .topStrip{
+        height:auto;
+    }
+    #caption{
+        -webkit-animation:none;
+        white-space:unset;
+    }
+    .countdown .item{
+        padding:3px 0;
+    }
+    .top-bar{
+        margin-top:53px;
+    }
+    .jar-header .container{
+        display:grid;
+    }
+    .mobilemenu{
+        top:68px;
+    }
+    .topStrip > .container{
+          flex-wrap: wrap;    justify-content: center;
+    }
+    .countdowns .item{
+      font-size: 14px;padding: 3px 10px 3px;
+    }
+}
+.testi-para{
+    font-style: normal;
+    text-align:center;
+}
+.kore-inner h4{
+  font-size: 26px;
+}
+#_d{display: none;}
+.kore-inner h2{
+  border-radius: 0;
+}
+.jianb h2,.jianb h3{color: #000;}
+.jianb h4{
+  display: none;
+  color: #f9a331;
+   --r: 30px; /* control the radius */
+  --h: 20px; /* control the height of the tail */
+  --p: 10%;  /* control the position of the tail */
+
+  padding: var(--r);
+  border-bottom: var(--h) solid #0000;
+  --m:
+    /* adjust the angles of the 1st conic-gradient to control the shape */
+    conic-gradient(from 30deg at var(--p) 100%,#0000,#000 1deg 30deg,#0000 31deg)
+     0 100%/100% calc(100% - var(--r)) no-repeat,
+    conic-gradient(at calc(var(--r)/2) calc(var(--r)/2),#000 270deg,#0000 0)
+     0 0/calc(100% - var(--r)/2) calc(100% - var(--r)/2) padding-box,
+    radial-gradient(50% 50%,#000 98%,#0000) 
+     0 0/var(--r) var(--r) space padding-box;
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  margin: 50px auto;
+  max-width: 350px;
+  font-size: 20px;    margin-top: 0;margin-bottom: 0;
+}
+.kore-minus_btn,.kore-plus_btn,.kore-order-now{border-radius: 0;}
+.people{
+    position:absolute;
+    width:75px;    margin-top: -50px;    background: #fff;
+    border-radius: 50px;
+    padding: 5px;
+}
+.reviews_box .star{
+    width:100px;margin: 0;
+}
+.reviews_box .reviews{
+    padding:10px;
+}
+.review_text{
+    background:#cbe3fb;
+    height:220px;
+    text-align:left;
+    padding:20px 10px;
+}
+.review_text .user{text-align:left;margin-top: 10px;}
+.review_ver{
+  float: inline-end;
+    color: #86ce4b;
+    font-size: 13px;
+}
+a.order-btn{
+    height:53px;
+}
+.kore-inner h4{
+    line-height:0;width: max-content;
+}
+.kore-inner h5 span{color:red}
+.kore-inner{
+    background: #f1f1f1;
+}
+.kore-inner h3,.kore-inner h2{
+    background:unset;
+}
+.section5{
+    background:#92c753;
+}
+.jianb h2{padding-top: 20px;}
+img.man{
+        position: relative;    left: 5%;
+}
+.testi-new{
+    display: inline-flex;
+    align-items: center;
+}
+p.user{
+    margin-top:0;color:#507d3d;
+}
+.testi-son{
+       margin-left: 50px; 
+}
+.customfooter2{
+        background: #cfe3e1;display: grid;
+    width: 100%;
+    place-items: center;
+}
+.customfooter2 .logo{
+    width:300px;
+}
+.customfooter2 ul{
+        display: flex;
+}
+.customfooter2 ul li{
+    margin-right:10px;
+}
+.customfooter2 ul li a{
+    color:#000;
+}
+@media only screen and (min-width: 767px){
+    .section1{
+        padding-top:20px;
+    }
+    
+    
+    #use > div{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .testi-row{
+        margin:10px 0;
+    }
+    /* .firstmgs{margin-top: 20px;} */
+    .es_variant_row .col-xs-12 {
+    margin: 10px 0;
+}
+}
+@media only screen and (max-width: 767px){
+    /* .firstmgs{
+    margin-top:10px;
+} */
+/* #use > div > div:nth-child(4){
+    margin-top:10px;
+} */
+}
+p.testi-para{
+  text-align: left;
+}
+.countdowns .item {
+    background: #fff;font-weight: 700;
+}
+.czbox{
+        max-height: 650px;
+    overflow: hidden;
+}
+.chuizhi img{
+    margin:10px 0;
+}
+.slick-prev, .slick-next{
+    top:20%;
+}
+.chuizhi img{
+    transform: scale(0.8);
+    margin:0;
+}
+.chuizhi img.slick-center{
+    transform: scale(1);
+}
+.chuizhi .slick-prev:before,.chuizhi .slick-next:before {
+    color: #537e3e !important;
+}
+.chuizhi .slick-prev,.chuizhi .slick-next{
+    transform: rotate(90deg) scale(1.8);
+}
+.chuizhi .slick-prev{
+    left: -20px;
+}
+.chuizhi .slick-next{
+    left:-20px;
+    margin-top:50px;
+}
+.chuizhi{
+    padding:0 20px;transform: scale(0.8);
+}
+
+.chuizhi .slick-active:first-child {
+  transform: scale(1.2);
+}
+.chuizhi img{
+   transform: scale(1.2);
+    margin:20px 0;
+    padding-left:50px;
+}
+.chuizhi .slick-slide:not(.slick-active){
+    transform: scale(0.8);
+}
+@media only screen and (max-width: 767px){
+   .reviews_box{
+        margin-top: 90px;
+} 
+    #overview > div > p{
+            padding-top: 20px;
+    }
+    p.user{
+        margin-left:20px;
+    }
+    .customfooter2 {
+    background: #92c753;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20%;
+}
+    .customfooter2 ul {
+    display: block;
+}
+.testi-new .review_ver{
+      margin-left: 80px;
+}
+}
+.mbbox .heads{
+    width:50px;
+}
+.mb_item{
+    padding:0 20px;
+    border:1px solid #fff;
+}
+.mb_1{
+        display: flex;
+    align-items: center;
+}
+.mb_2{
+    margin-top:20px;
+}
+.mbbox{margin-bottom: 0;}.section2{    background: #92c753;}
+.review_ver img{
+    width:15px;height: 15px;
+}
+.review_ver{
+    display:flex;
+}
+.review_text .user{
+    font-size:16px;
+}
+red{color: red;}p.tipss{    background: #fff;font-weight: 700;
+    margin: 0;
+    padding: 10px;}
+    .testi-new .review_ver{
+      margin-left: 80px;
+    }
+    .mb_11{
+      padding: 0 30px;
+    }
+    .jiantou{
+          height: fit-content;margin: 10px 0;
+    }
+    @media (min-width: 768px){
+    .top-bar{
+            position: fixed;
+    margin-top: 0;
+    top: 50px;
+    display: block;
+    width: 100%;
+        z-index:9999;
+    }
+}
+
+@media (max-width: 768px){
+    .top-bar{
+            position: fixed;
+    margin-top: -5px;
+    top: 90px;
+    display: block;
+    width: 100%;
+        z-index:9999;
+    }
+    .jar-header{
+      border: none;
+    }
+    .section1 .slick-next{
+          margin-right: 15px;
+    }
+    .section1 .slick-prev{
+          margin-left: 15px;
+    }
+    .section1 .slick-prev,.section1 .slick-next {
+        top: 40%;
+    }
+    .offerbox.box-checked {
+    background: #ffefb3;
+    border: 1px solid #ffefb3;
+}
+}
+.topStrip{
+  z-index: 99;
+}
+.pro_s{
+        display: flex;
+    flex-wrap: wrap;font-weight: 700;
+}
+.pro_s img{
+        max-width: 100px !important;
+}
+.offerbox_var input.offer-check{
+        width: 5px;
+    height: 20px;display: none;
+}
+.es_product_img{
+       transform: scale(1.5);
+    margin-left: 20px;
+}
+.es_text {
+    margin-left: 30px;
+}
+.rty img{width:100%;    margin-top: 15px;}
+@media (max-width: 768px){
+    .top-bar{
+            top: 70px !important;
+    }
+    .jar-header {
+    padding-top: 0;
+}
+.jar-header {
+    height: 60px;
+    margin-top: 0;
+    top: 0;
+}
+#sakerlp > div:nth-child(3){
+        margin-top: 120px !important;
+}
+}
+.ribbon {
+    color: #fff;
+    font-size: 11px;
+    width: 150px;
+    text-align: center;
+    background: #d32020;
+    letter-spacing: 1px;
+    transform: rotate(55deg);
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+    position: absolute;
+    z-index: 90;
+    top: 16px;
+    right: -53px;
+    padding: 5px 0 !important;
+}
+</style>
+<script type="text/javascript">
+  
+      $(function(){
+       function countdown() {
+    var endTime = new Date().getTime() + (1.5 * 60 * 60 * 1000); // 当前时间加上一个半小时
+    var x = setInterval(function() {
+        var now = new Date().getTime(); // 获取当前时间
+        var distance = endTime - now; // 计算距离结束时间的毫秒数
+
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var milliseconds = Math.floor(distance % 1000);
+
+        // 显示在指定的 HTML 元素中
+        document.getElementById("_h").innerHTML = ('0' + hours).slice(-2);
+        document.getElementById("_m").innerHTML = ('0' + minutes).slice(-2);
+        document.getElementById("_s").innerHTML = ('0' + seconds).slice(-2);
+        document.getElementById("_ms").innerHTML = ('00' + milliseconds).slice(-3);
+
+        // 当倒计时结束时清除计时器
+        if (distance < 0) {
+            clearInterval(x);
+        }
+    }, 10); // 每 10 毫秒更新一次倒计时
+}
+
+// 启动倒计时
+countdown();
+      })
+</script>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">Kaufen Sie 3 Stück und sparen Sie 13,99 €</p>
+<p class="countdowns"><span id="_d">00</span> <span id="_h" class="item">00</span> <span id="_m" class="item">00</span> <span id="_s" class="item">00</span> <span id="_ms" class="item">00</span></p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img class="logo" style="max-width: 250px;" src="https://www.gluschwein.de/cdn/shop/files/logo_400x.png?v=1662993852"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#use">Merkmale</a></li>
+<li><a href="#uses">Verwendung</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+<div style="width: 250px;" class="element-wrapper"><a href="#es_buy" class="order-btn pulse show-desk hidden-xs" style="background: #92c753; margin-top: -5px;">JETZT EINKAUFEN - Sparen Sie 13,99 €</a></div>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div id="mobMenuBtn" class="dl-trigger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#use">Merkmale</a></li>
+<li><a href="#uses">Verwendung</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative; margin-top: 160px;"><a style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;" href="#es_buy"></a> <img alt="" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/banner1pc.jpg?v=1712890571" class="show-desk" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/banner1_5b13abfb-56e4-4e67-bf1f-0fa966bd2f47.jpg?v=1712890568" class="show-mob" style="width: 100%;"><ds id="overview"></ds> <img class="show-desk" style="width: 100%;" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/pc_83ab7434-86bb-4adb-a5ed-b09f03e999ca.jpg?v=1712890961"> <img class="show-mob" style="width: 100%;" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/210bf8caf9178610aa9e6b180ae604eb_6915991a-e995-4516-95c4-c4b8d9e13e3c.jpg?v=1712890902"></div>
+<div id="overview2" class="section1">
+<div class="container">
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/7ba7bf979df6600a8bd462dc5abdb23a.jpg?v=1712891574" class="show-desk"><img alt="" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/7ba7bf979df6600a8bd462dc5abdb23a_d09debcb-3739-42d6-b219-ee70af625693.jpg?v=1712891576" class="show-mob"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/829229129ae5d90f597f2b94bc9b2d83_92b1c469-2eaa-41ca-b383-a52a14e6a477.jpg?v=1712891681" class="show-desk"><img alt="" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/dca3527c75cbd6f4e37a2ed5c742b2e6_f12bad12-5ed8-4dd6-aad8-7fe1c04cdfab.jpg?v=1712891690" class="show-mob"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT EINKAUFEN - Sparen Sie 13,99 €</a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<!-- <div class="strip-bg" style="padding-top: 0px;">
+<div class="container">
+<p class="ftur-hdng">1080p Magnetische WiFi-Minikamera</p>
+<img src="https://cdn.shopify.com/s/files/1/0298/7930/4276/files/4_8db3af14-5fe1-4393-9662-e14ad8ee4e5f.jpg?v=1669110813" alt="" /></div>
+</div> -->
+<div id="features" class="section2">
+<div class="container">
+<p class="common-head">Geeignet für verschiedene Anwendungsbereiche</p>
+<div class="comon-bdr"></div>
+<div class="clearall"></div>
+<div class="row rty">
+<div class="col-xs-12 col-sm-6"><img  src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_8a67dd5e-a1f0-4f24-a4a2-5a151f6af93e.webp?v=1712900239"></div>
+<div class="col-xs-12 col-sm-6"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/dcd43f32399f221415663046a5654bd1_0a325767-4067-45f4-96a0-5c914f83b051.gif?v=1712900242"></div>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/829229129ae5d90f597f2b94bc9b2d83_92b1c469-2eaa-41ca-b383-a52a14e6a477.jpg?v=1712891681" class="show-mob">
+<img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/dca3527c75cbd6f4e37a2ed5c742b2e6_f12bad12-5ed8-4dd6-aad8-7fe1c04cdfab.jpg?v=1712891690" class="show-mob">
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT EINKAUFEN - Sparen Sie 13,99 €</a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div id="use" class="section4">
+<div class="container">
+<p class="common-head">Vorteile freischalten</p>
+<div class="comon-bdr"></div>
+<p style="padding-bottom: 10px;" class="common-para">Vereinfachen Sie Ihre Nähaufgaben</p>
+<div class="col-xs-12 col-sm-6">
+<div class="clearall"></div>
+<img class="firstmgs" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/1_84ccb85c-6df6-4182-8bba-9e5dd6c2b9a7.jpg?v=1712901092"></div>
+<div class="col-xs-12 col-sm-6"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/2_bb5e5d97-545b-49b1-9499-4f634c147aab.jpg?v=1712901093"></div>
+<div class="col-xs-12 col-sm-6"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/3_7d3cb3cf-fac2-4917-b888-99de99c172aa.jpg?v=1712901092"></div>
+<div class="col-xs-12 col-sm-6"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/4_e06a11fc-cbab-487f-860b-a6ee97dcec89.jpg?v=1712901093"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT EINKAUFEN - Sparen Sie 13,99 €</a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="section5">
+<div id="es_buy" class="container">
+<h3 style="padding-bottom: 20px;" class="center-h2">WAHL DEIN BEVORZUGTES PAKET</h3>
+<div class="row es_variant_row hide-mob">
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #ff711d, #ff8f1d);" class="jianb">
+<h2>BESTSELLER</h2>
+<h3>Grau+Grün+Gelb</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_02c800f6-b168-4b14-bb8f-dbb91fd2c513.jpg?v=1712902485" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.9K Bewertungen</p>
+<h5><del>27,99 € </del><span>13,99 € </span></h5>
+<input value="47978132701507" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/47978132701507:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Grau×3</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_df5f5438-2a74-4d9c-b36e-86ef2a272653.jpg?v=1712902486" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.8K Bewertungen</p>
+<h5><del>27,99 € </del><span>13,99 € </span></h5>
+<input value="48182392455491" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/48182392455491:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Grün×3</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_774d2fb5-a9b5-4b21-adbc-afa77bb684ff.jpg?v=1712902485" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.7K Bewertungen</p>
+<h5><del>27,99 € </del><span>13,99 € </span></h5>
+<input value="48182392488259" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/48182392488259:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Gelb×3</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_630eedea-32a8-40fb-b1e3-06c33e9bf9b7.jpg?v=1712902486" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">18.2K Bewertungen</p>
+<h5><del>27,99 € </del><span>13,99 € </span></h5>
+<input value="48182392521027" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/48182392521027:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Grau</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_cd4ace1e-3acc-44a4-9489-0e73b39b07f6.jpg?v=1712902485" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.8K Bewertungen</p>
+<h5><del>15,99 € </del><span>7,99 € </span></h5>
+<input value="47978132603203" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/47978132603203:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Grün</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/5_a422b6b6-1155-48a3-a03c-4668ff1e1733.jpg?v=1712902486" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.5K Bewertungen</p>
+<h5><del>15,99 € </del><span>7,99 € </span></h5>
+<input value="47978132635971" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/47978132635971:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<div style="background: linear-gradient(to bottom, #859745, #92c753);" class="jianb">
+<h2>SCHLUSSVERKAUF</h2>
+<h3>Gelb</h3>
+<h4>50% RABATT</h4>
+</div>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/7_d607e696-385b-4dc1-9bc0-f8ab4b626715.jpg?v=1712902485" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">17.5K Bewertungen</p>
+<h5><del>15,99 € </del><span>7,99 € </span></h5>
+<input value="47978132668739" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ed910a;" href="/cart/47978132668739:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input data-type="shopify" data-variant="47978132701507" data-id="47978132701507" checked="checked" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_02c800f6-b168-4b14-bb8f-dbb91fd2c513.jpg?v=1712902485" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Grau+Grün+Gelb</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 27,99 € </label><label class="es_total_price"> 13,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="47978132701507" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/47978132701507:1" class="kore-order-now kore-buttonBounce kore-checkout">Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+<div class="ribbon red">BESTSELLER</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="48182392455491" data-id="48182392455491" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_df5f5438-2a74-4d9c-b36e-86ef2a272653.jpg?v=1712902486" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Grau×3</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 27,99 € </label><label class="es_total_price"> 13,99 €</label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="48182392455491" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/48182392455491:1" class="kore-order-now kore-buttonBounce kore-checkout">Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+<div class="ribbon red">SCHLUSSVERKAUF</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="48182392488259" data-id="48182392488259" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_774d2fb5-a9b5-4b21-adbc-afa77bb684ff.jpg?v=1712902485" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Grün×3</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 27,99 € </label><label class="es_total_price"> 13,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="48182392488259" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/48182392488259:1" class="kore-order-now kore-buttonBounce kore-checkout">Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+<div class="ribbon red">SCHLUSSVERKAUF</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="48182392521027" data-id="48182392521027" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_630eedea-32a8-40fb-b1e3-06c33e9bf9b7.jpg?v=1712902486" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Gelb×3</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 27,99 € </label><label class="es_total_price"> 13,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="48182392521027" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/48182392521027:1" class="kore-order-now kore-buttonBounce kore-checkout">Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="47978132603203" data-id="47978132603203" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_cd4ace1e-3acc-44a4-9489-0e73b39b07f6.jpg?v=1712902485" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Grau</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 15,99 € </label><label class="es_total_price"> 7,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="47978132603203" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/47978132603203:1" class="kore-order-now kore-buttonBounce kore-checkout">Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="47978132635971" data-id="47978132635971" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/5_a422b6b6-1155-48a3-a03c-4668ff1e1733.jpg?v=1712902486" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Grün</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 15,99 € </label><label class="es_total_price"> 7,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="47978132635971" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/47978132635971:1" class="kore-order-now kore-buttonBounce kore-checkout"> Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="47978132668739" data-id="47978132668739" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/7_d607e696-385b-4dc1-9bc0-f8ab4b626715.jpg?v=1712902485" class="es_product_img">
+<div class="es_text">
+<p class="pro_s">Gelb</p>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> 15,99 € </label><label class="es_total_price"> 7,99 € </label></div>
+<!-- <div class="kore-qty">
+<a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a>
+</div> --> <input value="47978132668739" type="hidden" class="kore-variants"> <a style="background: #ed910a; padding: 5px 10px;" href="/cart/47978132668739:1" class="kore-order-now kore-buttonBounce kore-checkout"> Jetzt bestellen </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="clearfix"><a style="height: 60px; margin-bottom: 30px;" data-type="shopify" data-variant="" data-id="" data-num="1" class="es_btn es_btn-order order-now-btn mobile-checkout"><span>Jetzt bestellen</span><br><span><small>JETZT EINKAUFEN - Sparen Sie 13,99 €</small></span></a></div>
+</div>
+</div>
+</div>
+<div id="reviews" class="section6">
+<div class="container">
+<div class="row hidden-xs">
+<div class="col-xs-12 col-sm-6">
+<div class="testi-row">
+<p class="testi-para">Die <ora>kompakte und tragbare Konstruktion</ora> dieses Werkzeugs ist ein echter Gamechanger für mich. Ich kann es problemlos in meiner Tasche oder meiner Nähschatulle tragen und bin so immer bereit für schnelle Reparaturen oder Anpassungen.</p>
+<div class="testi-new"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_9761bfab-7d05-4ed1-a0d8-37e301ea23dd.png?v=1712903593" class="man">
+<div class="testi-son">
+<p class="user">Ursula D.</p>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="star"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+</div>
+<div class="testi-row">
+<p class="testi-para">Während langer Nähsitzungen leide ich unter Handermüdung, aber das ergonomische Design dieses Nahttrenners hat einen großen Unterschied gemacht.<ora> Er liegt angenehm in der Hand und reduziert die Belastung,</ora> sodass ich länger nähen kann, ohne Unbehagen zu verspüren.</p>
+<div class="testi-new"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_ae6e7b2a-7881-436a-9e40-66632e64fc52.png?v=1712903593" class="man">
+<div class="testi-son">
+<p class="user">Helga B.</p>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="star"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+</div>
+<div class="testi-row">
+<p class="testi-para">Ich habe schon meine gerechte Portion an billigen Nahtauftrennern gehabt, die nach nur wenigen Anwendungen kaputtgegangen sind, aber dieser hier ist anders. <ora>Seine robuste Konstruktion gibt mir ein beruhigendes Gefühl, </ora>da ich weiß, dass er den Strapazen meiner Nähprojekte standhalten wird.</p>
+<div class="testi-new"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_4a7bc070-5ae4-4119-8d04-21bdae32498e.png?v=1712903593" class="man">
+<div class="testi-son">
+<p class="user">Klaus P.</p>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="star"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+</div>
+<div class="testi-row">
+<p class="testi-para">Ich benutze diesen Nadel-Einfädler und Nahttrenner jetzt schon eine Weile, <ora>und ich bin beeindruckt von seiner Präzision und Effizienz. </ora>Er erleichtert das Entfernen von Nähten und das Einfädeln von Nadeln, selbst bei komplizierten Projekten, enorm.</p>
+<div class="testi-new"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_593bc63b-0f7a-4638-a495-f97d2b07c128.png?v=1712903592" class="man">
+<div class="testi-son">
+<p class="user">Gertrud M.</p>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="star"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 czbox">
+<div class="images_box chuizhi"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_41ac85c1-e361-4497-b640-4bdab586b231.jpg?v=1712903594"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_ebb5a031-df8a-4d37-912c-98d6b2695d8a.jpg?v=1712903594"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_f8baa4ef-a257-4b85-b4d1-924d8bda4461.jpg?v=1712903593"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_e8bec321-51ef-4980-b623-4e051b35e072.jpg?v=1712903593"></div>
+</div>
+</div>
+<div class="row visible-xs">
+<div class="mbbox slick-4-1">
+<div class="mb_item">
+<div class="mb_1"><img class="heads" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_9761bfab-7d05-4ed1-a0d8-37e301ea23dd.png?v=1712903593">
+<div class="mb_11">
+<p class="user">Ursula D.</p>
+<img class="star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+<div class="mb_2"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_41ac85c1-e361-4497-b640-4bdab586b231.jpg?v=1712903594"></div>
+<div class="mb_3">
+<p class="testi-para">The <ora>compact and portable design</ora> of this tool is a game-changer for me. I can easily carry it in my pocket or sewing toolbox, <ora>ensuring I'm always prepared </ora>for any quick repairs or adjustments.</p>
+</div>
+</div>
+<div class="mb_item">
+<div class="mb_1"><img class="heads" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_ae6e7b2a-7881-436a-9e40-66632e64fc52.png?v=1712903593">
+<div class="mb_11">
+<p class="user">Helga B.</p>
+<img class="star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+<div class="mb_2"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_ebb5a031-df8a-4d37-912c-98d6b2695d8a.jpg?v=1712903594"></div>
+<div class="mb_3">
+<p class="testi-para">I suffer from hand fatigue during long sewing sessions, but this seam ripper's ergonomic design has made a world of difference. <ora>It's comfortable to hold and reduces strain on my hand, </ora>allowing me to sew for longer without discomfort.</p>
+</div>
+</div>
+<div class="mb_item">
+<div class="mb_1"><img class="heads" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_4a7bc070-5ae4-4119-8d04-21bdae32498e.png?v=1712903593">
+<div class="mb_11">
+<p class="user">Klaus P.</p>
+<img class="star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+<div class="mb_2"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_f8baa4ef-a257-4b85-b4d1-924d8bda4461.jpg?v=1712903593"></div>
+<div class="mb_3">
+<p class="testi-para">I've had my fair share of cheap seam rippers that break after just a few uses, but this one is different.<ora> Its durable construction gives me peace of mind, </ora>knowing it will withstand the rigors of my sewing projects.</p>
+</div>
+</div>
+<div class="mb_item">
+<div class="mb_1"><img class="heads" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_593bc63b-0f7a-4638-a495-f97d2b07c128.png?v=1712903592">
+<div class="mb_11">
+<p class="user">Gertrud M.</p>
+<img class="star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<span class="review_ver"><img src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/570d9be1af981bf8fb4cadd488675619.png?v=1711330625">Verifizierter Kauf</span></div>
+<div class="mb_2"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_e8bec321-51ef-4980-b623-4e051b35e072.jpg?v=1712903593"></div>
+<div class="mb_3">
+<p class="testi-para">I've been using this needle threader seam ripper for a while now, and <ora> I'm impressed by how precise and efficient it is.</ora> It makes removing seams and threading needles a breeze, even for intricate projects.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT EINKAUFEN - Sparen Sie 13,99 €</a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div style="position: relative;" id="ctabtn-mob"><a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT EINKAUFEN - Sparen Sie 13,99 €</a></div>
+</div>
+</div>
+<div class="customfooter2"><img class="logo" src="https://www.gluschwein.de/cdn/shop/files/logo_400x.png?v=1662993852">
+<p>Copyright 2024 | All Rights Reserved.</p>
+<ul>
+<li><a href="/pages/faqs">FAQs</a></li>
+<li><a href="/pages/contact">Kontaktieren uns</a></li>
+<li><a href="/pages/datenschutzinformationen">Datenschutzinformationen</a></li>
+<li><a href="/pages/uber-uns">Über uns</a></li>
+</ul>
+</div>
+</div>
