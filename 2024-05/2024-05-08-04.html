@@ -1,0 +1,803 @@
+<style>
+.announcement-bar {
+        background-color: #000 !important;
+    }
+
+    .kore-special-promo,
+    .kore-special-promo h2,
+    .kore-special-promo h3 {
+        color: #fff !important;
+    }
+
+    .kore-special-promo h2 span {
+        background: linear-gradient(transparent 71%, #6b8725 15%, #6b8725 90%, transparent 80%) !important;
+    }
+
+    .kore-inner h3 {
+        font-size: 18px !important;
+    }
+
+    .kore-inner h3,
+    .kore-inner h4 {
+        background-color: #f8f8f8 !important;
+    }
+
+    /*.kore-inner .variant select, .variant-show select {width: 170px!important;}*/
+    @media (min-width: 992px) {
+        .kore-advantage-block h2 {
+            font-size: 34px !important;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .kore-wysiwyg-content p {
+            font-size: 16px !important;
+        }
+
+        .new-chamfer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-chamfer>div.col-xs-12:nth-child(1) {
+            order: 3;
+        }
+
+        .new-chamfer>div.col-xs-12:nth-child(2) {
+            order: 1;
+        }
+
+        .new-chamfer>div.col-xs-12:nth-child(3) {
+            order: 2;
+        }
+    }
+
+    .each-pair {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        color: #d51010 !important;
+    }
+
+    @media (min-width: 768px) {
+        .kore-advantage-item img {
+            max-width: 115px;
+        }
+    }
+
+    .announcement-bar {
+        display: block;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .announcement-bar__message {
+        display: block;
+        font-weight: 400;
+        padding: 5px 30px;
+        margin: 0;
+    }
+
+    .announcement-bar {
+        background-color: #222222;
+    }
+
+    .announcement-bar__message {
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .kore-advantage-block h5 {
+        font-size: 25px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+        .offersWrapper {
+            text-align: center;
+        }
+
+        .offerbox {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offerbox-info {
+            display: block;
+            padding-left: 15px;
+            text-align: left;
+            width: calc(100% - 125px);
+        }
+
+        .offerbox-info h1 {
+            font-size: 16px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .offerbox-info p {
+            font-size: 14px;
+            color: #c82f31;
+        }
+
+        .offerbox-info p span {
+            display: block;
+            color: #333;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .offerbox-info p del {
+            color: rgb(136, 136, 136);
+            padding-left: 5px;
+        }
+
+        .offerbox figure {
+            width: 100px;
+        }
+
+        .ribbon {
+            color: #fff;
+            font-size: 11px;
+            width: 150px;
+            text-align: center;
+            background: #d32020;
+            letter-spacing: 1px;
+            transform: rotate(55deg);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            z-index: 90;
+            top: 25px;
+            right: -45px;
+            padding: 5px 0 !important;
+        }
+
+        .offersWrapper .ribbon.green {
+            background: #2dad57;
+        }
+
+        input.offer-checked[type="checkbox"] {
+            -webkit-appearance: none;
+            width: 30px;
+            height: 25px;
+            border: 2px solid #ced8dd;
+            background: #f2f9fd;
+            position: relative;
+            margin-right: 10px !important;
+            outline: none;
+        }
+
+        input.offer-checked[type="checkbox"]:checked {
+            width: 30px;
+            height: 25px;
+            background: url(https://cdn.shopifycdn.net/s/files/1/0518/4625/0673/files/checkmark.svg?v=1619337294) #f2f9fd center center / 18px 18px no-repeat;
+            border: 2px solid #ced8dd;
+        }
+
+        .box-checked {
+            transform: scale(1.03);
+            background: #d9f6ff;
+            border-color: #0071a8;
+        }
+
+        .kore-minus-btn {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #d7dbdb;
+            border-right: none;
+            border-radius: 13px 0px 0px 13px;
+            display: block;
+            background: url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png') #fff no-repeat center center;
+            float: left;
+            cursor: pointer;
+        }
+
+        .kore-plus-btn {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #d7dbdb;
+            text-align: center;
+            border-radius: 0px 13px 13px 0;
+            display: block;
+            background: url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png') #fff no-repeat center center;
+            float: left;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        .kore-qty-box {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .box-txtbox {
+            width: 50px;
+            height: 30px !important;
+            border: 1px solid #d7dbdb;
+            text-align: center;
+            font-size: 14px;
+            color: #333232;
+            padding: 0 5px;
+            font-weight: 900;
+            float: left;
+            display: block;
+        }
+
+        .offerbox-info .kore-minus-btn,
+        .offerbox-info .kore-plus-btn {
+            height: 30px;
+        }
+
+        /*! CSS Used keyframes */
+        @keyframes bounce {
+            15% {
+                transform: translateY(0);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+
+            35% {
+                transform: translateY(-35%);
+                box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.25);
+            }
+
+            45% {
+                transform: translateY(0%);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+
+            55% {
+                transform: translateY(-20%);
+                box-shadow: 0px 5px 4px -4px rgba(0, 0, 0, 0.25);
+            }
+
+            70% {
+                transform: translateY(0%);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+
+            80% {
+                transform: translateY(-10%);
+                box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.25);
+            }
+
+            90% {
+                transform: translateY(0%);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+
+            95% {
+                transform: translateY(-2%);
+                box-shadow: 0px 2px 3px -3px rgba(0, 0, 0, 0.25);
+            }
+
+            99% {
+                transform: translateY(0%);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+
+            100% {
+                transform: translateY(0);
+                box-shadow: 0px 0px 0px 0px transparent;
+            }
+        }
+    }
+
+    .kore-order-now {
+        border: none;
+    }
+
+    @media (max-width: 767px) {
+        .kore-advantage-block h2 {
+            font-size: larger !important;
+        }
+
+        .kore-advantage-block h5 {
+            line-height: inherit !important;
+            font-size: initial !important;
+        }
+
+        .kore-advantage-item h3 {
+            word-break: break-all;
+        }
+    }
+
+    @media (min-width: 767px) {
+        .right-content img {
+            width: 50% !important;
+        }
+    }
+
+    .common-head {
+        font-size: 32px;
+        text-align: center;
+        line-height: 52px;
+        color: #191919;
+        font-weight: bold;
+    }
+
+    .comon-bdr {
+        background: #191919;
+        width: 75px;
+        height: 5px;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    @media (max-width:768px) {
+        .common-head {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    .reviewblk {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        max-width: 800px;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        padding: 25px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .ratingBox {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16%;
+        background: #56a5dd;
+        color: #fff;
+    }
+
+    .ratingBox p {
+        float: left;
+        width: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    .ratingBox span {
+        float: left;
+        width: 100%;
+        font-size: 16px;
+        background: #2b73a7;
+        padding: 3px 0;
+    }
+
+    .ratingImg {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px;
+    }
+
+    .overall-rating {
+        display: inline-block;
+        vertical-align: middle;
+        width: 17%;
+        color: #393737;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 500;
+        margin: 0 13px;
+    }
+
+    .overall-rating img {
+        width: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 7px;
+    }
+
+    .cs-percent {
+        display: inline-block;
+        vertical-align: middle;
+        width: 21%;
+        margin: 0px 12px;
+        color: #393737;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .cs-percent span {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        float: left;
+        width: 100%;
+    }
+
+    .testiBox {
+        width: 100%;
+        padding: 0 70px;
+        margin-top: 40px;
+    }
+
+    .testi-row {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        padding-left: 105px;
+        position: relative;
+        text-align: left;
+        margin-bottom: 45px;
+    }
+
+    .testi-imgs {
+        position: absolute;
+        left: 2px;
+        top: 10px;
+        max-width: 85px;
+    }
+
+    .clearall {
+        clear: both;
+        font-size: 1px;
+        line-height: 1px;
+        height: 1px;
+    }
+
+    .testi-para {
+        float: left;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000;
+        font-style: italic;
+        margin-top: 15px;
+    }
+
+    .usr-name {
+        float: left;
+        width: 100%;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+        .reviewblk {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 30px;
+            align-items: center;
+        }
+    }
+
+    @media (max-width:480px) {
+        .reviewblk {
+            max-width: 100%;
+            padding: 0 0 15px;
+            margin-top: 10px;
+            border-radius: 0;
+        }
+
+        .ratingBox {
+            width: 100%;
+        }
+
+        .ratingImg {
+            margin: 22px 0;
+        }
+
+        .overall-rating {
+            width: 100%;
+            margin: 0;
+        }
+
+        .overall-rating img {
+            margin: -10px 0 0;
+            width: 90px;
+        }
+
+        .cs-percent {
+            width: 90%;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .testiBox {
+            margin-top: 30px;
+            padding: 0;
+        }
+
+        .testi-row {
+            padding-left: 85px;
+            margin-bottom: 30px;
+        }
+
+        .testi-imgs {
+            width: 75px;
+        }
+
+        .testi-para {
+            font-size: 17px;
+            line-height: 25px;
+            margin-top: 12px;
+        }
+
+        .usr-name {
+            margin-top: 15px;
+        }
+    }
+
+    .section6 {
+        background: #fff;
+        width: 100%;
+        padding: 30px 0 30px;
+    }
+
+    @media (min-width: 768px) {
+        .new-chamfer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+<div class="kore">
+<div class="kore-body">
+<div class="announcement-bar">
+<p class="announcement-bar__message">Don't miss our promotion - Up to 58% off</p>
+</div>
+<a href="#kore-product"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/01_5b2ce62d-3a4d-4583-be48-3677b2256ad8.jpg?v=1715157473" style="width: 100%;" class="img-responsive center-block hidden-xs"> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/94d53239037849179c79285840325f32_046617ce-dd64-4077-a2a5-9d099271ec8c.jpg?v=1715157473" style="width: 100%;" class="img-responsive center-block visible-xs"> </a>
+<div style="background: #000;" class="kore-wysiwyg-content">
+<div class="container"><img src="https://cdn.shopify.com/s/files/1/0225/4818/5162/files/ia_33.png?v=1618388544" class="img-responsive center-block">
+<p style="color: #fff;">"This floor cleaner truly lives up to its promises. It effortlessly removes stains and dirt, leaving my floors sparkling clean and with a natural shine. "  </p>
+<p><span style="color: #fff;">-- Ady J.</span></p>
+</div>
+</div>
+<div class="kore-advantage-block">
+<div class="container">
+<h2>Kraftig dekontamineringsgulvrens</h2>
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/icon02.png?v=1713255522" class="img-responsive center-block">
+<h3>Brighten Your Floors</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/icon03.png?v=1713255522" class="img-responsive center-block">
+<h3>Easily Remove A Variety Of Stubborn Stains</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/icon04.png?v=1713255522" class="img-responsive center-block">
+<h3>Multipurpose Cleaning</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/icon.png?v=1713255687" class="img-responsive center-block">
+<h3>Naturally Aromatic Scents</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row kore-product-info">
+<div class="col-xs-12 col-sm-6 kore-product-left">
+<div id="gallery">
+<div id="gallery_output"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0000__1_562ce2da-0e4f-40b3-9a8b-89ef25de3dc9.jpg?v=1689666782" class="img-responsive" id="img1"></div>
+<div id="gallery_nav">
+<a rel="img1" class="on"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0000__1_562ce2da-0e4f-40b3-9a8b-89ef25de3dc9.jpg?v=1689666782" class="img-responsive"></a> <a rel="img2" class=""><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0001__2_4716cdd1-ba9c-43d6-a652-2c87d757faa8.jpg?v=1689666782" class="img-responsive"></a> <a rel="img3"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0002_1_53e0bd39-765a-4514-816c-ee2fbed09b47.jpg?v=1689666782" class="img-responsive"></a> <a rel="img4"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0003_2_1b3b6069-b337-4500-8c37-d03b8ff1eb49.jpg?v=1689666782" class="img-responsive"></a> <a rel="img5"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0004_3_15ed3eaa-e128-4672-8ee6-ace8f70889cf.jpg?v=1689666782" class="img-responsive"></a> <a rel="img6"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0005_4_e4fb4de3-db06-4344-9fb9-d85a86bb3072.jpg?v=1689666782" class="img-responsive"></a> <a rel="img7"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0006_5_b1dc03e6-357d-4f54-bdd5-654e6a139bb0.jpg?v=1689666782" class="img-responsive"></a> <a rel="img8"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0007_6_d92b23a2-9427-4377-b8c5-668714a21e66.jpg?v=1689666782" class="img-responsive"></a>
+<a rel="img9"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0008_7_664e32cf-0404-4dd4-843a-ccbbeafa35d7.jpg?v=1689666782" class="img-responsive"></a>
+<a rel="img10"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0009_8_6d54929d-adf5-4c5b-827b-140eb85c7ac8.jpg?v=1689666782" class="img-responsive"></a>
+<a rel="img11"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0010_b2cf5a3d-146f-4f91-9ec4-7ee87f093c33.jpg?v=1689666782" class="img-responsive"></a>
+<a rel="img12"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/products/0011_eb0049c1-800e-41ff-913f-f31ced7a4501.jpg?v=1689666782" class="img-responsive"></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 kore-product-right">
+<div>
+<h1 style="font-family: 'helveticaneue-light';" class="kore-product-name"><strong><a>Powerful Decontamination Floor Cleaner
+</a></strong></h1>
+<div class="kore-product-prices"><span class="kore-product-compare-price">$25.99</span><span class="kore-product-price">$12.99</span><span class="kore-discount"><span class="kore-percent">37% OFF</span></span></div>
+<div class="clearfix"></div>
+<a style="background: #edba3b;" href="#kore-product" class="kore-product-button">YES! I WANT TO ORDER NOW</a></div>
+<p class="kore-text-tip">🔒 Safe Secure Checkouts<br>📦 Insured Shipping<br> ✉ Customer Support
+</p>
+<div class="right-content">
+<ul>
+<li><b>Brighten Your Floors:</b>  Wipe away spills, stains, and dust to restore your floors' natural shine, decontamination, and quick drying the floor is as clean as new.</li>
+<li><b>Easily Remove A Variety Of Stubborn Stains:</b>  Quickly removes built-up dirt, grease, water, footprints, and sticky stains, leaving your floors sparkling and naturally fresh!</li>
+<li><b>Multipurpose Cleaning:</b>  Not only can be used to clean all kinds of wood floors, tile floors, and marble, but also can be used to clean ceramics, wooden furniture, sinks, refrigerators, windows, kitchens, and so on.</li>
+<li><b>Naturally Aromatic Scents:</b>  No harsh scents here! Fresh lemon scent removes unpleasant odors of the floor, and leaves a faint naturally scented on the floor.</li>
+<li><b>Safe And Gentle:</b>  Made with decontamination factor + plant extract, it does not hurt the floor, does not contain any irritating and harmful ingredients, and can be used by children and the elderly at home.</li>
+</ul>
+</div>
+<div class="kore-payment-image"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_b4f1d50f-dd0d-4901-a433-5a9a1772f239.png?v=1697771243" class="img-responsive center-block"></div>
+</div>
+</div>
+</div>
+<div class="container">
+<div style="margin-bottom: 30px; margin-top: 30px;" class="row"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/02_62370ff6-5566-45f2-88e0-7905ba665466.jpg?v=1715157472" class="img-responsive center-block hidden-xs"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/02_62370ff6-5566-45f2-88e0-7905ba665466.jpg?v=1715157472" class="img-responsive center-block visible-xs"></div>
+</div>
+<div class="kore-buy" id="kore-product">
+<div class="container">
+<h3 style="font-weight: 600;" class="kore-product-title">BUY MORE, SAVE MORE!</h3>
+<div class="row new-chamfer  hidden-xs">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #edba3b; text-transform: uppercase;">Best Seller</h2>
+<h3>5 PCS</h3>
+<h4 style="color: #bb2525;">58% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku03.jpg?v=1713255523"></figure>
+<p><img>21.4K Reviews</p>
+<h5 class="price"><del>$71.99</del><span>$35.99</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48070233817433"> <a class="kore-plus_btn"></a></div>
+<button style="background: #edba3b;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('48070233817433')"> Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #edba3b; text-transform: uppercase;">Hot Sale</h2>
+<h3>3 PCS</h3>
+<h4 style="color: #bb2525;">45% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku02.jpg?v=1713255523" class="img-responsive center-block"></figure>
+<p><img>25.6K Reviews</p>
+<h5 class="price"><del>$47.99</del><span>$23.99</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="48070233784665"> <a class="kore-plus_btn"></a></div>
+<button style="background: #edba3b;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('48070233784665')"> Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #edba3b; text-transform: uppercase;">Hot Sale</h2>
+<h3>2 PCS</h3>
+<h4 style="color: #bb2525;">37% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku01.jpg?v=1713255523" class="img-responsive center-block"></figure>
+<p><img>31.1K Reviews</p>
+<h5 class="price"><del>$37.99</del><span>$19.99</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="48070233751897"> <a class="kore-plus_btn"></a></div>
+<button style="background: #edba3b;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('48070233751897')"> Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offersWrapper  visible-xs">
+<div class="offerbox box-checked"><input checked="checked" type="checkbox" class="offer-checked" data-id="48070233817433" value="48070233817433" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku03.jpg?v=1713255523"></figure>
+<div class="offerbox-info">
+<h1>5 PCS</h1>
+<p><span>58% OFF</span><b>$35.99</b><del>$71.99</del></p>
+<input class="kore-variants" type="hidden" value="48070233817433">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="48070233784665" data-id="48070233784665" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku02.jpg?v=1713255523" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>3 PCS</h1>
+<p><span>45% OFF</span><b>$23.99</b><del>$47.99</del></p>
+<input value="48070233784665" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="48070233751897" data-id="48070233751897" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/sku01.jpg?v=1713255523" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>2 PCS</h1>
+<p><span>37% OFF</span><b>$19.99</b><del>$37.99</del></p>
+<input value="48070233751897" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="clearfix"><a style="background: #1d2740;" href="/cart/48070233751897:1" class="kore-order-now kore-buttonBounce kore-mobile-order"> <i class="fa fa-angle-double-right fa_prepended"></i> Order Now</a></div>
+</div>
+</div>
+</div>
+<div class="kore-customer-review">
+<div class="container">
+<h2 style="font-weight: 600;">HAPPY CUSTOMERS' REVIEWS</h2>
+<div class="row" style="display: flex; flex-wrap: wrap; row-gap: 20px;">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/ping02.jpg?v=1713255523">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>
+I was looking for a safe and effective floor cleaner, and this product exceeded my expectations. It's tough on stubborn stains yet gentle on my floors. I appreciate that it's made with plant-based ingredients, making it safe for my family. Highly recommend!</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/ping05.jpg?v=1713255523">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>
+This floor cleaner is a must-have for every household. It's incredibly versatile—I use it not only on my floors but also on countertops, windows, and furniture. The cleaning power is impressive, and the natural lemon aroma is delightful. I'm very pleased with this purchase!"</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0597/3891/5024/files/ping04.jpg?v=1713255523">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>Fresh Scent and Effective Cleaning
+I love how this cleaner leaves my floors smelling fresh and looking brand new. It tackles tough stains effortlessly and dries quickly without leaving any residue. Knowing that it's safe for kids and the elderly is a big plus. Definitely my go-to cleaner now!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="background: url('https://cdn.shopify.com/s/files/1/0597/3891/5024/files/banner_3a1edaa5-ba25-4e39-91b1-d721af012870.jpg?v=1713255523') center/cover no-repeat;" class="kore-special-promo">
+<div class="container">
+<h2><span>SPECIAL PROMOON OFFER NOW!</span></h2>
+<h3>ORDER TODAY AND RECEIVE A 58% DISCOUNT</h3>
+<p>This discount is valid for a limited time only.<br>Quantities are limited - act now!</p>
+<a style="background: #607140;" href="#kore-product" class="kore-banner-btn snow-banner-btn"><i class="fa fa-angle-right"></i>Claim Your 58% Discount</a>
+<ul>
+<li>
+<strong>Guaranteed High Quality</strong>We back up all our products with a full money-back guarantee.</li>
+<li>
+<strong>No-Hassle Returns</strong> If you are not 100% satisfied with your order, return it within 30 days for a full refund.</li>
+</ul>
+</div>
+
+
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul>
+<li><a href="/pages/about-us">About Us</a></li>
+<li><a href="/pages/contact-us">Contact us</a></li>
+<li><a href="/pages/faqs">FAQs</a></li>
+<li><a href="/pages/payment-policy">Payment Policy</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">PAYMENT METHODS</h3>
+<div><span> <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_b4f1d50f-dd0d-4901-a433-5a9a1772f239.png?v=1697771243" class="credit-cards-image"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GUARANTEE</h3>
+<p class="footer-guarantee-content">30-Day money-back guarantee</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>// <![CDATA[
+    function padding(num, length) {
+        if ((num + "").length >= length) { return num; }
+        return padding("0" + num, length)
+    }
+    setInterval(function () {
+        var s = parseInt($(".ss-1").html() + $(".ss-2").html()); var m = parseInt($(".mm-1").html() + $(".mm-2").html()); var h = parseInt($(".hh-1").html() + $(".hh-2").html()); if (s > 0) { var ns = padding(s - 1, 2); $(".ss-1").html(ns.toString().substr(0, 1)); $(".ss-2").html(ns.toString().substr(-1)); } else { $(".ss-1").html(5); $(".ss-2").html(9); var ms = padding(m - 1, 2); $(".mm-1").html(ms.toString().substr(0, 1)); $(".mm-2").html(ms.toString().substr(-1)); }
+        if (m = 0) { $(".mm-1").html(5); $(".mm-2").html(9); var hs = padding(h - 1, 2); $(".hh-1").html(hs.toString().substr(0, 1)); $(".hh-2").html(hs.toString().substr(-1)); }
+    }, 1000);
+    // ]]>
+
+    function add_to_cart(variant_id) {
+
+
+        var quantity = $("input[variant_id='" + variant_id + "']").val();
+        location.href = "/cart/" + variant_id + ":" + quantity
+
+    }
+    // ]]></script>
