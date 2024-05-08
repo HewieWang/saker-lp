@@ -1,0 +1,693 @@
+<style>
+        .page-bgcolor {
+            /* background-color: #eaeaea; */
+        }
+
+        .text-orange {
+            color: #ff8400;
+        }
+
+        .bgcolor-orange {
+            background-color: #ff8400;
+        }
+
+        .line-orange {
+            border-top: solid 1px #ff8400
+        }
+
+        .box-orange {
+            border: solid 2px #ff8400
+        }
+
+        .text-gold {
+            color: #ffdd1a;
+        }
+
+        .product-top-right ul li {
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .order-btn {
+            height: 3rem;
+            max-width: 16rem;
+        }
+
+        .scaleDrew {
+            animation: scaleDrew 2.5s ease-in-out infinite;
+        }
+
+        @keyframes scaleDrew {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.1, 1.1);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        .imgage-container {
+            position: relative;
+        }
+
+        .imgage-container>* {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .imgage-container:after {
+            content: '';
+            display: block;
+            height: 0;
+            width: 100%;
+        }
+
+        .banner-1 .img-pc.imgage-container:after {
+            padding-bottom: 27.60%;
+        }
+
+        .banner-1 .img-m.imgage-container:after {
+            padding-bottom: 109.86%;
+        }
+
+        .product-top-left .imgage-container:after {
+            padding-bottom: 91.66%;
+        }
+
+        .line-img .imgage-container:after {
+            padding-bottom: 3.84%;
+        }
+
+        .feature-row .imgage-container:after {
+            padding-bottom: 110.86%;
+        }
+
+        .section-5 .imgage-container:after {
+            padding-bottom: 43.84%;
+        }
+
+        .vs-section .imgage-container:after {
+            padding-bottom: 80.73%;
+        }
+
+        .service-row .imgage-container:after {
+            padding-bottom: 121.52%;
+        }
+
+        .day30 .img-pc.imgage-container:after {
+            padding-bottom: 13.93%;
+        }
+
+        .day30 .img-m.imgage-container:after {
+            padding-bottom: 27.1%;
+        }
+
+        .product-row .imgage-container:after {
+            padding-bottom: 78.39%;
+        }
+
+        .comment-row .imgage-container:after {
+            padding-bottom: 87.4%;
+        }
+
+        .banner-3 .img-pc.imgage-container:after {
+            padding-bottom: 32.92%;
+        }
+
+        .banner-3 .img-m.imgage-container:after {
+            padding-bottom: 166.13%;
+        }
+
+        .footer {
+            background-color: #F5F5F5;
+        }
+
+        .order-btn-now:active,
+        .order-btn:active {
+            box-shadow: 3px 3px 5px 3px rgba(197, 199, 210, 0.51), -3px -3px 5px 3px rgba(197, 199, 210, 0.51) !important;
+        }
+
+        @media(max-width:480px) {
+            .product-bottom {
+                max-width: calc(100% - 160px);
+                z-index: 99;
+            }
+
+            .product-image {
+                width: calc(100% - 20px);
+                height: calc(100% - 20px);
+                z-index: 1;
+            }
+
+            .product-secure {
+                font-size: 10px !important;
+            }
+        }
+
+        @media(max-width:320px) {
+            .product-bottom {
+                max-width: calc(100% - 120px);
+                z-index: 99;
+            }
+
+            .product-image .imgage-container {
+                width: 112px;
+            }
+
+            .order-btn-now {
+                font-size: 18px !important
+            }
+        }
+    .box-lightblue{
+        background: #ddedfc;
+    border-color: #ddedfc;
+    }
+    .box-yellow{
+       border-color: #fbd98f; 
+    } 
+    .bgcolor-yellow{
+        background: #fbd98f;
+    }
+    .bgcolor-blue{
+        background-color:#6a9feb;
+    }
+    .bgcolor-cheng{
+        background-color:#fc7b1d;
+    }
+    .bgcolor-red{
+        background-color:#fd3116;
+    }
+    .bg-blue{
+        background-color:#6a9feb;
+    }
+    .bg-cheng{
+        background-color:#fc7b1d;
+    }
+    .bg-red{
+        background-color:#fd3116;
+    }
+    .text-blue{
+        color:#6a9feb;
+    }
+    .text-cheng{
+        color:#fc7b1d;
+    }
+    .text-red{
+       color:#fd3116;
+    }
+    .text-yellow{
+       color:#f8ea0b;
+    }
+    .bgcolor-yellow.buynow-btn{
+        background: #f8ea0b;color:#000;
+    }
+    .feature-title{margin-top:20px;}
+    @media(max-width:768px) {
+        div.wsmenucontainer.clearfix > div.page-bgcolor.m-0.p-0.lp-section > div:nth-child(4) > div > a{
+                margin-top: 40px;
+        }
+        .section-3 .feature-title{
+                font-size: 14px;
+        }
+    }
+    .banner-3{margin:20px 0;}
+    @media (max-width: 480px) {
+        .product-bottom {
+        margin-left: calc(100% - 150px);
+    }
+    .product-image{
+        justify-content:unset;align-items: center;
+    }
+    .product-box,.product-img{
+        border-radius:5px;
+    }
+    .product-top{display:none;}
+       .ribbon {
+    color: #fff;
+    font-size: 11px;
+    width: 150px;
+    text-align: center;
+    background: #d32020;
+    letter-spacing: 1px;
+    transform: rotate(55deg);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 90;
+    top: 25px;
+    right: -50px;
+    padding: 5px 0 !important;
+}
+.ribbon.green {
+    background: #2dad57;
+}
+.ribbon.red {
+    background: red;
+}
+.product-box{
+    overflow:hidden;
+} 
+.product-bottom {
+        transform: scale(.8);        place-items: flex-start;
+    }
+    .product-price{
+        direction: rtl;
+    }
+    .order-btn {
+    height: 2rem;
+    border-radius: 5px;
+}
+.hi-xs{display:none;}
+}
+.product-top{text-align:center;}
+@media (min-width: 480px){
+    .ribbon{display:none;}
+    .vi-xs{display:none}
+}
+.buynow-btn .ml-2{
+        width: 20px;
+}
+</style>
+<div class="page-bgcolor m-0 p-0 lp-section">
+<div class="section-1">
+<div class="fixed z-[9999] top-0 start-0 w-full text-white text-center bg-black" id="promotion">
+<div class="flex items-center justify-center text-sm sm:text-base h-8 max-w-7xl mx-auto px-0 xl:px-20 promotion-row"><span class="text-yellow pr-1">★★★★★</span><span>|</span><span class="px-1 text-yellow"> Start from $0.99 each </span><span>Monthly sales of 10,000+</span></div>
+</div>
+</div>
+<div class="section-header"><nav class="bg-white w-full fixed z-[9999] top-8 start-0 border-b border-gray-200" id="header">
+<div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto px-4 xl:px-20 py-2 md:py-4"><a class="flex items-center space-x-3 rtl:space-x-reverse"> <img src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/acssart_180x.png?v=1713962024" class="h-8" alt="Acssart Logo"> </a>
+<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"><a style="max-width: fit-content;" id="menu-link-btn" class="hidden md:flex text-white text-xl uppercase bgcolor-yellow scaleDrew font-bold text-sm px-4 py-2 text-center items-center justify-center cursor-pointer order-btn buynow-btn">GET MY REMOVER!<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a> <button type="button" id="menu-open-btn" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100"> <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path> </svg> </button></div>
+<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+<ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+<li><a class="cursor-pointer block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0 border-b border-gray-100 md:border-0 menu-overview" data-id="features">Features</a></li>
+<li><a class="cursor-pointer block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0 border-b border-gray-100 md:border-0 menu-features" data-id="service">Service</a></li>
+<li><a class="cursor-pointer block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0 border-b border-gray-100 md:border-0 menu-usage" data-id="es_buy">Options</a></li>
+<li><a class="cursor-pointer block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-500 md:p-0 menu-reviews" data-id="reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+</nav></div>
+<div class="section-2 mt-[88px] md:mt-[112px]">
+<div class="w-full max-w-[1920px] mx-auto">
+<div class="banner-1">
+<div class="img-pc imgage-container hidden sm:block"><a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_fb602e72-12cc-4c59-9f9a-2744b29f113f.jpg?v=1714442076"></a></div>
+<div class="img-m imgage-container block sm:hidden"><a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/74b96dbb2d19db9758ba306fc55ad040_26715d04-73aa-4aac-ba83-1c1813653c90.jpg?v=1714442012"></a></div>
+</div>
+</div>
+<!-- <div class="block sm:hidden pt-2 pb-4 product-top-m">
+<div class="grid grid-cols-12 gap-4 product-top-row">
+<div class="col-span-5 pl-3 product-top-left">
+<div class="imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/15_082de4f4-8e1a-4183-9e9f-281abe86ad78.png?v=1712745001" class="w-full h-auto lazyload"></div>
+</div>
+<div class="col-span-7 flex items-center font-medium product-top-right">
+<ul>
+<li class="flex items-center"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/huo_17x.png?v=1712740487" class="mr-1"><span class="text-orange mr-1">Safe</span> Handling</li>
+<li class="flex items-center"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/huo_17x.png?v=1712740487" class="mr-1"><span class="text-orange mr-1">Easy</span> to Use</li>
+<li class="flex items-center"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/huo_17x.png?v=1712740487" class="mr-1"><span class="text-orange mr-1">High-quality</span> stainless steel</li>
+<li class="flex items-center"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/huo_17x.png?v=1712740487" class="mr-1"><span class="text-orange mr-1">Efficient</span> experience</li>
+</ul>
+</div>
+</div>
+<div class="pt-4 product-bottom-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
+</div> --></div>
+<div class="section-3">
+<div class="max-w-7xl mx-auto pt-2 sm:pt-4 px-4 xl:px-20"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a>
+<div style="visibility: hidden;" class="text-center my-2 line-img">
+<div class="imgage-container max-w-2xl mx-auto"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487"></div>
+</div>
+<div class="grid grid-cols-12 gap-4 feature-row">
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img class="w-full h-auto lazyload feature-img" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_44027301-251f-472f-9327-314938b74d33.png?v=1714441739"></div>
+<div class="text-center font-medium leading-5 feature-title">Reusable and Washable</div>
+</div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img class="w-full h-auto lazyload feature-img" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_eb5cb9c5-615c-4c28-89fe-ab392921cbd3.png?v=1714441738"></div>
+<div class="text-center font-medium leading-5 feature-title">Ergonomic Handle</div>
+</div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img class="w-full h-auto lazyload feature-img" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_d7b93278-d680-4bf6-bc3f-9ae6543fa248.png?v=1714441739"></div>
+<div class="text-center font-medium leading-5 feature-title">No Refill, Non-Toxic and Safe</div>
+</div>
+<div class="col-span-3 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-containers"><img class="w-full h-auto lazyload feature-img" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f9d614fb-f872-4589-a3c0-3e536df9ce34.png?v=1714441739"></div>
+<div class="text-center font-medium leading-5 feature-title">Multi-Purpose Functionality</div>
+</div>
+</div>
+</div>
+</div>
+<div id="service" class="section-4">
+<div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
+<div class="banner-3">
+<div class="img-pc imgage-containers hidden sm:block"><a class="cursor-pointer buynow-btn"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/210bf8caf9178610aa9e6b180ae604eb_f30da264-03dd-4bdd-892d-aa7a4e869926.jpg?v=1714441792" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/210bf8caf9178610aa9e6b180ae604eb_f30da264-03dd-4bdd-892d-aa7a4e869926.jpg?v=1714441792" class="w-full h-auto lazyloaded"></a></div>
+<div class="img-m imgage-containers block sm:hidden"><a class="cursor-pointer buynow-btn"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/12108b26c17620f29c39715ef7becc87_412e208d-71bc-4367-a059-8258ab138892.jpg?v=1714441890" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/12108b26c17620f29c39715ef7becc87_412e208d-71bc-4367-a059-8258ab138892.jpg?v=1714441890" class="w-full h-auto lazyload"></a></div>
+</div>
+</div>
+<a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
+<div class="section-3">
+<div class="max-w-7xl mx-auto pt-2 sm:pt-4 px-4 xl:px-20">
+<h3 class="text-center text-2xl font-medium max-w-2xl mx-auto">Do you have the following troubles when cleanning up pet hair</h3>
+<div class="text-center my-2 line-img">
+<div class="imgage-container max-w-2xl mx-auto"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487" class="w-full h-auto ls-is-cached lazyloaded"></div>
+</div>
+<div class="grid grid-cols-12 feature-row">
+<div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+<div class="imgage-containers"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_107060e2-d1db-4da5-81b8-486256bf36d7.png?v=1714441949" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_107060e2-d1db-4da5-81b8-486256bf36d7.png?v=1714441949" class="w-full h-auto feature-img ls-is-cached lazyloaded"></div>
+</div>
+<div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+<div class="imgage-containers"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_4f26f06c-e45c-4545-97e1-ba8987aa0794.png?v=1714441950" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_4f26f06c-e45c-4545-97e1-ba8987aa0794.png?v=1714441950" class="w-full h-auto feature-img ls-is-cached lazyloaded"></div>
+</div>
+<div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+<div class="imgage-containers"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_56ae1023-481f-4753-8daa-d1eb51856582.png?v=1714441950" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_56ae1023-481f-4753-8daa-d1eb51856582.png?v=1714441950" class="w-full h-auto feature-img ls-is-cached lazyloaded"></div>
+</div>
+<div class="col-span-12 sm:col-span-6 flex flex-col justify-start">
+<div class="imgage-containers"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_86bd6aab-bdd6-452a-8fe3-b3861e986912.png?v=1714441949" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_86bd6aab-bdd6-452a-8fe3-b3861e986912.png?v=1714441949" class="w-full h-auto feature-img ls-is-cached lazyloaded"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]" style="background: #6a9feb;">
+<div class="w-full max-w-7xl mx-auto py-4 px-4 lg:px-40">
+<div class="grid grid-cols-12 gap-4 black-img-section">
+<div class="col-span-12 sm:col-span-12 text-center text-white text-xl xl:text-2xl pl-0 md:pl-4 lg:pl-0 bis-left">ARE YOU READY TO <span class="text-4xl text-gold"> BECOME A PRO </span> ON THE CLEANING?</div>
+<div class="col-span-12 sm:col-span-12 flex justify-center items-center  bis-right">
+<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a></div>
+</div>
+</div>
+</div>
+</div>
+<div style="background: #fff; padding-bottom: 20px;" class="section-41">
+<div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
+<div class="banner-3">
+<div class="img-pc imgage-containers hidden sm:block"><a class="cursor-pointer buynow-btn"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_859a8ce8-6623-44c1-bcab-fc118554ed67.jpg?v=1714442077" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_859a8ce8-6623-44c1-bcab-fc118554ed67.jpg?v=1714442077" class="w-full h-auto lazyloaded"></a></div>
+<div class="img-m imgage-containers block sm:hidden"><a class="cursor-pointer buynow-btn"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/829229129ae5d90f597f2b94bc9b2d83_5a974ef3-36e9-4ce1-b21a-cddcc34f2049.jpg?v=1714442012" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/829229129ae5d90f597f2b94bc9b2d83_5a974ef3-36e9-4ce1-b21a-cddcc34f2049.jpg?v=1714442012" class="w-full h-auto lazyload"></a></div>
+</div>
+</div>
+<!-- <a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!
+<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a> --></div>
+<div class="section-4">
+<div style="background: #6a9feb;" class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]">
+<div class="w-full max-w-7xl mx-auto py-4 px-4 lg:px-40">
+<div class="grid grid-cols-12 gap-4 black-img-section">
+<div class="col-span-12 sm:col-span-12 text-center text-white text-xl xl:text-2xl pl-0 md:pl-4 lg:pl-0 bis-left">If you answered <span class="text-4xl text-gold">"YES"</span> to any of these questions! Our Multifunctional Pet Hair Remover make cleaning a breeze, allowing you to create the perfect housekeeping experience in no time!</div>
+<div class="col-span-12 sm:col-span-12 flex justify-center items-center  bis-right">
+<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-5" id="features">
+<div class="max-w-7xl mx-auto px-4 py-0 md:py-4 xl:px-20">
+<div class="grid grid-cols-12 gap-4 md:gap-8 black-img-section">
+<div class="col-span-12 sm:col-span-12 relative order-1 md:order-1">
+<div class="w-full imgage-containers"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_45c9276e-fa6f-4e63-bfac-9a24bcbd38e7.png?v=1714441792"></div>
+</div>
+<div class="col-span-12 sm:col-span-12 relative order-2 sm:order-2">
+<div class="w-full imgage-containers"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_61d8ca82-2913-4c4b-af85-0934d8235155.png?v=1714441792"></div>
+</div>
+<div class="col-span-12 sm:col-span-12 relative order-3 sm:order-3">
+<div class="w-full imgage-containers"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_0550e959-e328-4788-a957-a2b60fe1fe85.png?v=1714441792"></div>
+</div>
+<div class="col-span-12 sm:col-span-12 relative order-4 md:order-4">
+<div class="w-full imgage-containers"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_f548e51c-cc6e-4da6-bb44-0b55ec06641a.png?v=1714441792"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-9">
+<div class="w-full max-w-7xl my-8 mx-auto"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a>
+<div class="day30">
+<div class="img-pc max-w-xl md:max-w-2xl mx-auto imgage-container hidden sm:block"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/eed1f6b9be9031c5ff3eb98eb35ac32c_74c8e394-b611-41d5-9b5b-06320ecd28a5.png?v=1714442076" class="w-full h-auto lazyloaded"></div>
+<div class="img-m w-80 mx-auto imgage-container block sm:hidden"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/eed1f6b9be9031c5ff3eb98eb35ac32c.png?v=1714442011" class="w-full h-auto lazyload"></div>
+</div>
+</div>
+</div>
+<!-- <div class="section-6">
+<div style="background: url('https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2e90f055d3d7233f80460e8c3e13c56e.png?v=1712740487') top center;" class="w-full max-w-[1920px] mx-auto flex justify-center items-center my-4 min-h-[213px]">
+<div class="w-full max-w-7xl mx-auto py-4 px-4 lg:px-40">
+<div class="grid grid-cols-12 gap-4 black-img-section">
+<div class="col-span-12 sm:col-span-6 text-center text-white text-xl sm:text-2xl bis-left">
+<div class="text-4xl text-gold">ARE YOU READY</div>
+<div class="text-xl sm:text-2xl">TO BECOME A PRO ON THE GRILL?</div>
+</div>
+<div class="col-span-12 sm:col-span-6 flex justify-center items-center  bis-right">
+<div class="w-full"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-orange font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!<img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div> --> <!-- <div id="usage" class="section-7">
+<div class="max-w-7xl mx-auto px-4 py-0 md:py-4 xl:px-20">
+<div class="grid grid-cols-12 gap-4 md:gap-8 relative vs-section">
+<div class="col-span-12 sm:col-span-6 relative">
+<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/gif2.gif?v=1712742966" class="w-full h-auto rounded-lg lazyload"></div>
+</div>
+<div class="col-span-12 sm:col-span-6 relative">
+<div class="w-full imgage-container"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/02_193e308d-f6a2-4354-acff-3cb51a69b782.png?v=1712740488" class="w-full h-auto rounded-lg lazyload"></div>
+</div>
+<div class="absolute w-full h-full flex justify-center items-center"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/vs.png?v=1712740487" class="w-24 md:w-40 h-auto lazyload"></div>
+</div>
+</div>
+</div> --> <!-- <div id="service" class="section-8">
+<div class="max-w-7xl mx-auto px-4 pt-4 xl:px-20">
+<h3 class="text-center text-2xl font-medium max-w-2xl mx-auto">Our capabilities and services</h3>
+<div class="text-center my-2 line-img">
+<div class="imgage-container max-w-2xl mx-auto"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487" class="w-full h-auto lazyload"></div>
+</div>
+<h4 class="text-center font-medium max-w-2xl mx-auto mb-4">Here are the latest updates on our store's achievements and service policies, designed to enhance everyone's shopping experience.</h4>
+<div class="grid grid-cols-12 gap-4 service-row">
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-container order-2"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_1.png?v=1712740488" class="w-full h-auto lazyload service-img"></div>
+<div class="w-40 mx-auto text-center font-medium leading-5 my-4 service-title order-1">Sales of over <span class="text-xl text-orange">30,000+</span> units per month</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-container order-1"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_d6c95662-cd07-41d4-8b33-f78af7bd432f.png?v=1712740401" class="w-full h-auto lazyload service-img"></div>
+<div class="w-40 mx-auto text-center font-medium leading-5 my-4 service-title order-2">Bestseller in <span class="text-xl text-orange">42</span> countries in Europe and the Americas</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-container order-2"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_2.png?v=1712740488" class="w-full h-auto lazyload service-img"></div>
+<div class="w-40 mx-auto text-center font-medium leading-5 my-4 service-title order-1">Get an extra <span class="text-xl text-orange">10%</span> discount by subscribing to our newsletter</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start">
+<div class="imgage-container order-1"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_2-1.png?v=1712740487" class="w-full h-auto lazyload service-img"></div>
+<div class="w-40 mx-auto text-center font-medium leading-5 my-4 service-title order-2">SECURE PAYMENT Paypal, credit card, Klarna, Bancontact, Giropay etc.</div>
+</div>
+</div>
+</div>
+</div> --> <!-- <div class="section-9">
+<div class="w-full max-w-7xl my-8 mx-auto">
+<div class="day30">
+<div class="img-pc max-w-xl md:max-w-2xl mx-auto imgage-container hidden sm:block"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/6_3.png?v=1712740487" class="w-full h-auto lazyload"></div>
+<div class="img-m w-80 mx-auto imgage-container block sm:hidden"><img data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/5_3244b5fc-c7eb-497a-bf19-323db4b46e6b.png?v=1713748393" class="w-full h-auto lazyload"></div>
+</div>
+</div>
+</div> -->
+<div class="section-10" id="es_buy">
+<div class="max-w-7xl mx-auto pt-2 sm:pt-4 px-4 xl:px-20">
+<div class="grid grid-cols-12 gap-4 md:gap-8 product-row">
+<div class="mt-0 sm:mt-8 sm:mt-0 col-span-12 sm:col-span-4 flex flex-col justify-start bg-white p-3 rounded-2xl relative box-orange product-box box-lightblue">
+<div class="flex flex-col pb-0 sm:pb-2 justify-center items-center product-top sm:block">
+<div class="text-2xl font-bold product-tag">Hot Sale</div>
+<div class="py-1 text-blue font-bold text-4xl hidden sm:block uppercase product-discount">Save $1.44</div>
+<div class="leading-5 text-center uppercase text-lg font-bold product-name">1 PC</div>
+</div>
+<div class="absolute sm:relative flex justify-end items-end sm:items-center product-image">
+<div class="w-40 sm:w-full imgage-container"><img class="w-full h-auto rounded-2xl product-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_edd4c4d4-cd34-4c83-96a8-c6fd865ee34e.jpg?v=1714441404"></div>
+</div>
+<div class="flex flex-col justify-center items-center product-bottom">
+<div class="leading-5 text-center uppercase text-lg font-bold product-name sm:hidden">1 PC</div>
+<div class="py-0 sm:py-2 product-price"><del class="text-gray-500 text-lg">$14.43</del> <span class="text-2xl font-bold text-blue">$12.99</span></div>
+<div class="font-bold text-xl block sm:hidden uppercase product-discount">Save <span class="text-blue">$1.44</span></div>
+<!-- <div class="pb-0 sm:pb-2 flex justify-center items-center hidden product-variant-row">
+                                <select
+                                    class="bg-gray-50 border border-gray-500 text-gray-500 text-sm rounded-lg block w-full p-2.5 product-variant">
+                                    <option value="48220613509465" selected>1 FORK + 1
+                                        OXFORD STORAGE BAG</option>
+                                </select>
+                            </div> -->
+<div class="flex justify-center items-center hidden sm:block product-qty-row">
+<div class="flex justify-center items-center w-36 border border-gray-500 rounded-md text-base font-medium bg-white qty-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-minus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path> </svg> <input type="number" value="1" name="quantity" class="max-w-full w-16 border-x border-gray-500 py-1.5 text-base leading-5 font-medium text-gray-500 text-center sm:text-sm quantity qty-input"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-plus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path> </svg></div>
+</div>
+<div class="w-full py-2 product-order-btn"><a data-variant="48220613509465" data-type="shopify" class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-blue font-bold uppercase rounded-xl order-btn order-btn-now cursor-pointer">Order Now</a></div>
+<div class="flex justify-center items-center text-xs product-secure">Secured and encrypted <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ml-1 text-green-700"> <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+</div>
+<div class="col-span-12 sm:col-span-4 flex flex-col justify-start p-3 rounded-2xl box-yellow product-box relative bgcolor-yellow">
+<div class="flex flex-col pb-0 sm:pb-2 justify-center items-center product-top sm:block">
+<div class="text-2xl font-bold hidden sm:block product-tag">Best Seller</div>
+<div class="py-1 text-cheng font-bold text-4xl hidden sm:block uppercase product-discount">save $5.87</div>
+<div class="leading-5 text-center uppercase text-lg font-bold product-name">2 PCS</div>
+</div>
+<div class="absolute sm:relative flex justify-end items-end sm:items-center product-image">
+<div class="w-40 sm:w-full imgage-container"><img class="w-full h-auto rounded-2xl product-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_aad1a8fa-5c26-4af1-8b12-0aa93ebe3a21.jpg?v=1714441405"></div>
+</div>
+<div class="flex flex-col justify-center items-center product-bottom">
+<div class="leading-5 text-center uppercase text-lg font-bold product-name sm:hidden">2 PCS</div>
+<div class="py-0 sm:py-2 product-price"><del class="text-gray-500 text-lg">$28.86</del> <span class="text-2xl font-bold text-cheng">$22.99</span></div>
+<div class="font-bold text-xl block sm:hidden uppercase product-discount">Save <span class="text-cheng">$5.87</span></div>
+<!-- <div class="pb-0 sm:pb-2 flex justify-center items-center hidden product-variant-row">
+                                <select
+                                    class="bg-gray-50 border border-gray-500 text-gray-500 text-sm rounded-lg block w-full p-2.5 product-variant">
+                                    <option value="48220613542233" selected>2 FORKS + 1
+                                        OXFORD STORAGE BAG</option>
+                                </select>
+                            </div> -->
+<div class="flex justify-center items-center hidden sm:block product-qty-row">
+<div class="flex justify-center items-center w-36 border border-gray-500 rounded-md text-base font-medium bg-white qty-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-minus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path> </svg> <input type="number" value="1" name="quantity" class="max-w-full w-16 border-x border-gray-500 py-1.5 text-base leading-5 font-medium text-gray-500 text-center sm:text-sm quantity qty-input"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-plus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path> </svg></div>
+</div>
+<div class="w-full py-2 product-order-btn"><a data-variant="48220613542233" data-type="shopify" class="flex mx-auto text-xl text-white justify-center items-center uppercase bg-cheng font-bold uppercase rounded-xl order-btn order-btn-now cursor-pointer">Order Now</a></div>
+<div class="flex justify-center items-center text-xs product-secure">Secured and encrypted <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ml-1 text-green-700"> <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="ribbon green">Best Seller</div>
+</div>
+<div class="mt-0 sm:mt-8 sm:mt-0 col-span-12 sm:col-span-4 flex flex-col justify-start bg-white p-3 rounded-2xl relative box-yellow product-box bgcolor-yellow">
+<div class="flex flex-col pb-0 sm:pb-2 justify-center items-center product-top sm:block">
+<div class="text-2xl font-bold product-tag">Best Value</div>
+<div class="py-1 text-red font-bold text-4xl hidden sm:block uppercase product-discount">save $15.3</div>
+<div class="leading-5 text-center uppercase text-lg font-bold product-name">3 PCS</div>
+</div>
+<div class="absolute sm:relative flex justify-end items-end sm:items-center product-image">
+<div class="w-40 sm:w-full imgage-container"><img class="w-full h-auto rounded-2xl product-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_5f87fd9c-a3cf-44b9-ba43-662ac67f5be5.jpg?v=1714441404"></div>
+</div>
+<div class="flex flex-col justify-center items-center product-bottom">
+<div class="leading-5 text-center uppercase text-lg font-bold product-name sm:hidden">3 PCS</div>
+<div class="py-0 sm:py-2 product-price"><del class="text-gray-500 text-lg">$43.29</del> <span class="text-2xl font-bold text-red">$27.99</span></div>
+<div class="font-bold text-xl block sm:hidden uppercase product-discount">Save <span class="text-red">$15.3</span></div>
+<!-- <div class="pb-0 sm:pb-2 flex justify-center items-center hidden product-variant-row">
+                                <select
+                                    class="bg-gray-50 border border-gray-500 text-gray-500 text-sm rounded-lg block w-full p-2.5 product-variant">
+                                    <option value="48220613575001" selected>4 FORKS + 2
+                                        OXFORD STORAGE BAG</option>
+                                </select>
+                            </div> -->
+<div class="flex justify-center items-center hidden sm:block product-qty-row">
+<div class="flex justify-center items-center w-36 border border-gray-500 rounded-md text-base font-medium bg-white qty-box"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-minus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path> </svg> <input type="number" value="1" name="quantity" class="max-w-full w-16 border-x border-gray-500 py-1.5 text-base leading-5 font-medium text-gray-500 text-center sm:text-sm quantity qty-input"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block mx-1.5 cursor-pointer btn-plus"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path> </svg></div>
+</div>
+<div class="w-full py-2 product-order-btn"><a data-variant="48220613575001" data-type="shopify" class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-red font-bold uppercase rounded-xl order-btn order-btn-now cursor-pointer">Order Now</a></div>
+<div class="flex justify-center items-center text-xs product-secure">Secured and encrypted <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ml-1 text-green-700"> <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="ribbon red">Best Value</div>
+</div>
+</div>
+<a style="margin-top: 20px;" class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn"><img style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_5df78db1-9648-43dc-be0b-43e5b3faf9aa.png?v=1714441404" class="mr-2">ORDER NOW </a></div>
+</div>
+<div class="section-11" id="reviews">
+<div class="max-w-7xl mx-auto px-4 pt-4 sm:pt-10 xl:px-20">
+<h3 class="text-center text-2xl font-medium max-w-2xl mx-auto">More than <span class="text-blue"> 1000+ </span> customers recommend this product!</h3>
+<div class="text-center my-2 line-img">
+<div class="imgage-container max-w-2xl mx-auto"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/cacbf9dcae4c5da505caf190daf13503.png?v=1712740487"></div>
+</div>
+<div class="grid grid-cols-12 gap-4 comment-row">
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start bg-white p-2 rounded-2xl">
+<div class="imgage-container"><img class="w-full h-auto lazyload comment-img rounded-2xl" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_e4db0430-46e7-4cff-9bad-46a50d237cbe.jpg?v=1714441842"></div>
+<div class="pt-1 relative flex justify-between items-center comment-line">
+<div class="w-15 scale-100 sm:scale-75 md:scale-100 comment-author">
+<div class="text-[10px] lg:text-xs font-bold author-name">Robert H.</div>
+<div class="flex justify-start items-center comment-star"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="absolute w-full flex justify-center items-center top-[-75%] xl:top-[-120%] comment-avator"><img class="w-10 lg:w-16 xl:w-20" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_6ad03d5e-647e-40ce-89db-0c12972dceb2.png?v=1714441405"></div>
+<div class="w-15 flex justify-center items-center scale-75 sm:scale-50 md:scale-75 lg:scale-80 comment-verify">
+<div class="verify-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 lg:w-6 h-3 lg:h-6 text-green-700"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path> </svg></div>
+<div class="w-12 text-[10px] lg:text-xs leading-[12px] lg:leading-4 text-green-700 verify-text">Verified Purchased</div>
+</div>
+</div>
+<div class="w-full mx-auto text-center text-sm my-2 pt-1 lg:my-4 line-orange comment-title"><span class="text-blue">Life-changing!</span> This pet hair remover works wonders on my furniture and clothes.<span class="text-blue"> No more sticky residue </span> like with lint rollers!</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start bg-white p-2 rounded-2xl">
+<div class="imgage-container"><img class="w-full h-auto lazyload comment-img rounded-2xl" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_9bd61f47-4775-445c-81da-50d17629f3cb.jpg?v=1714441842"></div>
+<div class="pt-1 relative flex justify-between items-center comment-line">
+<div class="w-15 scale-100 sm:scale-75 md:scale-100 comment-author">
+<div class="text-[10px] lg:text-xs font-bold author-name">Luis G.</div>
+<div class="flex justify-start items-center comment-star"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="absolute w-full flex justify-center items-center top-[-75%] xl:top-[-120%] comment-avator"><img class="w-10 lg:w-16 xl:w-20" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_3e4d596e-4223-488d-a998-3cfe071303b2.png?v=1714441404"></div>
+<div class="w-15 flex justify-center items-center scale-75 sm:scale-50 md:scale-75 lg:scale-80 comment-verify">
+<div class="verify-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 lg:w-6 h-3 lg:h-6 text-green-700"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path> </svg></div>
+<div class="w-12 text-[10px] lg:text-xs leading-[12px] lg:leading-4 text-green-700 verify-text">Verified Purchased</div>
+</div>
+</div>
+<div class="w-full mx-auto text-center text-sm my-2 pt-1 lg:my-4 line-orange comment-title">So convenient! I love <span class="text-blue"> how easy it is to use and clean.</span> Perfect for keeping my home hair-free.</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start bg-white p-2 rounded-2xl">
+<div class="imgage-container"><img class="w-full h-auto lazyload comment-img rounded-2xl" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_d6e942ea-6bc4-43fa-8215-0a57dc035c16.jpg?v=1714441842"></div>
+<div class="pt-1 relative flex justify-between items-center comment-line">
+<div class="w-15 scale-100 sm:scale-75 md:scale-100 comment-author">
+<div class="text-[10px] lg:text-xs font-bold author-name">Naomi D.</div>
+<div class="flex justify-start items-center comment-star"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="absolute w-full flex justify-center items-center top-[-75%] xl:top-[-120%] comment-avator"><img class="w-10 lg:w-16 xl:w-20" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_a3dc4a77-1a3f-49c4-a3a6-9591d19101f3.png?v=1714441404"></div>
+<div class="w-15 flex justify-center items-center scale-75 sm:scale-50 md:scale-75 lg:scale-80 comment-verify">
+<div class="verify-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 lg:w-6 h-3 lg:h-6 text-green-700"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path> </svg></div>
+<div class="w-12 text-[10px] lg:text-xs leading-[12px] lg:leading-4 text-green-700 verify-text">Verified Purchased</div>
+</div>
+</div>
+<div class="w-full mx-auto text-center text-sm my-2 pt-1 lg:my-4 line-orange comment-title">Versatile and effective. This little tool <span class="text-blue"> picks up pet hair from all surfaces, </span>making it a must-have for pet owners.</div>
+</div>
+<div class="col-span-6 sm:col-span-3 flex flex-col justify-start bg-white p-2 rounded-2xl">
+<div class="imgage-container"><img class="w-full h-auto lazyload comment-img rounded-2xl" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_54856689-ddf8-4544-a8c1-222618db0cb9.jpg?v=1714441842"></div>
+<div class="pt-1 relative flex justify-between items-center comment-line">
+<div class="w-15 scale-100 sm:scale-75 md:scale-100 comment-author">
+<div class="text-[10px] lg:text-xs font-bold author-name">Abel L.</div>
+<div class="flex justify-start items-center comment-star"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-2 lg:w-3 h2 lg:h-4 text-orange"> <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path> </svg></div>
+</div>
+<div class="absolute w-full flex justify-center items-center top-[-75%] xl:top-[-120%] comment-avator"><img class="w-10 lg:w-16 xl:w-20" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/4_90e73b06-1eb5-4d91-a186-35372809bb76.png?v=1714441405"></div>
+<div class="w-15 flex justify-center items-center scale-75 sm:scale-50 md:scale-75 lg:scale-80 comment-verify">
+<div class="verify-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 lg:w-6 h-3 lg:h-6 text-green-700"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path> </svg></div>
+<div class="w-12 text-[10px] lg:text-xs leading-[12px] lg:leading-4 text-green-700 verify-text">Verified Purchased</div>
+</div>
+</div>
+<div class="w-full mx-auto text-center text-sm my-2 pt-1 lg:my-4 line-orange comment-title"><span class="text-blue">Handy and portable.</span> I take this lint remover everywhere. It's a lifesaver for <span class="text-blue"> keeping my outfits pet-hair free on the go!</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-12">
+<div class="w-full mt-4 sm:mt-0 max-w-[1920px] mx-auto">
+<div class="banner-3">
+<div class="img-pc imgage-containers hidden sm:block"><a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/PC_81640104-267e-4603-9199-5ab05c3a5ac6.jpg?v=1714442077"></a></div>
+<div style="padding-bottom: 250px;" class="img-m imgage-containers block sm:hidden"><a class="cursor-pointer buynow-btn"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/97dfad60776e193c1a71f9ba171f42aa.jpg?v=1714442012"></a> <a style="margin-top: -300px;" class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER! <img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738" class="ml-2"></a></div>
+</div>
+</div>
+</div>
+<div class="section-13 footer">
+<div class="max-w-7xl mx-auto py-8 px-4 xl:px-20">
+<div class="grid grid-cols-12 gap-4 footer-row">
+<div class="col-span-12 sm:col-span-4">
+<h4 class="text-center md:text-left font-medium border-b border-gray-500 pb-1 mb-3">INFORMATION</h4>
+<ul>
+<li class="text-center md:text-left text-sm py-1"><a href="/pages/about-us">About Us</a></li>
+<li class="text-center md:text-left text-sm py-1"><a href="/pages/contact-us">Contact us</a></li>
+<li class="text-center md:text-left text-sm py-1"><a href="/pages/faqs">FAQs</a></li>
+<li class="text-center md:text-left text-sm py-1"><a href="/pages/payment-policy">Payment Policy</a></li>
+</ul>
+</div>
+<div class="col-span-12 sm:col-span-4">
+<h4 class="text-center md:text-left uppercase font-medium border-b border-gray-500 pb-1 mb-3">PAYMENT METHODS</h4>
+<div class="payment-icon"><img class="w-full h-auto lazyload" data-src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_b4f1d50f-dd0d-4901-a433-5a9a1772f239.png?v=1697771243"></div>
+</div>
+<div class="col-span-12 sm:col-span-4">
+<h4 class="text-center md:text-left uppercase font-medium border-b border-gray-500 pb-1 mb-3">GUARANTEE</h4>
+<div class="text-center md:text-left text-sm">30-Day money-back guarantee</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 divide-gray-500 border-t border-gray-500 pt-4 mt-4 footer-row">
+<div class="col-span-12">
+<div class="text-center text-sm copyright">© 2024 Copyright All Rights Reserved.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden w-full bottom-0 fixed page-bgcolor z-[999] section-float-btn">
+<div class="max-w-7xl mx-auto py-4 px-4 xl:px-20">
+<div class="float-btn-row"><a class="flex mx-auto text-xl text-white justify-center items-center uppercase bgcolor-yellow font-bold scaleDrew cursor-pointer order-btn buynow-btn">GET MY REMOVER!<img class="ml-2" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon_30x_b8b5eec5-5794-48e4-8350-e6dae90aff31.png?v=1714454738"></a></div>
+</div>
+</div>
+</div>
