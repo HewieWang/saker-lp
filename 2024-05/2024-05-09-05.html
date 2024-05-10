@@ -1,0 +1,580 @@
+<style>
+  a:not([disabled]):hover,
+  a:focus {
+    color: #b47c07;
+  }
+  .kore-qty {
+    display: none;
+  }
+  .s2-bnr-icn {
+    width: 25%;
+    background: #fff;
+    border-radius: 30px;
+  }
+  a.order-btn:hover,
+  a.order-btn:focus,
+  a.kore-order-now:hover,
+  a.kore-order-now:focus {
+    color: #fff;
+  }
+  .topStrip {
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    background: #02A2A2;
+  }
+  .jar-banner a.order-btn {
+    width: auto;
+  }
+  h2.es_variant_title {
+    word-break: break-all;
+}
+  a.order-btn {
+    background: #02A2A2;
+  }
+  .sec1-list li p {
+    word-break: break-word;
+    align-items: flex-start !important;
+  }
+  /* .sec1-list li span {
+      height: 50px;
+    }
+    ul.sec1-list li img {
+      width: 100px;
+      margin: 0 auto;
+    }*/
+  ul.sec1-list li span,
+  ul.s2-list span {
+    font-size: 18px;
+  }
+  ul.sec1-list li p,
+  ul.s2-list p {
+    font-size: 16px;
+  }
+  ul.s2-list li img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+  }
+  .strip-bg img {
+    margin-bottom: 0;
+  }
+  .kore-inner h3 {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef4eb;
+    font-size: 16px !important;
+    word-break: break-word !important;
+  }
+  .kore-inner h4 {
+    font-size: 30px;
+    background-color: #fef4eb;
+  }
+  .overall-rating {
+    width: 21%;
+  }
+  .top-fix-bar {
+    margin-bottom: 105px;
+  }
+  .top-bar {
+    margin-top: 33px;
+    height: 90px;
+  }
+  @media only screen and (max-width: 767px) {
+    .overall-rating {
+      width: 100% !important;
+    }
+    .vid-sec img {
+      margin-top: 0 !important;
+    }
+    .top-bar {
+      height: 60px;
+    }
+    .kore-inner h3 {
+      min-height: 50px;
+      font-size: 15px !important;
+    }
+  }
+  .es_text {
+    margin-left: 10px;
+  }
+  .kore-inner h5 {
+    text-transform: inherit;
+  }
+  @media only screen and (max-width: 767px) {
+    #ctabtn-mob a.order-btn {
+      width: 360px !important;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    ul.sec1-list li {
+      width: 19% !important;
+    }
+    ul.s2-list li {
+      /*width: 24% !important;*/
+    }
+    .kore-inner h3{height: 20px;}
+    .variant{height: 40px;}
+  }
+  ul.s2-list p {
+    /*display:none;*/
+  }
+  /*ul.sec1-list li span, ul.s2-list span{
+    word-break: break-all;
+  }*/
+  .ribbon {
+    color: #fff;
+    font-size: 11px;
+    width: 150px;
+    text-align: center;
+    background: #d32020;
+    letter-spacing: 1px;
+    transform: rotate(55deg);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 7;
+    top: 25px;
+    right: -45px;
+    padding: 5px 0 !important;
+  }
+  .ribbon p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .offersWrapper .ribbon.green {
+    background: #2dad57;
+  }
+  .testi-imgs {
+    width: 80px;
+  }
+  .kore-review-item {
+    margin-bottom: 30px;
+    border: 1px solid #979797;
+  }
+  .kore-review-item-content {
+    padding: 20px 25px;
+    text-align: left;
+  }
+  .kore-review-item-content h4 {
+    color: #9b9b9b;
+    font-size: 16px;
+    letter-spacing: 0.55px;
+    line-height: 1.4;
+  }
+  .kore-review-star img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .kore-review-item-content p {
+    color: #333;
+    font-size: 16px;
+    letter-spacing: 0.55px;
+    line-height: 1.4;
+  }
+  @media only screen and (min-width: 768px) {
+    #pays {
+      width: 50% !important;
+    }
+    .kore-review-item {
+      min-height: 600px;
+    }
+
+    .jar-header {
+      padding: 15px 0;
+    }
+    ul.sec1-list li:last-child {
+      margin-right: 0;
+    }
+  }
+  .logo {
+    margin-top: 10px;
+  }
+      .es_freeshipping_text {
+        width: 100%;        padding: 10px 0;
+    }
+</style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">🎈Blitzverkauf🧡✨Kostenloser Versand ab €30 ✨</p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img class="logo" style="max-width: 160px; margin-top: 0 !important;" src="https://www.falkeco.de/cdn/shop/files/logo1.png?v=1681984191"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Nutzen </a></li>
+<li><a href="#reviews">Bewertungen</a></li>
+</ul>
+</div>
+<div style="width: 250px;" class="element-wrapper">
+<h1 style="display: none !important;" class="alt-2"><time datetime="PT01H32M21S" class="countdown"><span class="item item-hh"><span class="hh-1">0</span><span class="hh-2">1</span><span class="label label-hh">hours</span></span><span class="separator">:</span><span class="item item-mm"><span class="mm-1">3</span><span class="mm-2">2</span><span class="label label-mm">minutes</span></span><span class="separator">:</span><span class="item item-ss"><span class="ss-1">2</span><span class="ss-2">1</span><span class="label label-ss">seconds</span></span></time></h1>
+</div>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div id="mobMenuBtn" class="dl-trigger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Nutzen </a></li>
+<li><a href="#reviews">Bewertungen</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;"><a style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;" href="#es_buy"></a> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/922a912e-db77-4d6d-c33c-93ad60495900.jpg?v=1715074441" class="hidden-xs" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/922a912e-db77-4d6d-c33c-93ad60495900.jpg?v=1715074441" class="visible-xs" style="width: 100%;"></div>
+<div id="overview" class="section1">
+<div class="container">
+<div class="clearall"></div>
+<p style="background-size: 80%; font-weight: bold; font-size: 26px; padding-top: 20px;">Wasserdichter 3D Augenbrauenstift mit 4 Gabelspitzen</p>
+<div class="vid-sec"><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/7edecbb8-a587-4653-73f8-6ba2a5b7e900.jpg?v=1715074439" class="hidden-xs" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/7edecbb8-a587-4653-73f8-6ba2a5b7e900.jpg?v=1715074439" class="visible-xs" style="width: 100%;"></div>
+<ul class="sec1-list">
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4ae30d91-83db-4cea-44cc-93aeadfa1200.jpg?v=1715075812">
+<div class="clearall"></div>
+<span>Natürliche wilde Augenbrauen</span>
+<p>Der Augenbrauenstiftkopf verfügt über vier fortschrittliche, abgewinkelte Mikrogabeln, mit denen sich vier schlanke Linien bequem und reibungslos bewegen lassen.Diamantähnlicher Schutz</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/41957918-4b80-4d95-8e93-026d84420100.jpg?v=1715075813">
+<div class="clearall"></div>
+<span>Modische Schminkartikel</span>
+<p>Augenbrauen sind ein MUSS, wenn Sie sich für einen Look ohne Make-up entscheiden! Durch das Hinzufügen eines Microblading-Effekts zu Ihren Brauen wird Ihr Gesicht innerhalb ihres Rahmens vollständig definiert.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/dc602279-82f9-4f31-555d-18f6a10e7d00.jpg?v=1715075813">
+<div class="clearall"></div>
+<span>Wasserdicht & Langlebig</span>
+<p>Nicht leicht zu verblassen, wasserfest, schweißfest, wischfest für lange Nutzungsdauer. Unsere Formel sorgt dafür, dass Ihr Make-up den ganzen Tag hält, ohne dass Sie sich Gedanken über Schweiß und Wasser machen müssen.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/050d369e-56b4-47d5-16e5-9ffb12a13500.jpg?v=1715075813">
+<div class="clearall"></div>
+<span>Leicht zu entfernen</span>
+<p>Dieser Microblading-Augenbrauenstift lässt sich ganz einfach mit Make-up-Entferner oder Reinigungsöl entfernen, ohne Rückstände zu hinterlassen. Macht die abendliche Make-up-Entfernung einfach und unkompliziert.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/ebadbae1-53de-46ee-02bb-7003e16fb600.jpg?v=1715075813">
+<div class="clearall"></div>
+<span>5 klassische Farben</span>
+<p>Dieser Augenbrauenstift ist in 5 beliebten Farben erhältlich: Hellbraun, Dunkelbraun, Rotbraun, klassisches Schwarz und Rauchgrau, passend zu Ihrem Hautton oder Make-up-Stil.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<!-- <div class="strip-bg" style="padding-top: 0px;">
+    <div class="container">
+    <p class="ftur-hdng">1080p Magnetische WiFi-Minikamera</p>
+    <img src="https://cdn.shopify.com/s/files/1/0298/7930/4276/files/4_8db3af14-5fe1-4393-9662-e14ad8ee4e5f.jpg?v=1669110813" alt="" /></div>
+    </div> -->
+<div id="features" class="section2">
+<div class="container">
+<p class="common-head">Keine altmodischen Augenbrauenfüllungen mehr!</p>
+<div class="comon-bdr"></div>
+<p style="padding-bottom: 20px;" class="common-para">Sie können ganz einfach eine natürliche, wilde Augenbraue erhalten, die das natürliche Make-up betont. Die Bedienung ist so einfach, dass sie sowohl für Anfänger als auch für Profis geeignet ist.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/791ceedf-57a5-4fe2-9461-0705572d4500.jpg?v=1715074439" class="hidden-xs" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/791ceedf-57a5-4fe2-9461-0705572d4500.jpg?v=1715074439" class="visible-xs" style="width: 100%;"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div id="use" class="section4">
+<div class="container">
+<p class="common-head">Schmerzloser 3D-Microblading-Effekt</p>
+<div class="comon-bdr"></div>
+<p style="padding-bottom: 20px;" class="common-para">Ziehen Sie einfach, um salonfrische, buschige Brauen zu erhalten, ohne sich einer schmerzhaften Operation oder Augenbrauenstickerei zu unterziehen.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/9097787f-e043-4a16-b7b9-69ae20001800.jpg?v=1715074438" class="hidden-xs"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/9097787f-e043-4a16-b7b9-69ae20001800.jpg?v=1715074438" class="visible-xs"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="section5">
+<div id="es_buy" class="container">
+<h3 style="padding-bottom: 20px;" class="center-h2">MEHR KAUFEN, MEHR SPAREN!</h3>
+<div class="row es_variant_row hide-mob">
+<div class="col-xs-12 col-sm-6 col-md-4" style="margin-top: 20px;">
+<div class="kore-inner">
+<h2 style="background: #000000;">ENTDECKUNGSPAKET </h2>
+<h3>Hellbraun/Dunkelbraun/Rotbraun/Schwarz/Rauchgrau*1</h3>
+<h4>50% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/5_4ccba9e6-f1e8-4e0d-b3b2-dd89b8eec6cc.jpg?v=1715061091" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">29.7K Bewertungen</p>
+<h5 class="price"><del>€27.99</del><span>€13.99</span></h5>
+<div class="variant">
+<span>Color</span>
+<select name="multi-variant">
+    <option value="48708577919278"   selected="" data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/5_4ccba9e6-f1e8-4e0d-b3b2-dd89b8eec6cc.jpg?v=1715061091"> Hellbraun*1 </option>
+    <option value="48708577952046"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/6_2aa3d6f5-c1c1-4337-933e-7a52dbfe6452.jpg?v=1715061091"> Dunkelbraun*1 </option>
+    <option value="48708577984814"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/2_e8878719-9e75-44b9-b019-04f5b7d0504b.jpg?v=1715061091"> Rotbraun*1 </option>
+    <option value="48708577886510"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/7_c589ea07-84bc-49d2-8e5d-5c3652961aab.jpg?v=1715061091"> Schwarz*1 </option>
+    <option value="48708578017582"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/1_3cd47639-0d05-45b6-88e7-d8a1052567ee.jpg?v=1715061091"> Rauchgrau*1 </option>
+</select>
+</div>
+<input value="48708577919278" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/48708577919278:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #02a2a2;">BESTSELLER</h2>
+<h3>Hellbraun+Dunkelbraun</h3>
+<h4 style="padding: 10px 0;">70% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/19.jpg?v=1715061037" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">35.9K Bewertungen</p>
+<h5 class="price"><del>€55.99</del><span>€16.99</span></h5>
+<div class="variant">
+</div>
+<input value="48708578050350" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #02a2a2;" href="/cart/48708578050350:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #000000;">BESTER WERT</h2>
+<h3>Hellbraun/Dunkelbraun*3</h3>
+<h4 style="padding: 10px 0;">77% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4..jpg?v=1715061091" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">32.1K Bewertungen</p>
+<h5 class="price"><del>€83.99</del><span>€19.99</span></h5>
+<div class="variant">
+<span>Color</span>
+<select name="multi-variant">
+    <option value="48708578083118"   selected="" data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4..jpg?v=1715061091"> Hellbraun*3 </option>
+    <option value="48708578115886"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_34e8e4b9-f30c-4007-942f-abd58afc3f71.jpg?v=1715061091"> Dunkelbraun*1 </option>
+</select>
+</div>
+<input value="48708578083118" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/48708578083118:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input type="checkbox" checked="checked" class="offer-checked" value="48708578050350" data-id="48708578050350" data-variant="48708578050350" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/19.jpg?v=1715061037">
+<div class="es_text">
+<h2 class="es_variant_title">Hellbraun+Dunkelbraun</h2>
+<label class="es_freeshipping_text" style="float: left;">70% RABATT</label>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price">€55.99</label><label class="es_total_price">€16.99</label></div>
+</div>
+<div class="ribbon green">BESTSELLER</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" value="48708578083118" data-id="48708578083118" data-variant="48708578083118" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4..jpg?v=1715061091">
+<div class="es_text">
+<h2 class="es_variant_title">Hellbraun/Dunkelbraun*3</h2>
+<label class="es_freeshipping_text" style="float: left;">40% RABATT</label>
+<div class="variant">
+<span>Color</span>
+<select name="multi-variant">
+    <option value="48708578083118"   selected="" data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4..jpg?v=1715061091"> Hellbraun*3 </option>
+    <option value="48708578115886"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_34e8e4b9-f30c-4007-942f-abd58afc3f71.jpg?v=1715061091"> Dunkelbraun*1 </option>
+</select>
+</div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price">€83.99</label><label class="es_total_price">€19.99</label></div>
+</div>
+<div class="ribbon red">BESTER WERT</div>
+</div>
+<div class="offerbox"><input type="checkbox"  class="offer-checked" value="48708577919278" data-id="48708577919278" data-variant="48708577919278" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/5_4ccba9e6-f1e8-4e0d-b3b2-dd89b8eec6cc.jpg?v=1715061091">
+<div class="es_text">
+<h2 class="es_variant_title">Hellbraun/Dunkelbraun/Rotbraun/Schwarz/Rauchgrau*1</h2>
+<label class="es_freeshipping_text" style="float: left;">70% RABATT</label>
+<div class="variant">
+<span>Color</span>
+<select name="multi-variant">
+    <option value="48708577919278"   selected="" data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/5_4ccba9e6-f1e8-4e0d-b3b2-dd89b8eec6cc.jpg?v=1715061091"> Hellbraun*1 </option>
+    <option value="48708577952046"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/6_2aa3d6f5-c1c1-4337-933e-7a52dbfe6452.jpg?v=1715061091"> Dunkelbraun*1 </option>
+    <option value="48708577984814"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/2_e8878719-9e75-44b9-b019-04f5b7d0504b.jpg?v=1715061091"> Rotbraun*1 </option>
+    <option value="48708577886510"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/7_c589ea07-84bc-49d2-8e5d-5c3652961aab.jpg?v=1715061091"> Schwarz*1 </option>
+    <option value="48708578017582"   data-img="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/1_3cd47639-0d05-45b6-88e7-d8a1052567ee.jpg?v=1715061091"> Rauchgrau*1 </option>
+</select>
+</div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price">€27.99</label><label class="es_total_price">€13.99</label></div>
+</div>
+
+</div>
+<div class="clearfix"><a class="es_btn es_btn-order order-now-btn" data-num="1" data-id="" data-variant="" data-type="shopify" style="height: 50px; padding-top: 12px;" href="/cart/48708578050350:1"><span>Jetzt bestellen</span> </a></div>
+</div>
+</div>
+</div>
+<div id="use333" class="section4">
+<div class="container">
+<p class="common-head">Verwendung & Speichermethode</p>
+<div class="comon-bdr"></div>
+<p style="padding-bottom: 20px;" class="common-para">Bei der Anwendung die Spitze umdrehen und die Flüssigkeit aufsaugen lassen. Schütteln Sie ihn mehrmals vorsichtig auf und ab, damit die Flüssigkeit im Augenbrauenstift gleichmäßig fließen kann. Halten Sie den Deckel immer geschlossen und liegen Sie bei Nichtgebrauch flach auf einer ebenen Fläche.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/cdd5322e-6a24-47c5-b214-01411df53800.jpg?v=1715074437"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div id="reviews" class="section6">
+      <div class="container">
+        <p class="common-head">
+          Falkeco hat über 64.000 positive Bewertungen!
+        </p>
+        <p style="text-align: center" class="common-para">
+          Sehen Sie, was Kunden über ihre Erfahrungen mit Trinkbecher für
+          Bieneninsekten zu sagen haben
+        </p>
+        <div class="comon-bdr bdr-bg"></div>
+        <div class="clearall"></div>
+        <div class="reviewblk">
+          <div class="ratingBox">
+            <p>4.8</p>
+            <span>Von 5,0</span>
+          </div>
+          <img style="max-width: 230px" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/sdfgh.png?v=1712718753" class="ratingImg">
+          <div class="overall-rating" style="font-size: 12px;">
+            Gesamtbewertung
+            <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+          </div>
+          <div class="cs-percent">
+            <span>98%</span><br>der Kunden sagten, sie würden Falkeco wieder
+            kaufen und weiterempfehlen.
+          </div>
+        </div>
+        <div class="testiBox">
+          <div class="testi-row">
+            <img class="testi-imgs" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/11_e60e7f3d-eecf-4e48-ace6-7683935a2924.png?v=1680081574">
+            <div class="clearall"></div>
+            <img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+            <p class="testi-para">
+              Hält bei mir wirklich lange ohne zu verwischen, ich schminke ab und ziehe nur alle drei Tage nach. Wasser beim Duschen kein Problem (allerdings darauf achten bei Duschgel oder Seife) Hält auch bei Schwitzen gut. Bester Stift bisher den ich habe, ich bin Begeistert!
+            </p>
+            <p class="usr-name">Ingalls M.</p>
+          </div>
+          <div class="testi-row">
+            <img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/a9b400aa-2f7e-4215-4cc9-8779316d4400.png?v=1715246972">
+            <div class="clearall"></div>
+            <img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+            <p class="testi-para">
+             Lässt sich gut auftragen. Verwischt nicht und hält den ganzen Tag. Ich arbeite in einem Krankenhaus und da komme ich schon öfters mal ins schwitzen. Supertoll und einfach in der Handhabung, bin echt begeistert.
+            </p>
+            <p class="usr-name">Katie Q</p>
+          </div>
+          <div class="testi-row">
+            <img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/dc15e7ab-a6f2-48a3-8ac8-8e2352862c00.png?v=1715246972">
+            <div class="clearall"></div>
+            <img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+            <p class="testi-para">
+              Toller Augenbrauenstift. Leicht zu handhaben auch für Nichtgeübte. Durch die Form der Applikationsbürste kann man von leichtem stricheln bis zu richtig auffallenden Augenbrauen alles zaubern.
+            </p>
+            <p class="usr-name">Elga H.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- <div id="reviews" class="section6">
+<div class="container">
+<p class="common-head">Was sagen unsere Kunden?</p>
+<div class="comon-bdr bdr-bg"></div>
+<div class="clearall"></div>
+<div style="margin-top: 20px;" class="row">
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0556/2348/3564/files/10018.jpg?v=1712558098" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h4>01/01/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505" class="img-responsive"></div>
+<p>Fantastisches Produkt und das Finish auf dem Auto war der glänzende Diamanteffekt. Ich benutze dieses Produkt seit 3 Jahren und es ist absolut fantastisch. Die Autohändler sind immer begeistert, dass mein SUV besser glänzt als ihre Ausstellungsfahrzeuge.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0556/2348/3564/files/10019.jpg?v=1712558097" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h4>22/01/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505" class="img-responsive"></div>
+<p>Ich habe dieses Produkt für das Glas meines Bootes verwendet und es gab keine Wasserflecken mehr. Also habe ich es auch für die Scheiben meiner Fahrzeuge verwendet und es ist besser als andere Produkte.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0556/2348/3564/files/10020.jpg?v=1712558098" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h4>16/02/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505" class="img-responsive"></div>
+<p>Meine Autos sind wunderschön, ich habe einen Lieferwagen und das Ergebnis ist beeindruckend. Ich habe es auf meinen Lieferwagen aufgetragen und ich bin sehr zufrieden mit dem Produkt. Ich empfehle es generell jedem.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0556/2348/3564/files/10021.jpg?v=1712558097%20%20" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h4>02/03/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505" class="img-responsive"></div>
+<p>Ich habe mein Auto zum ersten Mal damit poliert und es ist fantastisch geworden! Der Glanz ist unwirklich und die Komplimente kommen immer wieder.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div> -->
+<div class="jar-footer">
+<div class="show-mob">
+<div style="position: fixed;" id="ctabtn-mob"><a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">JETZT KAUFEN<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*Sofern sie noch auf Lager sind</span></a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4 hidden-xs">
+<h3 class="">INFORMATION</h3>
+<ul>
+<li><a href="/pages/uber-uns">Über uns</a></li>
+<li><a href="/pages/kontaktieren-uns">Kontaktieren uns</a></li>
+<li><a href="/pages/agb">FALKECO-AGB</a></li>
+<li><a href="/pages/haftungserklarung-fur-falkeco">Haftungserklärung</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">ZAHLUNGSARTEN</h3>
+<div><span> <img class="credit-cards-image" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/falkeco_551507e1-2ab5-4c88-bfd7-96a711cc403b_x320.png?v=1686298910"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GARANTIE</h3>
+<p class="footer-guarantee-content">Wir bieten eine 30-tägige Geld-zurück-Garantie</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="">© 2024 Copyright All Rights Reserved.</p>
+<!-- <div class="footer-image-logo"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/guarantee-secure.png?v=1660805040" class="attachment-large size-large" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/dmca_premi_badge_5.png?v=1660804952" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_9f996ccb-013a-4142-b9cb-ad4275c16efa.webp?v=1660805040" alt="" loading="lazy" /></div> --></div>
+</div>
+</div>
+</div>
+</div>
