@@ -1,0 +1,589 @@
+<style><!--
+a:not([disabled]):hover,
+  a:focus {
+    color: #ffcd00;
+  }
+  .topStrip {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #2f9503;
+  }
+  .jar-banner a.order-btn {
+    width: auto;
+  }
+  a.order-btn {
+    background-color: #2f9503;
+  }
+  .sec1-list li p {
+    word-break: break-word;
+    align-items: flex-start !important;
+  }
+  .sec1-list li span {
+    height: 50px;
+  }
+  ul.sec1-list li img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  ul.sec1-list li span,
+  ul.s2-list span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  ul.sec1-list li p,
+  ul.s2-list p {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) {
+    .col-md-20 {
+      width: 20%;
+    }
+  }
+  ul.s2-list li {
+    border: 1px solid #f5f5f5;
+  }
+  ul.s2-list li img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+  }
+  .strip-bg img {
+    margin-bottom: 0;
+  }
+  .kore-inner h3 {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0f5c1;
+    font-size: 16px !important;
+    word-break: break-word !important;
+  }
+  .kore-inner h4 {
+    font-size: 40px;
+    color: red;
+    background-color: #d0f5c1;
+  }
+  .kore-inner h3,
+  .kore-inner h4 {
+    background-color: #F5F5F5 !important;
+  }
+  .overall-rating {
+    width: 27%;
+  }
+  .top-fix-bar {
+    margin-bottom: 105px;
+  }
+  .top-bar {
+    margin-top: 33px;
+    height: 90px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .jar-header .container {
+      justify-content: flex-start !important;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .logos {
+      max-width: 150px !important;
+    }
+    .overall-rating {
+      width: 100% !important;
+    }
+    .vid-sec img {
+      margin-top: 0 !important;
+    }
+    .top-bar {
+      height: 60px;
+    }
+    .kore-inner h3 {
+      min-height: 50px;
+      font-size: 15px !important;
+    }
+  }
+  .es_text {
+    margin-left: 10px;
+  }
+  /*! CSS Used from: https://m.gluckaro.de/core.min.css */
+  .ql-font-ebgaramond {
+    font-family: "EB Garamond";
+  }
+  .paragraph {
+    width: 100%;
+    font-size: 18px;
+    word-break: break-word;
+  }
+  .paragraph .paragraph-inner {
+    width: 100%;
+  }
+  .paragraph p {
+    font-size: 20px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8
+      list-9;
+  }
+  .paragraph * {
+    line-height: 35px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  .element-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: inherit;
+    min-height: 0;
+  }
+  .section.full .section_row {
+    max-width: 1170px;
+  }
+  .section .section_row {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (max-width: 600px) {
+    .no-mobile {
+      display: none !important;
+    }
+    .section .section_row {
+      flex-direction: column;
+    }
+    .section .section_row .row-column {
+      width: 100% !important;
+    }
+  }
+  .row-column {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+  }
+  /*! CSS Used from: Embedded */
+  .paragraph p {
+    font-family: "Lato", sans-serif !important;
+  }
+  @media only screen and (min-width: 767px) {
+    #use2 > div > div.hide-mob,
+    #reviews > div > div.hide-mob,
+    #verdicktes-magisches-reinigungstuch
+      > div.wsmenucontainer.clearfix
+      > div.container
+      > div {
+      display: flex;
+      justify-content: center;
+    }
+    .jar-header .container {
+      align-items: center;
+    }
+    a.nav-btn {
+      width: 158px !important;
+      background: #3e92da !important;
+    }
+    #sakerlp > div.strip-bg > div > p {
+      font-size: x-large;
+      font-weight: bold;
+    }
+  }
+  #es_buy > h3,
+  #reviews > div > p {
+    text-align: center;
+  }
+  .es_featured-label {
+    text-transform: uppercase;
+    width: 152px;
+    height: auto;
+    background: #ff3434;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -46px;
+    top: 6px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 20px 20px 10px 20px;
+  }
+  .comon-bdr {
+    background: #c480a8 !important;
+  }
+  .es_text h3 {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .es_btn-order:before {
+    content: none;
+  }
+  .s2-bnr-icn {
+    margin: 0 auto !important;
+    width: 70px;
+  }
+  .bnr-div {
+    margin: -41px auto 2px !important;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+  }
+  .vid-sec img { width:100%; }
+--></style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">Clearance is not available on a first-come, first-served basis; stock is limited!</p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img class="logos" style="max-width: 250px;" src="https://www.yullows.com/cdn/shop/files/350_550x.png?v=1619664004"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Overview </a></li>
+<li><a href="#features">Features </a></li>
+<li><a href="#use">Usage </a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+</div>
+<!-- <a href="#es_buy" class="nav-btn ignore-scroll show-desk">BUY NOW</a> -->
+<div style="width: 250px;" class="element-wrapper hidden-xs">
+<a class="order-btn" style="height: auto;" href="#es_buy">BUY NOW</a>
+</div>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div id="mobMenuBtn" class="dl-trigger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Overview </a></li>
+<li><a href="#features">Features </a></li>
+<li><a href="#use">Usage </a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;"><a style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;" href="#es_buy"></a> <img alt="" src="https://cdn.shopify.com/s/files/1/0505/5211/1269/files/1_e1fefb06-672e-47ec-b217-e0712895fd79.jpg?v=1716518567" class="hidden-xs" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0505/5211/1269/files/94d53239037849179c79285840325f32_52c385c6-a717-4d31-9767-676de06447ef.jpg?v=1716518567" class="visible-xs" style="width: 100%;"></div>
+<div class="strip-bg">
+<div class="container">
+<h1 class="alt-2 show-mob">1h 32m 55s</h1>
+<p style="background-size: 80%; font-weight: bold; background: none;" class="ftur-hdng">Clearance sale-AUTOMATIC REBOUND ABDOMINAL WHEEL</p>
+</div>
+</div>
+<div id="overview" class="section1">
+<div class="container">
+<div class="clearall"></div>
+<div class="vid-sec"><img alt="" src="https://cdn.shopify.com/s/files/1/0505/5211/1269/files/2_a6bc2a96-9883-4728-a104-70e8ebc989ba.jpg?v=1716518998"></div>
+<ul class="sec1-list">
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/01_f4cd95ee-3016-4fc1-87cc-82c513b9e21b.png?v=1689816448"> <span> Automatic rebound technology</span>
+<p>The auto rebound abdominal wheel with auto rebound technology ensures efficient and controlled movements. This feature provides a more intense workout experience while helping you avoid injuries. </p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/02_12b81c37-6c8e-4321-84ca-3ad09297f0be.png?v=1689816448"> <span> Practical double wheel design</span>
+<p>Unlike other dual wheel AB rollers, this roller features thickened rubber treads on the wheels to reduce friction on the ground. This design is quieter and does not damage the floor. </p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/03_60e93492-081c-44d0-ac19-7679fa9f3a51.png?v=1689816448"> <span> Train your entire body </span>
+<p>Widened double wheels and triangular structure rollers ensure stability and safety and are suitable for training various muscle groups including abdomen, back, arms, chest and shoulders. </p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/04_362973d1-213a-4382-b05a-24925f75cf07.png?v=1689816448"> <span> Non-slip and wear-resistant </span>
+<p>The scooter has sturdy double wheels and widened wheels, which are non-slip and wear-resistant and ensure safety during training. This feature makes it suitable for beginner workouts while providing stability for advanced users.</p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/05.png?v=1689816448"> <span> Easy to carry </span>
+<p>Unlike bulky exercise equipment such as dumbbells and exercise machines, this scooter is small and easy to carry. It is compact and light, making it the ideal training companion, whether at home or on the go. </p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If they are still in stock</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<!-- <div class="strip-bg" style="padding-top: 0px;">
+  <div class="container">
+  <p class="ftur-hdng">1080p Magnetische WiFi-Minikamera</p>
+  <img src="https://cdn.shopify.com/s/files/1/0298/7930/4276/files/4_8db3af14-5fe1-4393-9662-e14ad8ee4e5f.jpg?v=1669110813" alt="" /></div>
+  </div> -->
+<div id="features" class="section2">
+<div class="container">
+<p class="common-head">Automatic rebound wheel</p>
+<div class="comon-bdr"></div>
+<p class="common-para">Use this roller for an abdominal workout for effective total body fitness. Get rid of heavy fat and bad mood in just a few minutes a day and get a new you quickly.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0505/5211/1269/files/3_282996f8-2340-430a-9ffb-0037c6ddaa2e.jpg?v=1716519297"></div>
+<ul class="s2-list">
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/1_5e5adea6-24e0-4c77-8024-d1a56f1c2339.jpg?v=1689817955">
+<div class="clearall"></div>
+<div class="bnr-div"><img class="s2-bnr-icn" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/06_abbb04d2-c241-42d6-a242-4b90fed2a465.png?v=1689818017"></div>
+<span>Multi-layer material</span>
+<p>The abdominal trainer is made of high-quality ABS and the wider roller consists of a non-slip layer, a reinforcement layer and a cushion layer. You can enjoy your workout in a quiet environment.</p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/4_52f02b06-67c9-40b6-8f1f-fa02d936a2dc.jpg?v=1689817955">
+<div class="clearall"></div>
+<div class="bnr-div"><img class="s2-bnr-icn" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/010.png?v=1689818017"></div>
+<span>Stable triangular structure </span>
+<p>This home weight loss fitness equipment is primarily designed to train key core muscles, improve your body shape and build a perfect body for you.</p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/5_43c21b1d-272c-4b9c-8d23-e70de4d84176.jpg?v=1689817955">
+<div class="clearall"></div>
+<div class="bnr-div"><img class="s2-bnr-icn" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/08.png?v=1689818017"></div>
+<span> Angle friendly </span>
+<p>The automatic rebound function and thick foam handles can protect you from injury during exercise, which is ideal for beginners.</p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/3_09d7ce3b-0579-4fef-8591-259dfca0212c.jpg?v=1689817955">
+<div class="clearall"></div>
+<div class="bnr-div"><img class="s2-bnr-icn" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/09.png?v=1689818016"></div>
+<span>A way to assemble and disassemble </span>
+<p>Simply align the iron rod according to the specific position on the hole and pass it through. Then put on the foam handle. With this Ab Wheel abdominal trainer you can train anytime and anywhere.</p>
+</li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/2_6d1e5853-b425-43b2-8726-6b4f4f1ffd4d.jpg?v=1689817955">
+<div class="clearall"></div>
+<div class="bnr-div"><img class="s2-bnr-icn" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/07_dfb7c384-f217-4254-b00e-77e6fd2bc17c.png?v=1689818017"></div>
+<span> Happy Fitness</span>
+<p>You can place your smartphone on the abdominal trainer holder at home and choose rock music, a movie or a video call during exercise, say goodbye to boring exercises and fall in love with sports.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If they are still in stock</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<div id="use" class="section4">
+<div class="container">
+<p class="common-head">Why choose us?</p>
+<div class="comon-bdr"></div>
+<!-- <p class="common-para">Müssen Sie heute Abend für eine Party im Freien sowohl die Einfahrt als auch die Terrasse aufräumen? Mit unserem Unkrautstecher können Sie das Unkraut in nur wenigen Minuten von der breiteren Einfahrt und dem Gehweg auf die schmalere Terrasse und das Deck bringen.</p> -->
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0505/5211/1269/files/4_307ad879-38d1-4f70-a1f2-5e42e42811a7.jpg?v=1716519458"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If they are still in stock</span></a>
+<p class="text-day">&nbsp;</p>
+</div>
+</div>
+</div>
+<!-- <div class="section444 section">
+<div class="section444 section">
+<div class="container">
+<p class="common-head">Warum ist unser Unkrautentfernungsgerät Ihre beste Wahl?</p>
+<div class="comon-bdr"></div>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/banner4_9b07709d-c1f2-4589-839e-bbd0edc11535.jpg?v=1686043800" /></div>
+</div>
+</div>
+</div> --> <!-- <div class="section444 section" style="padding-bottom: 40px;">
+<div class="container">
+<div data-v-6c85cc04="" data-v-9b8eab12="" data-eid="637497" class="section_row no-mobile" style="color: #303030; font-size: 14px; text-align: initial; margin: 20px 0px; padding: 0px; background-size: auto; background-repeat: no-repeat; border: 2px solid #c5c7d2;">
+<div data-v-796cd32d="" data-v-6c85cc04="" class="row-column" style="width: 50%;">
+<div data-v-dfbf157a="" data-v-796cd32d="" data-eid="43284" class="element-wrapper">
+<div data-v-dfbf157a="" class="paragraph el-43284" style="font-family: 'EB Garamond'; border-top: none #c5c7d2; border-left: none #c5c7d2; border-right: 2px solid #c5c7d2; border-bottom: none #c5c7d2; border-radius: 0px; line-height: 0.1; margin: 0px; padding: 10px; text-shadow: transparent 0px 0px 0px;">
+<div class="paragraph-inner">
+<p><strong>Unser Unkrautentfernungsgerät</strong></p>
+<p>✅ Kosten sparen</p>
+<p>✅ Zeit sparen</p>
+<p>✅ Einfach zu verwenden</p>
+<p>✅ Effiziente Unkrautbekämpfung</p>
+</div>
+</div>
+</div>
+</div>
+<div data-v-796cd32d="" data-v-6c85cc04="" class="row-column" style="width: 50%;">
+<div data-v-dfbf157a="" data-v-796cd32d="" data-eid="530386" class="element-wrapper">
+<div data-v-dfbf157a="" class="paragraph el-530386" style="border-radius: 0px; line-height: 0.1; margin: 0px; padding: 10px; text-shadow: transparent 0px 0px 0px; border: 0px solid #c5c7d2;">
+<div class="paragraph-inner">
+<p><strong>Anderer Unkrautentfernungsgerät </strong></p>
+<p>❌ Mehr zeitaufwändig</p>
+<p>❌ Mehr Energie verbrauchen</p>
+<p>❌ Geringe Effizienz</p>
+<p>❌ Mühsam zu verwenden</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hide-mob" style="text-align: center;">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20" /><br /></span> <span class="text-span-5">*If they are still in stock</span></a>
+<p class="text-day"> </p>
+</div>
+</div> -->
+<div class="section5">
+<div id="es_buy" class="container">
+<h3 style="padding-bottom: 20px;" class="center-h2">CHOOSE A PACKAGE THAT FITS YOU!</h3>
+<div class="row es_variant_row hide-mob">
+<div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #fbb67c;">Hot sale</h2>
+<h3>Orange</h3>
+<h4>50% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/05.jpg?v=1715394284" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">31.8K Reviews</p>
+<h5><del>$79.99</del><span>$39.99</span></h5>
+<input value="44087676076251" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #fbb67c;" href="/cart/44087676076251:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Order now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #3e92da;">Best Seller</h2>
+<h3>Blue</h3>
+<h4 style="padding: 10px 0;">50% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/04.jpg?v=1715394284" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">35.9K Reviews</p>
+<h5><del>$79.99</del><span>$39.99</span></h5>
+<input value="44087676010715" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #3e92da;" href="/cart/44087676010715:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Order now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #fdaeae;">Hot sale</h2>
+<h3>Pink</h3>
+<h4>50% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/06.jpg?v=1715394283" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">28.3K Reviews</p>
+<h5><del>$79.99</del><span>$39.99</span></h5>
+<input value="44087676043483" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #fdaeae;" href="/cart/44087676043483:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>Order now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input data-type="shopify" data-variant="44087676010715" data-id="7942432129282" checked="checked" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/04.jpg?v=1715394284" class="es_product_img">
+<div class="es_text"><!-- <h2 class="es_variant_title" style="color: #ee2222;">Hot sale</h2> -->
+<h2 class="es_variant_title">Blue</h2>
+<label style="float: left;" class="es_freeshipping_text">Clearance not sale</label>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> $79.99</label><label class="es_total_price"> $39.99</label></div>
+</div>
+<label style="background: #e51a1a; color: #fff; right: -41px; top: 21px; padding: 7px 10px;" class="es_featured-label">Best Seller</label></div>
+<div class="offerbox"><input data-type="shopify" data-variant="44087676076251" data-id="7942432129282" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/05.jpg?v=1715394284" class="es_product_img">
+<div class="es_text">
+<h2 class="es_variant_title">Orange</h2>
+<label style="float: left;" class="es_freeshipping_text">Clearance not sale</label>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> $79.99</label><label class="es_total_price"> $39.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="44087676043483" data-id="7942432129282" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0743/7765/8677/files/06.jpg?v=1715394283" class="es_product_img">
+<div class="es_text">
+<h2 class="es_variant_title">Pink</h2>
+<label style="float: left;" class="es_freeshipping_text">Clearance not sale</label>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> $79.99</label><label class="es_total_price"> $39.99</label></div>
+</div>
+</div>
+<div class="clearfix"><a style="height: 50px; margin-bottom: 30px; padding-top: 10px; background-color: #2f9503; border: solid 2px #276e09;" data-type="shopify" data-variant="" data-id="" data-num="1" class="es_btn es_btn-order order-now-btn mobile-checkout"><span>BUY NOW</span></a></div>
+</div>
+</div>
+</div>
+<div id="reviews" class="section6">
+<div class="container">
+<p class="common-head">What our customers say</p>
+<!-- <p class="common-para">Sehen Sie, was Kunden über ihre Handyshalterung Mit Daumen Hoch zu sagen haben</p> --> <!-- <div class="comon-bdr bdr-bg"></div> -->
+<div class="clearall"></div>
+<div class="reviewblk">
+<div class="ratingBox">
+<p>4.8</p>
+<span>Out Of 5</span></div>
+<img class="ratingImg" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/rating-line.png?v=1660804534">
+<div class="overall-rating">Overall rating <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<div class="cs-percent"><span>98%</span><br> of customers would buy Blestep again and recommend it to others</div>
+</div>
+<div class="testiBox">
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/001.png?v=1689821308">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">I absolutely love this ab wheel! I was looking for a piece of fitness equipment that would help me build my abdominal and core muscles. This ab wheel is very simple, but still very effective. Its plank design is very stable and allows me to concentrate better on my workout. I would highly recommend this ab wheel to anyone who wants to exercise at home.</p>
+<p class="usr-name">Adrian</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/002.png?v=1689821308">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">This is a very high quality ab wheel. I really like its design, especially the plank design which gives me better balance and control. Its wheels are very smooth, which makes my training process smoother. I find this ab wheel to be a really good investment as it helps me train my abs and core effectively.</p>
+<p class="usr-name">Wiebke</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0426/6917/9031/files/003.png?v=1689821308">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692">
+<p class="testi-para">I've been using this ab wheel for a few months now. I really like its quality and durability. The plank design is very stable, allowing me to better control my body and concentrate on my workout. The handles are very comfortable, allowing me to train for longer periods of time without any discomfort. Overall, this is a really good ab trainer bike that I would highly recommend to anyone looking to work out at home.</p>
+<p class="usr-name">Yvonne</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div style="position: relative;" id="ctabtn-mob"><a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If they are still in stock</span></a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul>
+                
+                <li><a href="/pages/about-us">About us</a></li>
+                
+                <li><a href="/pages/contact-us">Contact us</a></li>
+                
+                <li><a href="/pages/frequently-asked-questions">Frequently Asked Questions</a></li>
+                
+                <li><a href="/pages/intellectual-property-rights">Intellectual Property Rights</a></li>
+                              
+              </ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">PAYMENT METHODS</h3>
+<div><span> <img src="https://www.yullows.com/cdn/shop/files/10_0082d6a5-e1d3-489a-96ea-1e37c7ff2016.png?v=1695706339" class="credit-cards-image"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GUARANTEE</h3>
+<p class="footer-guarantee-content">We offer a 30 day money back guarantee.</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">©2024 Copyright</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>// <![CDATA[
+$(function () {
+    var qtymb = `<div class="kore-qty" style="float: left;width: 100%;margin-top: 5px;">
+  <a class="kore-minus_btn" onclick="javascript:($(this).next().val(parseInt($(this).next().val())-1));" style="width: 20px;height: 20px;"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" style="width: 30px;height: 20px;
+  "> <a class="kore-plus_btn" onclick="javascript:($(this).prev().val(parseInt($(this).prev().val())+1));" style="width: 20px;height: 20px;"></a></div>`;
+    for (var i = 0; i < $(".offerbox").length; i++) {
+      $(".offerbox").eq(i).find(".pricing-info").before(qtymb);
+    }
+  });
+// ]]></script>

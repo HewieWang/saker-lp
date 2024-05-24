@@ -1,0 +1,641 @@
+<style>
+  #sakerlp {
+    font-family: "Open Sans" !important;
+  }
+  a:not([disabled]):hover,
+  a:focus {
+    /*    color: #1bed32;*/
+  }
+  .topStrip {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #ffc600;
+  }
+  .jar-banner a.order-btn {
+    width: auto;
+  }
+  a.order-btn {
+    padding: 15px 18px 3px 18px !important;
+    background-color: #ffc600;
+  }
+  .sec1-list li p {
+    word-break: break-word;
+    align-items: flex-start !important;
+  }
+  .sec1-list li span {
+    height: 25px;
+  }
+  ul.sec1-list li {
+    width: 19%;
+  }
+  @media (max-width: 1024) {
+    ul.sec1-list li {
+      width: 47%;
+      margin: 10px;
+    }
+  }
+  ul.sec1-list li strong {
+    margin-top: 12px;
+  }
+  ul.sec1-list li img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  ul.sec1-list li span,
+  ul.s2-list span {
+    font-size: 18px;
+  }
+  ul.sec1-list li p,
+  ul.s2-list p {
+    font-size: 16px;
+  }
+  ul.s2-list li {
+    width: 24%;
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
+  }
+  ul.s2-list span {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 18px !important;
+    height: 50px;
+  }
+  ul.s2-list p {
+    color: #494949;
+    line-height: 20px;
+  }
+  ul.s2-list li img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+  }
+  .strip-bg img {
+    margin-bottom: 0;
+  }
+  .kore-inner h3 {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef4eb;
+    font-size: 16px !important;
+    word-break: break-word !important;
+  }
+  .kore-inner h4 {
+    font-size: 30px;
+    background-color: #fef4eb;
+  }
+  .overall-rating {
+    width: 21%;
+    font-size: 18px;
+  }
+  .top-fix-bar {
+    margin-bottom: 105px;
+  }
+  .top-bar {
+    margin-top: 33px;
+    height: 100px;
+  }
+  .vid-sec img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 767px) {
+    .logo {
+      margin-top: -3px;
+    }
+    .overall-rating {
+      width: 100% !important;
+    }
+    .vid-sec img {
+      margin-top: 0 !important;
+    }
+    .top-bar {
+      height: 60px;
+    }
+    .kore-inner h3 {
+      min-height: 50px;
+      font-size: 15px !important;
+    }
+    .es_btn-order {
+      background: #ffc600 !important;
+      border: solid 2px #ffc600 !important;
+    }
+    ul.sec1-list li,
+    ul.s2-list li {
+      width: 100% !important;
+    }
+  }
+  .es_text {
+    margin-left: 10px;
+  }
+  .jar-header h1 {
+    bottom: 20px;
+  }
+  .testi-star {
+    max-height: 25px;
+  }
+  .common-head {
+    margin-top: 30px;
+  }
+  .section2 {
+    padding: 30px 0 20px;
+    background: #fff;
+  }
+  @media (min-width: 768px) {
+    .es_variant_row {
+      padding-top: 10px;
+    }
+    .video-back video {
+      max-width: 59% !important;
+      margin: 1% 0 0% 7% !important;
+    }
+
+    .video-back {
+      background: url(https://cdn.shopify.com/s/files/1/0722/1447/9136/files/banner_fa63cd14-b554-4c01-adee-bd0b5a24d8a6.jpg?v=1682409973)
+        bottom/cover no-repeat;
+      padding-bottom: 1%;
+      margin-top: 20px;
+    }
+    .prod-video {
+      display: flex;
+      position: relative;
+      padding: 5px;
+      /*      background: #f6f6f6;*/
+      margin: 1% 4% 9% 25%;
+      /*      border-radius: 50px 50px 0 0;*/
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-video img {
+      max-width: 200px !important;
+      height: auto;
+    }
+    .jar-header {
+      margin-top: -80px;
+    }
+  }
+  .kore-banner {
+    background: url(https://cdn.shopifycdn.net/s/files/1/0671/3825/7172/files/banner_34d6896b-1527-4cfa-a9c8-1092d06fc066.jpg?v=1679885731)
+      center/cover no-repeat !important;
+  }
+  .kore-top_section {
+    padding: 8% 55% 8% 0% !important;
+    text-align: left;
+    color: #fff;
+  }
+  .kore-top_text h5 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .kore-top_text h5 {
+    font-size: 18px;
+  }
+  .kore-top_text {
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px;
+  }
+  .kore-top_section .text-day {
+    text-align: center;
+    margin-left: 10%;
+    width: 300px;
+  }
+  @media (max-width: 480px) {
+    .kore-banner {
+      background: url(https://cdn.shopifycdn.net/s/files/1/0671/3825/7172/files/94d53239037849179c79285840325f32.jpg?v=1679885724)
+        center/cover no-repeat !important;
+    }
+    .kore-top_section {
+      padding: 110% 0px 20% 0% !important;
+    }
+    .ftur-hdng {
+      background-size: 0 !important;
+    }
+    .jar-header .container {
+      justify-content: flex-start !important;
+    }
+    .section2 {
+      padding: 0px 0 20px;
+    }
+    .prod-video img {
+      display: none;
+    }
+    .kore-qty {
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+    .kore-minus_btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px 0px 0px 5px;
+    }
+    .kore-plus_btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 0 5px 5px 0;
+    }
+    .kore-txtbox {
+      width: 40px;
+      height: 30px;
+    }
+    .variant {
+      margin-bottom: 5px;
+    }
+    .es_product_img {
+      width: 120px;
+    }
+    ul.s2-list span {
+      height: unset;
+    }
+  }
+  .testi-imgs {
+    max-width: 70px !important;
+  }
+  .es_old_price {
+    color: #000 !important;
+  }
+  .es_total_price,
+  .es_freeshipping_text {
+    color: #e51a1a !important;
+  }
+  .es_btn-order:before{
+    display: none !important;
+  }
+  .es_btn-order span{
+        font-size: 20px !important;
+  }
+  .es_btn-order{
+        line-height: 40px !important;
+  }
+</style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">☀️Sommeraktion⛱️ Kostenloser Versand 🚚</p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img class="logo" style="max-width: 150px;" src="https://cdn.shopify.com/s/files/1/0574/0802/8827/files/350.png?v=1623808900"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Überblick</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Anwendungsszenarien</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+<!-- <div class="element-wrapper" style="width: 250px;">
+  <h1 class="alt-2 show-desk">1h 32m 55s</h1>
+  </div> -->
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div id="mobMenuBtn" class="dl-trigger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Überblick</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Anwendungsszenarien</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;"><a style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;" href="#es_buy"></a> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/1-3_a2b635ba-5c39-46f3-8ba3-e703b649a7e4.jpg?v=1688635193" class="hidden-xs" style="width: 100%;"> <img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/94d53239037849179c79285840325f32_3d2631d2-64a4-42ec-892d-f30d36df5ff1.jpg?v=1688635193" class="visible-xs" style="width: 100%;"></div>
+<div class="strip-bg">
+<div class="container"><!-- <h1 class="alt-2 show-mob">1h 32m 55s</h1> -->
+<p style="background-size: 100%; font-weight: bold;" class="ftur-hdng" id="overview">TRAGBARE KABELLOSE HOCHDRUCK-WASSERSPRITZPISTOLE</p>
+</div>
+</div>
+<div class="section1">
+<div class="container">
+<div class="clearall"></div>
+<div class="vid-sec"><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/2-2_27d5ab6f-4b81-4d43-af4f-34e82f9375d6.jpg?v=1688635193"></div>
+<ul class="sec1-list">
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/01.png?v=1688635717">
+<div class="clearall"></div>
+<span>Kabellos</span>
+<p>Die tragbare Hochdruck-Wasserspritzpistole ist kabellos und kann daher überall verwendet werden, ohne dass eine Steckdose in der Nähe sein muss.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/02.png?v=1688635717">
+<div class="clearall"></div>
+<span>Wiederaufladbar</span>
+<p>Die Wasserspritzpistole wird mit einem wiederaufladbaren Akku betrieben und kann einfach über USB aufgeladen werden.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/03.png?v=1688635717">
+<div class="clearall"></div>
+<span>Hoher Druck</span>
+<p>Die Wasserspritzpistole erzeugt einen hohen Wasserdruck, der hartnäckigen Schmutz und Ablagerungen effektiv entfernt.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/04.png?v=1688635717">
+<div class="clearall"></div>
+<span>Tragbar</span>
+<p>Diese Wasserspritzpistole ist sehr leicht und handlich, sodass sie leicht von einem Ort zum anderen transportiert werden kann.</p>
+</li>
+<li><img alt="" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/05.png?v=1688635718">
+<div class="clearall"></div>
+<span>Einstellbar</span>
+<p>Der Wasserdruck der Pistole kann an spezifische Bedürfnisse angepasst werden.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">50 % RABATT heute<br> <span class="text-span-5">Jetzt bestellen</span></a> <!-- <p class="text-day">💶30 Tage Geld-Zurück-Garantie</p> --></div>
+</div>
+</div>
+<div class="section2" id="use">
+<div class="container">
+<p class="common-head">TRAGBARE KABELLOSE HOCHDRUCK-SPRÜHWASSERPISTOLE</p>
+<div class="comon-bdr"></div>
+<p class="common-para">Es bietet eine bequeme und flexible Möglichkeit, Hochdruckreinigungsaufgaben ohne Einschränkungen durch Kabel oder Steckdosen durchzuführen. Es ermöglicht auch eine effektive Reinigung schwer zugänglicher Bereiche und spart so Zeit und Mühe im Vergleich zu herkömmlichen Methoden.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_80c4b0a1-d76d-4611-8071-e74fbc11e6ed.jpg?v=1688635193" style="box-shadow: unset;" class="hidden-xs"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_80c4b0a1-d76d-4611-8071-e74fbc11e6ed.jpg?v=1688635193" style="box-shadow: unset;" class="visible-xs"></div>
+<ul class="s2-list" id="features">
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/1_e0375655-3dca-4517-a6ef-c17e9fd716d1.jpg?v=1688691539">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>FAHRZEUG REINIGEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/2_f8be39e1-ca60-4b46-a3b8-7c4b221adaa3.jpg?v=1688691676">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>FAHRRAD REINIGEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_0f81e6de-d456-4f11-ae2c-c75509b3b51f.jpg?v=1688691797">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>DECKE REINIGEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4_1413a60d-d1d5-4bd7-9b6a-fa956aa06461.jpg?v=1688691835">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>BLUMEN GIESSEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/9_8f5bee6c-b2ee-41b2-9011-d454033150b9.jpg?v=1688691895">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>TREPPEN REINIGEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4_233417a6-5d13-4b24-87fd-767df401ddb9.jpg?v=1688692061">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>GEMÜSE BEWÄSSERN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/5_d39c8eb4-e26d-4742-beda-82de4932f193.jpg?v=1688692194">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>SPIELEN</span></li>
+<li><img class="s2-bnr-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/7_374efea2-ae03-44d4-8eba-5a221763582f.jpg?v=1688692260">
+<div class="clearall"></div>
+<!-- <img src="https://cdn.shopify.com/s/files/1/0560/9580/1525/files/08.png?v=1685425289" class="s2-bnr-icn" /> --> <span>BODEN REINIGEN</span></li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">50 % RABATT heute<br> <span class="text-span-5">Jetzt bestellen</span></a> <!-- <p class="text-day">💶30 Tage Geld-Zurück-Garantie</p> --></div>
+<p class="common-head">Hochleistungsbatterie</p>
+<div class="comon-bdr"></div>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4_827546e1-e47d-4119-81bd-8e536734cabc.jpg?v=1688692409"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">50 % RABATT heute<br> <span class="text-span-5">Jetzt bestellen</span></a> <!-- <p class="text-day">💶30 Tage Geld-Zurück-Garantie</p> --></div>
+</div>
+</div>
+<!-- <div class="section4">
+  <div class="container">
+  <p class="common-head">Warum ist dieser schäumende Schwerölfleckenreiniger Ihre beste Wahl?</p>
+  <div class="comon-bdr"></div>
+  <div class="clearall"></div>
+  <div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0671/3825/7172/files/dca3527c75cbd6f4e37a2ed5c742b2e6.webp?v=1678342687" /></div>
+  <div class="hide-mob">
+  <div class="clearall"></div>
+  <a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">50 % RABATT heute<br /></span> <span class="text-span-5">Jetzt bestellen</span></a>
+  <p class="text-day">💶30 Tage Geld-Zurück-Garantie</p>
+  </div>
+  </div>
+  </div> -->
+<div class="section5">
+<div id="es_buy" class="container">
+<p class="common-head">WÄHLEN SIE EIN PAKET, DAS ZU IHNEN PASST!</p>
+<div style="margin-bottom: 20px;" class="comon-bdr"></div>
+<div class="row es_variant_row hide-mob">
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #000000;">Heißer Verkauf</h2>
+<h3>12HV-Batterie (Werkzeugkasten)</h3>
+<h4>43% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/12HV_8b994709-62c9-4241-8bbd-81de2f3b5d74.jpg?v=1688710204" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">31.6K Bewertungen</p>
+<h5><del>€104.99</del><span>€59.99</span></h5>
+<input value="45098681991396" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/45098681991396:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #ffc600;">Bestseller</h2>
+<h3>24HV-Batterie (Werkzeugkasten)</h3>
+<h4>45% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/24V_2ca2142d-1e9c-44f4-9eaf-1366f7dac968.jpg?v=1688710204" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">30.9K Bewertungen</p>
+<h5><del>€126.99</del><span>€69.99</span></h5>
+<input value="45098682024164" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ffc600;" href="/cart/45098682024164:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #ffc600;">Bester Wert</h2>
+<h3>48HV-Batterie (Werkzeugkasten)</h3>
+<h4>50% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/48HV_4089896d-8308-45cc-ad94-a0efdff9e09a.jpg?v=1688710204" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">33.7K Bewertungen</p>
+<h5><del>€159.99</del><span>€79.99</span></h5>
+<input value="45098682089700" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #ffc600;" href="/cart/45098682089700:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #000000;">Grundpackung</h2>
+<h3>12HV-Batterie (Karton)</h3>
+<h4>39% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/12HV_2e19fdd4-3069-4247-a547-a9619dda1a8d.jpg?v=1688710204" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">26.8K Bewertungen</p>
+<h5><del>€81.99</del><span>€49.99</span></h5>
+<input value="45098681958628" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/45098681958628:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #000000;">Grundpackung</h2>
+<h3>24HV-Batterie (Karton)</h3>
+<h4>41% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/24HV_342b59e8-2724-46da-9be4-e9ed75cee812.jpg?v=1688710204" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">26.8K Bewertungen</p>
+<h5><del>€110.99</del><span>€59.99</span></h5>
+<input value="45098682056932" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/45098682056932:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="kore-inner">
+<h2 style="background: #000000;">Grundpackung</h2>
+<h3> 48HV-Batterie(Karton)</h3>
+<h4>43% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0574/0802/8827/files/3333333.jpg?v=1715407127" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">23.8K Bewertungen</p>
+<h5><del>€122.99</del><span>€69.99</span></h5>
+<input value="45098684317924" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #000000;" href="/cart/45098684317924:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i>JETZT BESTELLEN<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Gesichert und verschlüsselt<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input data-type="shopify" data-variant="45098682024164" data-id="7736589746434" checked="checked" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/24V_2ca2142d-1e9c-44f4-9eaf-1366f7dac968.jpg?v=1688710204" class="es_product_img">
+<div class="es_text">
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title">24HV-Batterie <br>(Werkzeugkasten)</h2>
+<label class="es_freeshipping_text">45% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> €126.99</label> <label class="es_total_price">€69.99</label></div>
+</div>
+<label style="    background: #e51a1a;
+    color: #fff;
+    top: -10px;
+    left: -33px;
+    transform: rotate(-45deg);
+    height: 50px;
+    font-size: 10px;" class="es_featured-label">BESTSELLER</label></div>
+<div class="offerbox"><input data-type="shopify" data-variant="45098682056932" data-id="7736589746434" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/24HV_342b59e8-2724-46da-9be4-e9ed75cee812.jpg?v=1688710204" class="es_product_img">
+<div class="es_text"><!-- <h2 class="es_variant_title" style="color: #ee2222;">BESTWERT</h2> -->
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title">24HV-Batterie<br> (Karton)</h2>
+<label class="es_freeshipping_text">41% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> €110.99</label> <label class="es_total_price">€59.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="45098681991396" data-id="7736589746434" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/12HV_8b994709-62c9-4241-8bbd-81de2f3b5d74.jpg?v=1688710204" class="es_product_img">
+<div class="es_text">
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title">12HV-Batterie<br> (Werkzeugkasten)</h2>
+<label class="es_freeshipping_text">43% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> €104.99</label><label class="es_total_price"> €59.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="45098682089700" data-id="7736589746434" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/48HV_4089896d-8308-45cc-ad94-a0efdff9e09a.jpg?v=1688710204" class="es_product_img">
+<div class="es_text">
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title">48HV-Batterie<br> (Werkzeugkasten)</h2>
+<label class="es_freeshipping_text">50% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> €159.99</label><label class="es_total_price"> €79.99</label></div>
+</div>
+<label style="background: #e51a1a; color: #fff; top: -13px; left: -42px; width: 113px; padding: 28px 20px 10px 20px; transform: rotate(-45deg);" class="es_featured-label">Bester Wert</label></div>
+<div class="offerbox"><input data-type="shopify" data-variant="45098681958628" data-id="7736589746434" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/12HV_2e19fdd4-3069-4247-a547-a9619dda1a8d.jpg?v=1688710204" class="es_product_img">
+<div class="es_text">
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title">12HV-Batterie<br> (Karton)</h2>
+<label class="es_freeshipping_text">39% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price"> €81.99</label><label class="es_total_price"> €49.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" data-variant="45098684317924" data-id="45098684317924" class="offer-check" type="checkbox"> <img src="https://cdn.shopify.com/s/files/1/0574/0802/8827/files/3333333.jpg?v=1715407127" class="es_product_img">
+<div class="es_text">
+<h2 style="color: #222; margin: 5px 0;" class="es_variant_title"> 48HV-Batterie<br> (Karton)</h2>
+<label class="es_freeshipping_text">43% RABATT</label>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div style="float: left; clear: both;" class="pricing-info"><label class="es_old_price">€122.99</label><label class="es_total_price"> €69.99</label></div>
+</div>
+</div>
+<div class="clearfix"><a style="height: 60px; margin-bottom: 30px;" data-type="shopify" data-variant="" data-id="" data-num="1" class="es_btn es_btn-order order-now-btn mobile-checkout"><span><small>Jetzt bestellen</small></span></a></div>
+</div>
+</div>
+</div>
+<div id="reviews" class="section6">
+<div class="container">
+<p class="common-head">Erfahrungen von Kunden, die die Tragbare Kabellose Hochdruck-Wasserspritzpistole gekauft haben</p>
+<!-- <p class="common-para">Erfahrungen von Kunden, die Saker 3 In 1 Silikon-Abdichtungswerkzeug gekauft haben</p> -->
+<div class="comon-bdr bdr-bg"></div>
+<div class="clearall"></div>
+
+<div id="looxReviews" data-product-id="8339178225892" class="loox-reviews-default" data-upgraded="true" style="height: 852px;"><iframe id="looxReviewsFrame" title="Product reviews widget" src="https://loox.io/widget/BpWVO2ZqSc/reviews/8339178225892?h=1715408436457&amp;language=de" height="852px" width="100%" frameborder="0" scrolling="no" margin="0" style="overflow: hidden; height: 852px; width: 100%; box-shadow: unset; outline: unset;"></iframe></div>
+
+<!-- <div class="reviewblk">
+<div class="ratingBox">
+<p>4.8</p>
+<span>Out of 5.0</span></div>
+<img class="ratingImg" src="https://cdn.shopifycdn.net/s/files/1/0722/1447/9136/files/rating-line.webp?v=1682392517">
+<div class="overall-rating">Gesamtbewertung <img src="https://cdn.shopifycdn.net/s/files/1/0722/1447/9136/files/five_stars.webp?v=1682392517"></div>
+<div class="cs-percent"><span>98%</span><br>der Kunden gaben an, dass sie Falkeco wieder kaufen und weiterempfehlen würden.</div>
+</div> -->
+<!-- <div class="testiBox">
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4_6e239a6b-9109-4f43-b538-ef61d3f27112.png?v=1688692633">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopify.com/s/files/1/0671/3825/7172/files/five_stars.webp?v=1678331532">
+<p class="testi-para">Die kabellose Hochdruck-Wasserspritzpistole ist eine echte Erleichterung bei der Reinigung von Terrassen und Gehwegen. Ich bin mit der Leistung und Flexibilität dieses Geräts sehr zufrieden.</p>
+<p class="usr-name">Richard Behare</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/3_a79d6b4f-3383-43f6-a496-76fa61cd1c94.png?v=1688709605">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopify.com/s/files/1/0671/3825/7172/files/five_stars.webp?v=1678331532">
+<p class="testi-para">Anfangs war ich skeptisch, aber von der tragbaren Hochdruck-Wasserspritzpistole war ich wirklich beeindruckt. Es ist sehr leistungsstark und einfach zu bedienen. Ich würde sie jedem empfehlen, der eine wirksame Reinigungslösung sucht.</p>
+<p class="usr-name">Alis Fritsche</p>
+</div>
+<div class="testi-row"><img class="testi-imgs" src="https://cdn.shopify.com/s/files/1/0752/2841/4254/files/4_4660120a-aa57-408b-9649-b8800c9b4239.png?v=1688709605">
+<div class="clearall"></div>
+<img class="testi-star" src="https://cdn.shopify.com/s/files/1/0671/3825/7172/files/five_stars.webp?v=1678331532">
+<p class="testi-para">Die kabellose Hochdruck-Wasserspritzpistole ist ein absolutes Muss für jeden Hausbesitzer. Mit diesem Gerät entfernen Sie hartnäckigen Schmutz und Verunreinigungen im Handumdrehen. Ich bin sehr zufrieden mit meinem Kauf.</p>
+<p class="usr-name">Frank Rosenhahn</p>
+</div>
+</div> -->
+<div class="hide-mob">
+<div class="clearall"></div>
+<a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">50 % RABATT heute<br> <span class="text-span-5">Jetzt bestellen</span></a></div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div style="position: relative;" id="ctabtn-mob"><a class="order-btn pulse" style="padding-top: 15px;" href="#es_buy">50 % RABATT heute <br> <span class="text-span-5">Jetzt bestellen</span></a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATIONEN</h3>
+<ul>
+            
+            <li><a href="/pages/uber-uns">Über uns</a></li>
+            
+            <li><a href="/pages/kontaktieren-uns">Kontaktieren uns</a></li>
+            
+            <li><a href="/pages/faq-fragen-antworten">FAQ: Fragen &amp; Antworten</a></li>
+            
+            <li><a href="/pages/geschaftsbedingungen">Geschäftsbedingungen</a></li>
+                          
+          </ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">ZAHLUNGSMETHODEN</h3>
+<div><span> <img src="https://www.freiwing.de/cdn/shop/files/f994295577f46cc7fa059484967496c6_7155a516-1338-43f9-a848-4f13d9606cb2.png?v=1692697115" class="credit-cards-image"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GARANTIE</h3>
+<p class="footer-guarantee-content">Wir bieten eine 30-Tage-Geld-zurück-Garantie</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+<!-- <div class="footer-image-logo"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/guarantee-secure.png?v=1660805040" class="attachment-large size-large" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/dmca_premi_badge_5.png?v=1660804952" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_9f996ccb-013a-4142-b9cb-ad4275c16efa.webp?v=1660805040" alt="" loading="lazy" /></div> --></div>
+</div>
+</div>
+</div>
+</div>

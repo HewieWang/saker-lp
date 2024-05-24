@@ -1,0 +1,375 @@
+<style>
+.announcement-bar { background-color: #4fbae8!important; }
+  .kore-special-promo, .kore-special-promo h2, .kore-special-promo h3 { color: #000!important; }
+  .kore-special-promo h2 span{ background: linear-gradient(transparent 71%,#4fbae8 15%,#4fbae8 90%,transparent 80%)!important;}
+  .kore-inner h3 { font-size: 18px!important; }
+  .kore-inner h3, .kore-inner h4 {background-color: #f8f8f8!important;}
+  /*.kore-inner .variant select, .variant-show select {width: 170px!important;}*/
+  @media (min-width: 992px){
+    .kore-advantage-block h2 { font-size: 34px!important; }
+  }
+  @media (max-width: 480px){
+    .kore-wysiwyg-content p { font-size: 16px!important; }
+    .new-chamfer {
+      display: flex;
+      flex-direction: column;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(1) {
+      order: 3;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(2) {
+      order: 1;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(3) {
+      order: 2;
+    } 
+  }
+  .each-pair {
+    font-size: 14px!important;
+    font-weight: 400!important;
+    color: #d51010!important;
+}
+@media (min-width: 768px){
+  .kore-advantage-item img {
+    max-width: 115px;
+}
+}
+.announcement-bar{display:block;text-align:center;position:relative;text-decoration:none;}
+.announcement-bar__message{display:block;font-weight:400;padding:5px 30px;margin:0;}
+.announcement-bar{background-color:#222222;}
+.announcement-bar__message{color:#ffffff;font-size:14px;}
+.kore-advantage-block h5 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+@media (max-width: 768px){
+  .offersWrapper{text-align:center;}
+.offerbox{display:flex;align-items:center;justify-content:left;margin:15px 0;padding:15px;border:1px solid rgba(0,0,0,.1);border-radius:5px;background:white;position:relative;overflow:hidden;}
+.offerbox-info{display:block;padding-left:15px;text-align:left;width:calc(100% - 125px);}
+.offerbox-info h1{font-size:16px;padding-bottom:5px;font-weight:bold;}
+.offerbox-info p{font-size:14px;color:#c82f31;}
+.offerbox-info p span{display:block;color:#333;padding-top:5px;padding-bottom:5px;}
+.offerbox-info p del{color:rgb(136,136,136);padding-left:5px;}
+.offerbox figure{width:100px;}
+.ribbon{color:#fff;font-size:11px;width:150px;text-align:center;background:#d32020;letter-spacing:1px;transform:rotate(55deg);box-shadow:0px 0px 8px rgba(0,0,0,0.3);position:absolute;z-index:90;top:25px;right:-45px;padding:5px 0!important;}
+.offersWrapper .ribbon.green{background:#2dad57;}
+input.offer-checked[type="checkbox"]{-webkit-appearance:none;width:30px;height:25px;border:2px solid #ced8dd;background:#f2f9fd;position:relative;margin-right:10px!important;outline:none;}
+input.offer-checked[type="checkbox"]:checked{width:30px;height:25px;background:url(https://cdn.shopifycdn.net/s/files/1/0518/4625/0673/files/checkmark.svg?v=1619337294) #f2f9fd center center / 18px 18px no-repeat;border:2px solid #ced8dd;}
+.box-checked{transform:scale(1.03);background:#d9f6ff;border-color:#0071a8;}
+.kore-minus-btn{width:35px;height:35px;border:1px solid #d7dbdb;border-right:none;border-radius:13px 0px 0px 13px;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png') #fff no-repeat center center;float:left;cursor:pointer;}
+.kore-plus-btn{width:35px;height:35px;border:1px solid #d7dbdb;text-align:center;border-radius:0px 13px 13px 0;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png') #fff no-repeat center center;float:left;border-left:none;cursor:pointer;}
+.kore-qty-box{display:flex;align-items:center;margin-top:5px;}
+.box-txtbox{width:50px;height:30px!important;border:1px solid #d7dbdb;text-align:center;font-size:14px;color:#333232;padding:0 5px;font-weight:900;float:left;display:block;}
+.offerbox-info .kore-minus-btn,.offerbox-info .kore-plus-btn{height:30px;}
+/*! CSS Used keyframes */
+@keyframes bounce{15%{transform:translateY(0);box-shadow:0px 0px 0px 0px transparent;}35%{transform:translateY(-35%);box-shadow:0px 8px 5px -5px rgba(0,0,0,0.25);}45%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}55%{transform:translateY(-20%);box-shadow:0px 5px 4px -4px rgba(0,0,0,0.25);}70%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}80%{transform:translateY(-10%);box-shadow:0px 4px 3px -3px rgba(0,0,0,0.25);}90%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}95%{transform:translateY(-2%);box-shadow:0px 2px 3px -3px rgba(0,0,0,0.25);}99%{transform:translateY(0%);box-shadow:0px 0px 0px 0px transparent;}100%{transform:translateY(0);box-shadow:0px 0px 0px 0px transparent;}}
+}
+.kore-order-now{
+  border: none;
+}
+.kore-advantage-block h5{
+  line-height: inherit;
+}
+@media (max-width: 767px){
+  .kore-advantage-item h3{
+    word-break: break-all;
+  }
+  .kore-advantage-block h2{
+    font-size: larger !important;
+  }
+  .kore-advantage-block h5{
+    font-size: large !important;
+  }
+}
+@media (min-width: 767px){
+.right-content img{
+      width: 50% !important;
+}
+.kore-product-name a{
+  text-align: initial !important;
+}
+.kore-product-prices{
+  justify-content: inherit !important;
+}
+.countdown{
+  text-align: inherit !important;
+}
+.countdown .label{
+  left: 0px !important;
+}
+.countdown .label-hh {
+    left: 5px !important;
+}
+}
+</style>
+<div class="kore">
+<div class="kore-body">
+<div class="announcement-bar">
+<p class="announcement-bar__message">UP TO 50% OFF</p>
+</div>
+<a href="#kore-product"> <img src="https://cdn.shopify.com/s/files/1/0597/1663/2637/files/1_cd301156-7871-434f-8527-c82f378c4875.jpg?v=1715845063" style="width: 100%;" class="img-responsive center-block hidden-xs"> <img src="https://cdn.shopify.com/s/files/1/0597/1663/2637/files/94d53239037849179c79285840325f32.jpg?v=1715845063" style="width: 100%;" class="img-responsive center-block visible-xs"> </a>
+<div style="background: #4fbae8;" class="kore-wysiwyg-content">
+<div class="container"><img src="https://cdn.shopify.com/s/files/1/0225/4818/5162/files/ia_33.png?v=1618388544" class="img-responsive center-block">
+<p style="color: #fff;">"This item is great for removing paint from all types of dips and paint from scratches. I highly recommend it!"</p>
+<!-- <p><span style="color: #fff;">--Cynthia Thompson</span></p> --></div>
+</div>
+<div class="kore-advantage-block">
+<div class="container">
+<h2>BEST CHOICE FOR CAR REPAIR</h2>
+<h5>A MUST FOR EVERY FAMILY</h5>
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/1PROFESSIONELL.png?v=1682494514" class="img-responsive center-block">
+<h3>PROFESSIONAL</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/2LATT-OCH-SNABBT.png?v=1682494514" class="img-responsive center-block">
+<h3>SIMPLE AND FAST</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/3SAKERHETSMATERIAL.png?v=1682494515" class="img-responsive center-block">
+<h3>SAFETY MATERIALS</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/4ANVANDS-I-STOR-UTSTRACKNING.png?v=1682494514" class="img-responsive center-block">
+<h3>MULTIFUNCTIONAL</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row kore-product-info">
+<div class="col-xs-12 col-sm-6 kore-product-left">
+<div id="gallery">
+<div id="gallery_output"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/7_1400x_c9eccc51-f023-4a53-b6cb-64028a249eda_800x.jpg?v=1682391011" class="img-responsive" id="img1"></div>
+<div id="gallery_nav"><a rel="img1"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/7_1400x_c9eccc51-f023-4a53-b6cb-64028a249eda_800x.jpg?v=1682391011" class="img-responsive"></a> <a rel="img2"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/MightyCarScratchRemoverSetL4-louie_9b30c1b5-34fa-4afa-80f1-7250b6ce753d_800x.jpg?v=1682391011" class="img-responsive"></a> <a rel="img3"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/MightyCarScratchRemoverSetL7-louie_f31ac224-b376-4a06-9d18-5a52eebd1e35_800x.jpg?v=1682391011" class="img-responsive"></a> <a rel="img4"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/3_1400x_bc9c48c0-09b1-4719-af48-a04f8627aaf5_800x.jpg?v=1682391011" class="img-responsive"></a> <a rel="img5"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/products/8_1400x_3a5cfa33-efd8-448e-bf7f-3b2aa0764993_800x.jpg?v=1617773913" class="img-responsive"></a> <a rel="img6"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/1_d82af7ab-45ea-4e0f-8090-e03a4db7eb4b_800x.jpg?v=1682391004" class="img-responsive"></a> <a rel="img7"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/2_abad4ed1-42b0-458a-b7fb-f89a24bc1150_800x.jpg?v=1682391004" class="img-responsive"></a> <a rel="img8"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/3_98b5277a-cf56-4d92-879e-f4bf0d8c15c6_800x.jpg?v=1682391004" class="img-responsive"></a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 kore-product-right">
+<div>
+<h1 style="font-family: 'helveticaneue-light';" class="kore-product-name"><strong><a>Car Scuff Innovative Remover</a></strong></h1>
+<div class="kore-product-prices"><span class="kore-product-compare-price">$11.76</span><span class="kore-product-price">$10</span><span class="kore-discount"><span class="kore-percent">UP TO 50% OFF</span></span></div>
+<div class="clearfix"></div>
+<a style="background: #4fbae8;" href="#kore-product" class="kore-product-button">YES! I WANT TO ORDER NOW</a></div>
+<h1 class="alt-2"><time datetime="PT01H32M45S" class="countdown"><span class="item item-hh"><span class="hh-1">0</span><span class="hh-2">1</span><span class="label label-hh">Hours</span></span><span class="separator">:</span><span class="item item-mm"><span class="mm-1">3</span><span class="mm-2">2</span><span class="label label-mm">Minutes</span></span><span class="separator">:</span><span class="item item-ss"><span class="ss-1">4</span><span class="ss-2">5</span><span class="label label-ss">Seconds</span></span></time></h1>
+<!-- <p class="kore-text-sale">Utsalgspris Tilbake til 199 kr etter sluttsalg</p> -->
+<p class="kore-text-tip">🔒 Pay 100% securely<br>📦 Paypal, Credit card, Apple Pay, Google Pay<br>✉️ 30 days money back guarantee</p>
+<div class="right-content"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/1CHHTZ0012023.4.4_480x480.gif?v=1680578583" class="img-responsive center-block"> <img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/2CHHTZ0012023.4.4_480x480.gif?v=1680578598" class="img-responsive center-block">
+<ul>
+<li>CAR SCUFF INNOVATIVE REMOVER designed to restore original luster and color. Its activity decomposition grind sand, filler ingredients can quickly fill after decomposition and repair paint scratches. Easy to remove the oxide film on the surface and stubborn dirt, paint spots, burr, and color and luster lacquer layer again. This Car Scratch Repair Body Compound Can rapidly remove the paint of all kinds of deep and orange peel and paint primer of scratches.</li>
+<li>Car Scuff Innovative Remover is the NEWEST INNOVATIVE INSTANT FIX SOLUTION to ANY SCUFFS, SCRATCHES, SWIRLS, or MARKINGS in your CAR. It is SPECIALLY FORMULATED with PREMIUM INGREDIENTS that EFFECTIVELY and INSTANTLY SAVES your CAR from SCRATCHES and RESTORE its GLOSS and SHINE to BRING BACK its ORIGINAL BRILLIANCE.</li>
+<li>It is SUPER SAFE to your CAR’S COAT as it DOES NOT CONTAIN any WAX FORMULA, so it is GUARANTEED that the SCRATCHES are POLISHED and NOT FILLED IN. It can EASILY and QUICKLY ERASE the YEARS of WEAR and TEAR from your vehicle’s paint as the COMPOUND COMBINES a MEDIUM-CUTTING with FINE FINISHING.</li>
+<li>Car Scuff Innovative Remover has PREMIUM QUALITY CHEMICALS that has NO UNNECESSARY COLOR DYE or SCENTS. It comes with a SPONGE that is BEST PARTNER to the SOLUTION for a VISIBLE and EFFECTIVE RESULT. It is SUPER SAFE to USE and PROTECTS your car’s ORIGINAL PAINT. It is GUARANTEED SAFE to any CLEARCOAT, SINGLE STAGE, and MULTI-STAGE PAINT. It is SUPER EASY and CONVENIENT to USE.</li>
+</ul>
+</div>
+<div class="kore-payment-image"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/pay.png?v=1640316601" class="img-responsive center-block"></div>
+</div>
+</div>
+</div>
+<div class="container"><!-- <div class="gc-headline-divider-container">
+<div class="gc-divider-style-solid"></div>
+<div class="headline-divider-block">
+<h4>RIKTIG MÅTE Å BRUKE</h4>
+</div>
+<div class="gc-divider-style-solid"></div>
+</div> --> <!-- <div class="row gc-brand-list">
+<div class="col-xs-12"><img class="img-responsive center-block" src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/banner03_6a634ce5-a72e-42a8-9111-26dc549ecafe.jpg?v=1681191499" /></div>
+</div> --></div>
+<div class="container">
+<div style="margin-bottom: 30px;" class="row"><img src="https://cdn.shopifycdn.net/s/files/1/0519/0723/1915/files/banner02_74c402b8-1f09-4547-a15a-903ba1636333.jpg?v=1682493995" class="img-responsive center-block"></div>
+</div>
+<div class="container">
+<div style="margin-bottom: 30px;" class="row"><img src="https://cdn.shopify.com/s/files/1/0597/1663/2637/files/2_eca37d11-6de7-4b84-9bf7-99db3f7723df.jpg?v=1715845063" class="img-responsive center-block"></div>
+</div>
+<div class="kore-buy" id="kore-product">
+<div class="container">
+<h3 style="font-weight: 600;" class="kore-product-title">BUY MORE, SAVE MORE!</h3>
+<div class="row new-chamfer  hidden-xs">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #db2e2e;">BEST SELLER</h2>
+<h3>3 PCS</h3>
+<h4 style="color: #db2e2e;">35% OFF</h4>
+<figure><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/3_daafcc54-9964-4477-8f8d-f07e68a41e90.jpg?v=1681191883" class="img-responsive center-block"></figure>
+<p><img>31.1K Reviews</p>
+<h5 class="price"><del>$29.99</del><span>$19.99</span></h5>
+<!-- <h5 class="each-pair">99,5kr/ HVER， SPAR SAMLET 200kr</h5> -->
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="41367929552957"> <a class="kore-plus_btn"></a></div>
+<button style="background: #db2e2e;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('41367929552957')">Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #4fbae8;">Best Value</h2>
+<h3>5 PCS</h3>
+<h4 style="color: #4fbae8;">50% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0597/1663/2637/files/S.png?v=1715850472" class="img-responsive center-block"></figure>
+<p><img>21.4K Reviews</p>
+<h5 class="price"><del>$59.98</del><span>$29.99</span></h5>
+<!-- <h5 class="each-pair">149kr //HVER， SPAR SAMLET 50 kr</h5> -->
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="41367929585725"> <a class="kore-plus_btn"></a></div>
+<button style="background: #4fbae8;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('41367929585725')">Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #4fbae8;">HOT SALE</h2>
+<h3>1 PC</h3>
+<h4 style="color: #4fbae8;">15% OFF</h4>
+<figure><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/1_d92a9bab-22be-49c7-b7c9-4bc71c900b62.jpg?v=1681191882" class="img-responsive center-block"></figure>
+<p><img>25.6K Reviews</p>
+<h5 class="price"><del>$11.76</del><span>$10</span></h5>
+<!-- <h5 class="each-pair">86.3kr /HVER， SPAR SAMLET 280kr</h5> -->
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity" variant_id="41367929520189"> <a class="kore-plus_btn"></a></div>
+<button style="background: #4fbae8;" class="kore-order-now kore-buttonBounce kore-checkout" onclick="add_to_cart('41367929520189')">Order Now</button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+
+
+</div>
+<div class="offersWrapper  visible-xs">
+<div class="offerbox box-checked"><input data-type="shopify" value="41367929552957" data-id="41367929552957" checked="checked" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/3_daafcc54-9964-4477-8f8d-f07e68a41e90.jpg?v=1681191883" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>3 PCS</h1>
+<p><span>35% OFF</span><b>$19.99</b><del>$29.99</del></p>
+<input value="41367929552957" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+<div class="ribbon green">Best Seller</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="41367929585725" data-id="41367929585725" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0597/1663/2637/files/S.png?v=1715850472" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>5 PCS</h1>
+<p><span>50% OFF</span><b>$29.99</b><del> $59.98</del></p>
+<input value="41367929585725" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+<div class="ribbon green">Best Value</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="41367929520189" data-id="41367929520189" class="offer-checked" type="checkbox">
+<figure style="width: 170px;"><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/1_d92a9bab-22be-49c7-b7c9-4bc71c900b62.jpg?v=1681191882" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>1 PC</h1>
+<p><span>15% OFF</span><b>$10</b><del>$11.76</del></p>
+<input value="41367929520189" type="hidden" class="kore-variants">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="clearfix"><a style="background: #1d2740;" href="/cart/41367929552957:1" class="kore-order-now kore-buttonBounce kore-mobile-order"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now</a></div>
+</div>
+</div>
+</div>
+<div class="kore-customer-review">
+<div class="container">
+<h2 style="font-weight: 600;">Customers who bought Innovative car scratch remover</h2>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/1_e263171a-dbf4-4a13-acd1-95462f6c07d4.jpg?v=1681193388" class="img-responsive center-block"> <div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" /></div>
+<p>This product is a game-changer! I had some deep scratches on my car that were driving me crazy, but this remover did the trick. It's easy to use and the results are amazing. Highly recommend it to anyone dealing with scuffs or scratches!</p>
+</div></div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/2_facdc244-3b8a-42cc-9fe4-3c50441469cd.jpg?v=1681193388" class="img-responsive center-block"> <div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" /></div>
+<p>Wow, I'm impressed! This car scuff remover worked wonders on my vehicle. It's so simple and fast to use, and the results are professional-grade. I feel like I just got a brand new paint job. Definitely a must-have for every car owner!</p>
+</div></div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/3_60fe6cc3-8ca2-4143-8a9c-3489501f5077.jpg?v=1681193388" class="img-responsive center-block"> <div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" /></div>
+<p>I was skeptical at first, but this product exceeded my expectations. It effortlessly removed stubborn dirt and scratches from my car's surface, leaving it looking brand new. Plus, the safety materials ensure that my car's coat is protected. I'm definitely keeping this innovative remover handy for any future touch-ups!</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="background: url('https://cdn.shopifycdn.net/s/files/1/0569/2846/9164/files/cb9940b3a43e6ba6246f18015b17ac5a_c41bd2c6-02dc-4e3a-a5db-a626f1cc0764.jpg?v=1681193465') center/cover no-repeat;" class="kore-special-promo">
+
+
+<div class="container">
+<h2><span>SPECIAL PROMOON OFFER NOW!</span></h2>
+<h3>ORDER TODAY AND RECEIVE A 50% DISCOUNT</h3>
+<p>This discount is valid for a limited time only.<br>Quantities are limited - act now!</p>
+<a class="kore-banner-btn snow-banner-btn" href="#kore-product" style="background: #4fbae8;"><i class="fa fa-angle-right"></i>Claim Your 50% Discount</a>
+<ul>
+<li>
+<strong>Guaranteed High Quality</strong>We back up all our products with a full money-back guarantee.</li>
+<li>
+<strong>No-Hassle Returns</strong> If you are not 100% satisfied with your order, return it within 30 days for a full refund.</li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul class="linklist">
+                
+                <li><a href="/pages/about-us">About Us</a></li>
+                
+                <li><a href="/pages/contact-us">Contact us</a></li>
+                
+                <li><a href="/pages/faqs">FAQs</a></li>
+                
+                <li><a href="/pages/payment-policy">Payment Policy</a></li>
+                
+              </ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">PAYMENT METHODS</h3>
+<div><span> <img class="credit-cards-image" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_b4f1d50f-dd0d-4901-a433-5a9a1772f239.png?v=1697771243"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GUARANTEE</h3>
+<p class="footer-guarantee-content">30-Day money-back guarantee</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>// <![CDATA[
+function padding(num,length){if((num+"").length>=length){return num;}
+return padding("0"+num,length)}
+setInterval(function(){var s=parseInt($(".ss-1").html()+$(".ss-2").html());var m=parseInt($(".mm-1").html()+$(".mm-2").html());var h=parseInt($(".hh-1").html()+$(".hh-2").html());if(s>0){var ns=padding(s-1,2);$(".ss-1").html(ns.toString().substr(0,1));$(".ss-2").html(ns.toString().substr(-1));}else{$(".ss-1").html(5);$(".ss-2").html(9);var ms=padding(m-1,2);$(".mm-1").html(ms.toString().substr(0,1));$(".mm-2").html(ms.toString().substr(-1));}
+if(m=0){$(".mm-1").html(5);$(".mm-2").html(9);var hs=padding(h-1,2);$(".hh-1").html(hs.toString().substr(0,1));$(".hh-2").html(hs.toString().substr(-1));}},1000);
+// ]]>
+  function add_to_cart(variant_id){
+       
+       
+          var quantity=$("input[variant_id='"+variant_id+"']").val();
+          location.href="/cart/"+variant_id+":"+quantity
+       
+  }
+  $(document).ready(function() {
+        //  $("#gallery_output img").not(":first").hide();
+        if ($("#gallery_nav a").length > 0) {
+          $("#gallery_nav a:first").addClass("on")
+          $("#gallery_nav a").each(function (i) {
+            $(this).on("click", function () {
+              $("#gallery_output img").attr("src", $(this).find("img").attr("src"));
+              $("#gallery_nav a").removeClass("on");
+              $(this).addClass("on")
+            })
+          })
+        }
+      });
+// ]]></script>
