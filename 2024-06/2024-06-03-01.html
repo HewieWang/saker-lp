@@ -1,0 +1,623 @@
+<style>
+a:not([disabled]):hover,
+  a:focus {
+    color: #b47c07;
+  }
+  .topStrip {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #3fbf7c;
+  }
+  .jar-banner a.order-btn {
+    width: auto;
+  }
+  a.order-btn {
+    background-color: #3fbf7c;
+  }
+  .sec1-list li p {
+    word-break: break-word;
+    align-items: flex-start !important;
+  }
+  .sec1-list li span {
+    height: 50px;
+  }
+  ul.sec1-list li img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  ul.sec1-list li span,
+  ul.s2-list span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  ul.sec1-list li p,
+  ul.s2-list p {
+    font-size: 16px;
+  }
+  ul.s2-list li {
+    width: 24%;
+  }
+  @media (max-width: 767px) {
+    ul.s2-list li {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-20 {
+      width: 20%;
+    }
+  }
+  ul.s2-list li img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+  }
+  .strip-bg img {
+    margin-bottom: 0;
+  }
+  .kore-inner h3 {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef4eb;
+    font-size: 16px !important;
+    word-break: break-word !important;
+  }
+  .kore-inner h4 {
+    font-size: 30px;
+    background-color: #fef4eb;
+  }
+  .overall-rating {
+    width: 21%;
+  }
+  .top-fix-bar {
+    margin-bottom: 105px;
+  }
+  .top-bar {
+    margin-top: 33px;
+    height: 90px;
+  }
+  @media only screen and (max-width: 767px) {
+    .logos {
+      max-width: 150px !important;
+    }
+    .jar-header .container {
+      justify-content: flex-start !important;
+    }
+    .overall-rating {
+      width: 100% !important;
+    }
+    .vid-sec img {
+      margin-top: 0 !important;
+    }
+    .top-bar {
+      height: 60px;
+    }
+    .kore-inner h3 {
+      min-height: 50px;
+      font-size: 15px !important;
+    }
+  }
+  .es_text {
+    margin-left: 10px;
+  }
+  /*! CSS Used from: https://m.gluckaro.de/core.min.css */
+  .ql-font-ebgaramond {
+    font-family: "EB Garamond";
+  }
+  .paragraph {
+    width: 100%;
+    font-size: 18px;
+    word-break: break-word;
+  }
+  .paragraph .paragraph-inner {
+    width: 100%;
+  }
+  .paragraph p {
+    font-size: 20px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8
+      list-9;
+  }
+  .paragraph * {
+    line-height: 35px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  .element-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: inherit;
+    min-height: 0;
+  }
+  .section.full .section_row {
+    max-width: 1170px;
+  }
+  .section .section_row {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (max-width: 600px) {
+    .no-mobile {
+      display: none !important;
+    }
+    .section .section_row {
+      flex-direction: column;
+    }
+    .section .section_row .row-column {
+      width: 100% !important;
+    }
+  }
+  .row-column {
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+  }
+  /*! CSS Used from: Embedded */
+  .paragraph p {
+    font-family: "Lato", sans-serif !important;
+  }
+  /*! CSS Used from: Embedded */
+  .el-43284 {
+    font-size: calc(22px + 8 * ((100vw - 320px) / 960));
+    text-align: justify;
+  }
+  @media screen and (min-width: 480px) {
+    .el-43284 {
+      font-size: calc(18px + 8 * ((100vw - 320px) / 960));
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .el-43284 {
+      font-size: 22px;
+      text-align: justify;
+    }
+  }
+  /*! CSS Used from: Embedded */
+  .el-530386 {
+    font-size: 22px;
+    text-align: justify;
+  }
+  @media only screen and (min-width: 767px) {
+    #use2 > div > div.hide-mob,
+    #reviews > div > div.hide-mob,
+    #verdicktes-magisches-reinigungstuch
+      > div.wsmenucontainer.clearfix
+      > div.container
+      > div {
+      display: flex;
+      justify-content: center;
+    }
+    .jar-header .container {
+      align-items: center;
+    }
+    a.nav-btn {
+      width: 158px !important;
+      background: #3fbf7c !important;
+    }
+    #sakerlp > div.strip-bg > div > p {
+      font-size: x-large;
+      font-weight: bold;
+    }
+  }
+  #es_buy > h3,
+  #reviews > div > p {
+    text-align: center;
+  }
+  .es_featured-label {
+    text-transform: uppercase;
+    width: 152px;
+    height: auto;
+    background: #ff3434;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -46px;
+    top: 6px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 20px 20px 10px 20px;
+  }
+  .comon-bdr {
+    background: #c480a8 !important;
+  }
+  .es_text h3 {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .es_btn-order:before {
+    content: none;
+  }
+</style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">Free Shipping over $49.99!</p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img src="https://www.blestep.com/cdn/shop/files/350-120_230x.png?v=1713925582" style="max-width: 200px;" class="logos"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#use">Use</a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+</div>
+<a href="#es_buy" class="nav-btn ignore-scroll show-desk">BUY NOW</a>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div class="dl-trigger" id="mobMenuBtn">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#use">Use</a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;"><a href="#es_buy" style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;"></a> <img style="width: 100%;" class="hidden-xs" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/banner1.jpg?v=1692580485" alt=""> <img style="width: 100%;" class="visible-xs" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/c8577a1df210126991a8c79837c61c3f.jpg?v=1692581751" alt=""></div>
+<div class="strip-bg">
+<div class="container"><!-- <h1 class="alt-2 show-mob">1h 32m 55s</h1> -->
+<p class="ftur-hdng" style="background: unset; line-height: 30px;">We are happy to offer you a super glue that is a must-have for your home.</p>
+</div>
+</div>
+<div class="section1" id="overview">
+<div class="container">
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/banner2.jpg?v=1692580795" alt=""></div>
+<ul class="sec1-list">
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/2_98501886-9795-49a3-80fe-6a9437ec8c5d.png?v=1692581044" alt="">
+<div class="clearall"></div>
+<span>High Quality</span>
+<p>Buy-Puto-Ethyl-based cyanoacrylate adhesive</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/3_f33aac13-c212-4caa-9dbe-98f22a41058c.png?v=1692581045" alt="">
+<div class="clearall"></div>
+<span>Fast-Setting</span>
+<p>Dries in 10-20 seconds.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/4_88f3a9c8-c177-4cdc-8ae2-8f80e5899d74.png?v=1692581054" alt="">
+<div class="clearall"></div>
+<span>Easy to Use</span>
+<p>No clamping required.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/5_1d763557-9337-4a2a-9cb2-836c3838fcd5.png?v=1692581058" alt="">
+<div class="clearall"></div>
+<span>Safe to Use</span>
+<p>Prevents messy runoff and sticky hands.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/1_1dce9138-dc50-4bac-b66e-ff9f4433b349.png?v=1692581064" alt="">
+<div class="clearall"></div>
+<span>Wide Application</span>
+<p>Bonds anything such as wood, metal, ceramic, plastics etc.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If They're Still in Stock</span></a>
+<p class="text-day">30 Day Money Back Guarantee</p>
+</div>
+</div>
+</div>
+<!-- <div class="strip-bg" style="padding-top: 0px;">
+    <div class="container">
+    <p class="ftur-hdng">1080p Magnetische WiFi-Minikamera</p>
+    <img src="https://cdn.shopify.com/s/files/1/0298/7930/4276/files/4_8db3af14-5fe1-4393-9662-e14ad8ee4e5f.jpg?v=1669110813" alt="" /></div>
+    </div> -->
+<div class="section2" id="features">
+<div class="container">
+<p class="common-head">It's easy to use, really must have for your DIY tools.</p>
+<div class="comon-bdr"></div>
+<p class="common-para">Super Glue forms the strongest bonds on clean breaks of non-porous materials. Super glue for wood, ceramics, fingernails, metal, ceramics, plastic, porcelain, jewelry and more. The quick-drying formula sticks instantly and cures in 10-30 seconds; paintable and sandable.</p>
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/banner3.jpg?v=1692581474"></div>
+<ul class="s2-list">
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/2_a7147414-4a87-4e68-baf3-0c048e471de5.jpg?v=1692581564" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/3_77c15ef0-667d-415f-b67c-517c3832793d.png?v=1692581597" class="s2-bnr-icn"> <span>Welding High-Strength</span>
+<p>Keep your items pristine by gluing their loose ends back to their normal shape.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/3_2648951b-ae73-440a-b7f5-d21e511b23d8.jpg?v=1692581566" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/1_7709de75-524d-4627-a209-572ddcb5cc74.png?v=1692581599" class="s2-bnr-icn"> <span>Impact Resistant</span>
+<p>Specialized toughened formula that stands up to shock, vibration, and temperature extremes.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/4_65d3df6b-ce31-45e0-b008-f9bf8d8193ec.jpg?v=1692581569" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/4_45aa4270-be07-4727-8481-0c9e4f66c633.png?v=1692581605" class="s2-bnr-icn"> <span>Instant Bond</span>
+<p>This oil glue can reach the maximum bonding strength within 15 to 30 seconds, the glue is soft, strong stickiness, and still has elasticity after drying.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/1_054a6c72-965e-4058-9d81-fafeae5a3e8d.jpg?v=1692581573" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/2_f6eb38b3-cce1-422d-a1b7-1d67e5e402c0.png?v=1692581609" class="s2-bnr-icn"> <span>Precise Application</span>
+<p>Needle tip nozzle, precise application, no dripping, improved sealing. The extra-long tip makes it easy to use on hard-to-reach surfaces.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If They're Still in Stock</span></a>
+<p class="text-day">30 Day Money Back Guarantee</p>
+</div>
+</div>
+</div>
+<!-- <div id="use" class="section4">
+<div class="container">
+<p class="common-head">Multifunktional und Geldsparend</p>
+<div class="comon-bdr"></div>
+<p class="common-para">Funktioniert auf einer Vielzahl von Oberflächen, einschließlich Metall, Leder, Kork, Keramik, Holz, Spanplatten, Papier, Pappe, Gummi und den meisten Kunststoffen. Kann auf ebenen, senkrechten, unebenen und Überkopfflächen aufgetragen werden.</p>
+</div>
+</div> -->
+<div class="section4" id="use">
+<div class="container">
+<p class="common-head">Why is the super glue the best for your choice?</p>
+<div class="comon-bdr"></div>
+<div class="clearall"></div>
+<div class="vid-sec"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/banner4.jpg?v=1692581944"></div>
+</div>
+</div>
+<div class="section444 section" style="padding-bottom: 40px;">
+<div class="container">
+<div data-v-6c85cc04="" data-v-9b8eab12="" data-eid="637497" class="section_row no-mobile" style="color: #303030; font-size: 14px; text-align: initial; margin: 20px 0px; padding: 0px; background-size: auto; background-repeat: no-repeat; border: 2px solid #c5c7d2;">
+<div data-v-796cd32d="" data-v-6c85cc04="" class="row-column" style="width: 50%;">
+<div data-v-dfbf157a="" data-v-796cd32d="" data-eid="43284" class="element-wrapper">
+<div data-v-dfbf157a="" class="paragraph el-43284" style="font-family: 'EB Garamond'; border-top: none #c5c7d2; border-left: none #c5c7d2; border-right: 2px solid #c5c7d2; border-bottom: none #c5c7d2; border-radius: 0px; line-height: 0.1; margin: 0px; padding: 10px; text-shadow: transparent 0px 0px 0px;">
+<div class="paragraph-inner">
+<p><strong>Our super glue</strong></p>
+<p>✅ Fast drying in 10-45 seconds.</p>
+<p>✅ Oil based glue</p>
+<p>✅ Without dripping and weeping.</p>
+<p>✅ Strong bond</p>
+</div>
+</div>
+</div>
+</div>
+<div data-v-796cd32d="" data-v-6c85cc04="" class="row-column" style="width: 50%;">
+<div data-v-dfbf157a="" data-v-796cd32d="" data-eid="530386" class="element-wrapper">
+<div data-v-dfbf157a="" class="paragraph el-530386" style="border-radius: 0px; line-height: 0.1; margin: 0px; padding: 10px; text-shadow: transparent 0px 0px 0px; border: 0px solid #c5c7d2;">
+<div class="paragraph-inner">
+<p><strong>Others glue</strong></p>
+<p>❌ Slow drying</p>
+<p>❌ Harden or become brittle over time.</p>
+<p>❌ Will drip and ooze.</p>
+<p>❌ Wears out after repeated washing</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If They're Still in Stock</span></a>
+<p class="text-day">30 Day Money Back Guarantee</p>
+</div>
+</div>
+</div>
+<div class="section5">
+<div class="container" id="es_buy">
+<h3 class="center-h2" style="padding-bottom: 20px;">BUY MORE, SAVE MORE</h3>
+<div class="row es_variant_row hide-mob">
+<div class="col-xs-12 col-sm-6 col-md-20">
+<div class="kore-inner">
+<h2 style="background: #ffc40f;">Best Seller</h2>
+<h3>6 PCS</h3>
+<h4>50% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxWL7vACfDDNAyDNAyCwp_MQvJhUEcME1xA3Z4DsAA_800_800.jpg?v=1692582615"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.8K Reviews</p>
+<h5 class="price"><del>$59.99</del><span>$29.99</span></h5>
+<input class="kore-variants" type="hidden" value="49418253074741">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn"></a></div>
+<a class="kore-order-now kore-buttonBounce kore-checkout" href="/cart/49418253074741:1" style="background: #ffc40f;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-20">
+<div class="kore-inner">
+<h2 style="background: #ffc40f;">Best Seller</h2>
+<h3>4 PCS</h3>
+<h4>41% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxFIiipHfDDNAyDNAyCwuiLTnY6gw1gE1xA3Z4DsAg_800_800.jpg?v=1692582618"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.6K Reviews</p>
+<h5 class="price"><del>$41.99</del><span>$24.99</span></h5>
+<input class="kore-variants" type="hidden" value="49418253041973">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn"></a></div>
+<a class="kore-order-now kore-buttonBounce kore-checkout" href="/cart/49418253041973:1" style="background: #ffc40f;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-20">
+<div class="kore-inner">
+<h2 style="background: #3fbf7c;">Hot Sale</h2>
+<h3>3 PCS</h3>
+<h4>43% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJwew521ivDDNAyDNAyCwzq9Iif9hfgIE1xA3Z8DsAA_800_800.jpg?v=1692582622"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.3K Reviews</p>
+<h5 class="price"><del>$37.99</del><span>$21.99</span></h5>
+<input class="kore-variants" type="hidden" value="49418253009205">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn"></a></div>
+<a class="kore-order-now kore-buttonBounce kore-checkout" href="/cart/49418253009205:1" style="background: #3fbf7c;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-20">
+<div class="kore-inner">
+<h2 style="background: #3fbf7c;">Hot Sale</h2>
+<h3>2 PCS</h3>
+<h4>31% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJwxGJvUlXDDNAyDNAyCw26QCPHYOikUE1xA3Z0DsAA_800_800.jpg?v=1692582626"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">18.4K Reviews</p>
+<h5 class="price"><del>$25.99</del><span>$17.99</span></h5>
+<input class="kore-variants" type="hidden" value="49418252976437">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn"></a></div>
+<a class="kore-order-now kore-buttonBounce kore-checkout" href="/cart/49418252976437:1" style="background: #3fbf7c;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-20">
+<div class="kore-inner">
+<h2 style="background: #3fbf7c;">Hot Sale</h2>
+<h3>1 PC</h3>
+<h4>19% OFF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxhjh3PUfDDNAyDNAyCwGxae8zC1hJsE1xA3Z4DsAQ_800_800.jpg?v=1692582630"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.1K Reviews</p>
+<h5 class="price"><del>$15.99</del><span>$12.99</span></h5>
+<input class="kore-variants" type="hidden" value="49418252943669">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn"></a></div>
+<a class="kore-order-now kore-buttonBounce kore-checkout" href="/cart/49418252943669:1" style="background: #3fbf7c;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Secured and Encrypted<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input type="checkbox" class="offer-check" checked="checked" data-id="8126969250009" data-variant="49418253074741" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxWL7vACfDDNAyDNAyCwp_MQvJhUEcME1xA3Z4DsAA_800_800.jpg?v=1692582615">
+<div class="es_text">
+<h2 class="es_variant_title">6 PCS</h2>
+<h3>50% OFF</h3>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price"> $59.99</label> <label class="es_total_price">$29.99</label></div>
+</div>
+<label class="es_featured-label" style="background: #e51a1a; color: #fff;">Best Seller</label></div>
+<div class="offerbox"><input type="checkbox" class="offer-check" data-id="8126969250009" data-variant="49418253041973" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxFIiipHfDDNAyDNAyCwuiLTnY6gw1gE1xA3Z4DsAg_800_800.jpg?v=1692582618">
+<div class="es_text">
+<h2 class="es_variant_title">4 PCS</h2>
+<h3>41% OFF</h3>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price"> $41.99</label> <label class="es_total_price">$24.99</label></div>
+</div>
+<label class="es_featured-label" style="background: #e51a1a; color: #fff;">Best Seller</label></div>
+<div class="offerbox"><input type="checkbox" class="offer-check" data-id="8126969250009" data-variant="49418253009205" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJwew521ivDDNAyDNAyCwzq9Iif9hfgIE1xA3Z8DsAA_800_800.jpg?v=1692582622">
+<div class="es_text">
+<h2 class="es_variant_title">3 PCS</h2>
+<h3>43% OFF</h3>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price"> $37.99</label> <label class="es_total_price">$21.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-check" data-id="8126969250009" data-variant="49418252976437" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJwxGJvUlXDDNAyDNAyCw26QCPHYOikUE1xA3Z0DsAA_800_800.jpg?v=1692582626">
+<div class="es_text">
+<h2 class="es_variant_title">2 PCS</h2>
+<h3>31% OFF</h3>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price"> $25.99</label> <label class="es_total_price">$17.99</label></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-check" data-id="8126969250009" data-variant="49418252943669" data-type="shopify"> <img class="es_product_img" src="https://cdn.shopify.com/s/files/1/0747/4623/3110/files/lQDPJxhjh3PUfDDNAyDNAyCwGxae8zC1hJsE1xA3Z4DsAQ_800_800.jpg?v=1692582630">
+<div class="es_text">
+<h2 class="es_variant_title">1 PC</h2>
+<h3>19% OFF</h3>
+<div class="kore-qty"><a class="kore-minus_btn kore-minus_btn-mob"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1"> <a class="kore-plus_btn kore-plus_btn-mob"></a></div>
+<div class="pricing-info" style="float: left; clear: both;"><label class="es_old_price"> $15.99</label> <label class="es_total_price">$12.99</label></div>
+</div>
+</div>
+<div class="clearfix"><a class="es_btn es_btn-order order-now-btn mobile-checkout" data-num="1" data-id="" data-variant="" data-type="shopify" style="height: 50px; margin-bottom: 30px; padding-top: 10px;"><span>BUY NOW</span></a></div>
+</div>
+</div>
+</div>
+<div class="section6" id="reviews">
+<div class="container">
+<p class="common-head">What are our customers saying?</p>
+<!-- <p class="common-para">Sehen Sie, was Kunden über ihre Handyshalterung Mit Daumen Hoch zu sagen haben</p> --> <!-- <div class="comon-bdr bdr-bg"></div> -->
+<div class="clearall"></div>
+<div class="reviewblk">
+<div class="ratingBox">
+<p>4.8</p>
+<span>Out of 5.0</span></div>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/rating-line.png?v=1660804534" class="ratingImg">
+<div class="overall-rating">Overall rating  <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692"></div>
+<div class="cs-percent"><span>98%</span><br> of customers would buy Reichwahl again & recommend it to a friend.</div>
+</div>
+<div class="testiBox">
+<div class="testi-row"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/25d41d10d67d27f906586b834141a388.png?v=1660791596" class="testi-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="testi-star">
+<p class="testi-para">I've been struggling with a homemade plastic bird bath for months. Any glue or sealant I used was ineffective in attaching the base to the bowl. It took one application of several small drops of this glue and my problem was solved! I've also used it to attach metal hardware to the inside of a wooden cabinet door. It worked like magic and stuck to all 3 surfaces with no problem!</p>
+<p class="usr-name">Nikolas R.</p>
+</div>
+<div class="testi-row"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1652076675-62761514173743fa009fe133682106ef.webp?v=1660791596" class="testi-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="testi-star">
+<p class="testi-para">I have a plastic portable bathtub. The edges are made of flexible rubber. Unfortunately, one of the bottom edges had developed a slight tear. First I used duck tape which was supposed to be "the thing" to put back everything that was broken back together. ;) But that didn't really last. Eventually I got a few of these, applied some to the crack overnight and voila, the next day everything was fine. Absolutely worth every euro.</p>
+<p class="usr-name">Turner M.</p>
+</div>
+<div class="testi-row"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1651888512-3.webp?v=1660791596" class="testi-imgs">
+<div class="clearall"></div>
+<img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/star.png?v=1660804692" class="testi-star">
+<p class="testi-para">This stuff is amazing! I've been buying little super glues/crazy glue tubes for decades; I will never buy one again. This glue is superior in every way. First, the result is not brittle; it has an almost undetectable amount of give, meaning what you just glued won't break again as easily (as with regular super glue). Second, these tubes are truly reusable; You can use them again and again. (They don't dry out and solidify and become unusable like normal super glue tubes.)</p>
+<p class="usr-name">Jason H.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div id="ctabtn-mob" style="position: fixed;"><a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BUY NOW <span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">*If They're Still in Stock</span></a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul>
+                
+                <li><a href="/pages/about-us">About Us</a></li>
+                
+                <li><a href="/pages/contact">Contact Us</a></li>
+                
+                <li><a href="/pages/faqs">FAQs</a></li>
+                
+                <li><a href="/pages/terms-and-conditions">Terms and Conditions</a></li>
+                
+                <li><a href="/pages/intellectual-property-rights">INTELLECTUAL PROPERTY RIGHTS</a></li>
+                              
+              </ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">PAYMENT METHODS</h3>
+<div><span> <img class="credit-cards-image" src="https://www.blestep.com/cdn/shop/files/2_aac3f4bc-00b8-4bbf-8f91-1facd9f3219e.jpg?v=1682042174"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GUARANTEE</h3>
+<p class="footer-guarantee-content">We offer a 30-day money-back guarantee</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
