@@ -1,0 +1,666 @@
+<style>
+.comment-item .text-3{    text-align: left;}
+a:not([disabled]):hover,
+  a:focus {
+    color: #000;
+  }
+
+  .topStrip {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #107acf;
+  }
+
+  .jar-banner a.order-btn {
+    width: auto;
+  }
+
+  a.order-btn {
+    background-color: #107acf;
+  }
+
+  .sec1-list li p {
+    word-break: break-word;
+    align-items: flex-start !important;
+  }
+
+  .sec1-list li span {
+    height: 50px;
+  }
+
+  ul.sec1-list li {
+    width: 24%;
+  }
+
+  ul.sec1-list li img {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  ul.sec1-list li span,
+  ul.s2-list span {
+    font-size: 18px;
+  }
+
+  ul.sec1-list li p,
+  ul.s2-list p {
+    font-size: 16px;
+  }
+
+  ul.s2-list li img {
+    position: relative;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+  }
+
+  .strip-bg img {
+    margin-bottom: 0;
+  }
+
+  .kore-inner h3 {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef4eb;
+    font-size: 16px !important;
+    word-break: break-word !important;
+  }
+
+  .kore-inner h4 {
+    font-size: 30px;
+    background-color: #fef4eb;
+  }
+
+  .overall-rating {
+    width: 21%;
+  }
+
+  .top-fix-bar {
+    margin-bottom: 105px;
+  }
+
+  .top-bar {
+    height: 100px;
+  }
+
+  ul.topMenu li a {
+    color: #fff;
+  }
+
+  .top-bar .countdown,
+  .top-bar .countdown .label {
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .overall-rating {
+      width: 100% !important;
+    }
+
+    .vid-sec img {
+      margin-top: 0 !important;
+    }
+
+    .top-bar {
+      height: 60px;
+    }
+
+    .kore-inner h3 {
+      min-height: 50px;
+      font-size: 15px !important;
+    }
+
+    ul.sec1-list li {
+      width: 100%;
+    }
+  }
+
+  .es_text {
+    margin-left: 10px;
+  }
+
+  /*renwu332*/
+  .logo {
+    margin-top: 0px;
+  }
+
+  .top-bar {
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 33px;
+  }
+
+  .jar-header .countdown .item {
+    border: 1px solid #fff;
+  }
+
+  .jar-header h1 {
+    bottom: 8px;
+  }
+
+  .jar-banner-a {
+    position: static;
+    margin-top: 33px;
+  }
+
+  .section11 {
+    background: #f5f5f7;
+  }
+
+  .section11 .container {
+    padding: 40px 15px;
+  }
+
+  .section11 .fir-img,
+  .section11 .sec-img {
+    margin: 8px;
+  }
+
+  .section11 .common-para {
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 16px;padding: 10px 0;
+  }
+
+  .section11 .section11-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .section11 .section11-right h5 {
+    margin: 8px 0;
+    color: #8ac551;
+  }
+
+  .section11 a.order-btn {
+    /*width: 340px;*/
+    margin-top: 10px;
+  }
+
+  .section-4 {
+    padding: 50px 0;
+    background: url(https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner05.png?v=1708653678)
+      center/cover no-repeat;
+  }
+ 
+  .section-row {
+    padding: 0 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .title {
+    padding: 20px 0;
+    font-size: 36px;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-weight: bold;
+  }
+
+  .section-4-comment {
+    padding: 30px 0px;
+    margin: 30px 0 0;
+  }
+
+  .section-4-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .section-row {
+    padding: 0 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .comment-item {
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 8px;
+  }
+
+  .comment-item .text-1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .comment-item .text-2 {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 5px 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .comment-item .text-3 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .section-4 .buy-btn {
+    width: 460px;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .section5 {
+    padding: 15px 0;
+  }
+
+  .section-4-comment {
+    padding: 30px 0px;
+    margin: 30px 0 0;
+  }
+.kore-order-now{
+  border: none;
+}
+@media (min-width: 480px){
+  #mypic{
+    padding-top: 40px;
+  }
+}
+  @media (max-width: 480px) {
+    #mypic{
+    padding-top: 150px;
+  }
+    .section-4 {
+    background: url(https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner05_98b06ac9-a48b-47a1-beb7-7708585c9588.png?v=1708653724)
+      center/cover no-repeat;
+  }
+    .top-bar {
+      top: 33px;
+      height: 60px;
+    }
+
+    .jar-banner-a {
+      margin-top: 93px;
+    }
+
+    .section11 .fir-img,
+    .section11 .sec-img {
+      margin: 8px 0px;
+    }
+
+    .section-4 {
+      padding: 0px 0;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .section-4-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .section11 .fir-img {
+      width: 40%;
+      margin: 0 8px;
+    }
+
+    .section11 .sec-img {
+      width: 42%;
+      margin: 20px 8px 0;
+    }
+
+    .section11 .section11-right {
+      width: 85%;
+    }
+
+    .section11 .section11-right .text-day {
+      text-align: left;
+      margin-left: 17%;
+    }
+
+    .video-back video {
+      max-width: 45% !important;
+      margin: 3% 0 10% 35% !important;
+    }
+
+    .video-back {
+      background: url(https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner_b505f482-ed2e-471a-b6de-c966e882f61f.jpg?v=1680585350)
+        center/cover no-repeat;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1000px) {
+    .jar-banner-a {
+      margin-top: 115px;
+    }
+  }
+
+  .section11 .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 900px) {
+    .jar-header {
+      background: unset;
+    }
+
+    .section11 .container {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+.kore-buttonBounce{animation:bounce 1.5s infinite;animation-timing-function:ease-in;transition:.2s;}
+.kore-order-now{color:#fff!important;background:#c73030;font-size:18px;margin-top:14px;border-radius:60px;font-weight:bold;display:inline-block;padding:13px 35px;margin-bottom:5px;border:none;cursor:pointer;}
+.fa_prepended{margin-right:10px;}
+.kore-order-now:hover{color:#fff;background:#c73030;}
+.kore-qty-box{display:flex;align-items:center;margin-top:5px;}
+input.kore-txtbox[type="text"]{width:55px;height:35px;border:1px solid #d7dbdb;text-align:center;font-size:14px;color:#333232;padding:0 5px;font-weight:900;float:left;display:block;border-radius:0;margin-bottom:0;}
+.offersWrapper{text-align:center;}
+.offerbox{display:flex;align-items:center;justify-content:left;margin:15px 0;padding:15px;border:1px solid rgba(0,0,0,.1);border-radius:5px;background:white;position:relative;overflow:hidden;}
+.offerbox-info{display:block;padding-left:15px;text-align:left;width:calc(100% - 125px);}
+.offerbox-info h1{font-size:16px;padding-bottom:5px;font-weight:bold;}
+.offerbox-info p{font-size:14px;color:#c82f31;}
+.offerbox-info p span{display:block;color:#333;padding-top:5px;padding-bottom:5px;}
+.offerbox-info p del{color:rgb(136,136,136);padding-left:5px;}
+.offerbox figure{width:100px;}
+.ribbon{color:#fff;font-size:11px;width:150px;text-align:center;background:#d32020;letter-spacing:1px;transform:rotate(55deg);box-shadow:0px 0px 8px rgba(0,0,0,0.3);position:absolute;z-index:90;top:25px;right:-45px;padding:5px 0!important;}
+.offersWrapper .ribbon.green{background:#2dad57;}
+input.offer-checked[type="checkbox"]{-webkit-appearance:none;width:30px;height:25px;border:2px solid #ced8dd;background:#f2f9fd;position:relative;margin-right:10px!important;outline:none;}
+input.offer-checked[type="checkbox"]:checked{width:30px;height:25px;background:url(https://cdn.shopifycdn.net/s/files/1/0518/4625/0673/files/checkmark.svg?v=1619337294) #f2f9fd center center / 18px 18px no-repeat;border:2px solid #ced8dd;}
+.box-checked{transform:scale(1.03);background:#d9f6ff;border-color:#0071a8;}
+.kore-minus-btn{width:35px;height:35px;border:1px solid #d7dbdb;border-right:none;border-radius:13px 0px 0px 13px;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png') #fff no-repeat center center;float:left;cursor:pointer;}
+.kore-plus-btn{width:35px;height:35px;border:1px solid #d7dbdb;text-align:center;border-radius:0px 13px 13px 0;display:block;background:url('https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png') #fff no-repeat center center;float:left;border-left:none;cursor:pointer;}
+.kore-qty-box{display:flex;align-items:center;margin-top:5px;}
+.box-txtbox{width:50px;height:30px!important;border:1px solid #d7dbdb;text-align:center;font-size:14px;color:#333232;padding:0 5px;font-weight:900;float:left;display:block;}
+.offerbox-info .kore-minus-btn,.offerbox-info .kore-plus-btn{height:30px;}
+sss{
+  color: #1679d4 !important;    font-weight: 600;
+}
+.section11 .common-para{
+  line-height: 24px;
+}
+ssr{
+    margin-left:20px;
+}
+h5 {
+    text-transform: none !important;
+}
+</style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p id="caption">Mehr kaufen, mehr sparen! Viel Spaß beim Einkaufen!</p>
+</div>
+</div>
+<div class="top-bar">
+<div class="jar-header">
+<div class="container">
+<div class="element-wrapper"><img class="logo" style="max-width: 250px;" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/logo_400x.png?v=1662993852"></div>
+<div class="element-wrapper">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Verwendung</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div id="mobMenuBtn" class="dl-trigger">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Übersicht</a></li>
+<li><a href="#features">Merkmale</a></li>
+<li><a href="#use">Verwendung</a></li>
+<li><a href="#reviews">Bewertung</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="overview" class="jar-banner-a"><a href="#es_buy" style="position: absolute; left: 0; right: 0; bottom: 0; top: 0;"></a> <img style="width: 100%;" class="show-desk" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/1_8b6befda-f4f4-482b-84f5-68dc4df6386d.jpg?v=1718932361" alt=""> <img style="width: 100%;" class="show-mob" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/2_a8239393-0266-4b87-9e00-4c66058d8f2e.jpg?v=1718932361" alt=""></div>
+<div class="strip-bg" style="padding: 10px 0 0;">
+<div class="container"><!-- <h1 class="alt-2 show-mob">1h 32m 55s</h1> --> <!-- <p class="ftur-hdng" style="background-size: 80%; font-weight: bold; font-size: 26px;">Electric Drill Shears Attachment Cutter Nibbler</p> -->
+<p class="common-para" style="padding-bottom: 30px;">Fahren Sie mit Leichtigkeit: Vielseitiger 360° drehbarer                 handyhalter für sichere, bequeme nutzung</p>
+</div>
+</div>
+<div id="use" class="section11">
+<div class="container">
+<div class="section11-left"><img class="fir-img" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner02-1.png?v=1708652046" alt=""> <img class="sec-img" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner02-2.png?v=1708652046" alt=""></div>
+<div class="section11-right">
+<p class="common-para"><sss>Einfache Einhandbedienung:</sss> <br>Passen Sie Ihr Handy mühelos während der Fahrt an, um eine optimale Ansicht ohne Ablenkungen zu gewährleisten.
+ <br> <sss>Vielseitige 360-Grad-Drehung:</sss><br> Genießen Sie den perfekten Winkel für jede Aktivität, von der Navigation bis zu Videoanrufen, ohne Ihre Sicht zu blockieren.
+ <br> <sss>Kompakt und Sicher:</sss><br> Zusammenklappbares Design für einfache Aufbewahrung, mit einem stabilen Griff, der Ihr Handy auf jeder Straße sicher hält.
+ <br><sss>Hochwertige Qualität:</sss><br> Haltbares PP-Material, das keine Spuren hinterlässt und eine problemlose Installation und Entfernung gewährleistet.
+ <br><sss>Universelle Kompatibilität:  </sss><br>Passt zu allen Smartphones und Automodellen, perfekt für Navigation, Unterhaltung und mehr.</p>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BIS ZU 57% RABATT<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span><span class="text-span-5">JETZT KAUFEN</span></a>
+<p class="text-day">30 Tage Geld-zurück-Garantie</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section1">
+<div class="container">
+<div class="clearall"></div>
+<div id="features" class="vid-sec"><img style="box-shadow: none;" src="https://cdn.shopify.com/s/files/1/0650/7751/0392/files/de.png?v=1695631290" alt=""></div>
+<!-- <p class="common-para">Det er mange fordeler med våre produkter. Her er fire fordeler med krokfestet bilmobiltelefonbrakett.</p> -->
+<div class="vid-sec" id="mypic"><img class="show-desk" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/3_c29e7539-d607-4b41-8c5c-3b5a45a87979.jpg?v=1718932361" alt=""><img class="show-mob" src="https://cdn.shopify.com/s/files/1/0662/0898/9409/files/4_4edf7d17-f7f9-4735-b440-30d3db6207c5.jpg?v=1718932361"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BIS ZU 57% RABATT<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span><span class="text-span-5">JETZT KAUFEN</span></a>
+<p class="text-day">30 Tage Geld-zurück-Garantie</p>
+</div>
+</div>
+</div>
+<!-- <div class="strip-bg" style="padding-top: 0px;">
+  <div class="container">
+  <p class="ftur-hdng">1080p Magnetische WiFi-Minikamera</p>
+  <img src="https://cdn.shopify.com/s/files/1/0298/7930/4276/files/4_8db3af14-5fe1-4393-9662-e14ad8ee4e5f.jpg?v=1669110813" alt="" /></div>
+  </div> -->
+<div id="Bewertungen" class="section2">
+<div class="container"><!-- <p class="common-head">Electric Drill Shears Attachment Cutter Nibbler</p>
+  <div class="comon-bdr"></div>
+  <p class="common-para">🔵Professional: suitable for 12V, 21V lithium electric drill<br />🔵Universal : suitable for most electric drills such as lithium electric drills, impact drills, pistol drills, etc.</p> -->
+<div class="clearall"></div>
+<!-- <div class="vid-sec"><img src="https://cdn.shopifycdn.net/s/files/1/0565/9243/3310/files/11_7598970e-bdc7-4df9-92f7-27b547030a1d.jpg?v=1678241727" /></div> -->
+<p class="common-head" style="margin-top: 20px;">WARUM UNS WÄHLEN</p>
+<div class="comon-bdr"></div>
+<div class="vid-sec"><img class="show-desk" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner04_1803c9ad-275c-4979-a2b5-6ac02c481f7b.jpg?v=1708652679" alt=""><img class="show-mob" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/banner04_79b6ab7e-92ba-4b26-8a2a-c62e58fc3945.jpg?v=1708652679"></div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BIS ZU 57% RABATT<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span><span class="text-span-5">JETZT KAUFEN</span></a>
+<p class="text-day">30 Tage Geld-zurück-Garantie</p>
+</div>
+</div>
+</div>
+<div class="section5">
+<div class="container" id="es_buy">
+<h3 class="center-h2" style="padding-bottom: 20px; color: #000;">MEHR KAUFEN, MEHR SPAREN!</h3>
+<div class="row es_variant_row hide-mob">
+
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #107acf;">BESTSELLER</h2>
+<h3 style="background: #f1f9ff;">3 Stück</h3>
+<h4 style="color: #51a1fa; background: #f1f9ff;">57% RABATT</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/3_73518cf7-ec25-4e46-b285-ab07ee6a85eb.jpg?v=1708653449"></figure>
+<p><img>25.6K Bewertungen</p>
+<h5 class="price"><del>68,99 €</del><span>29,99 €</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48549121753411"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #107acf;" onclick="add_to_cart('48549121753411')">Jetzt bestellen</button>
+<div class="kore-lock">Gesichert und verschlüsselt<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #107acf;">HEIßER VERKAUF</h2>
+<h3 style="background: #f1f9ff;">2 Stück</h3>
+<h4 style="color: #51a1fa; background: #f1f9ff;">50% RABATTF</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/2_714643a3-a059-4ea8-849e-c3a03e922e36.jpg?v=1708653449"></figure>
+<p><img>31.1K Bewertungen</p>
+<h5 class="price"><del>45,99 €</del><span>22,99 €</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48549121720643"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #107acf;" onclick="add_to_cart('48549121720643')">Jetzt bestellen</button>
+<div class="kore-lock">Gesichert und verschlüsselt<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #107acf;">HEIßER VERKAUF</h2>
+<h3 style="background: #f1f9ff;">1 Stück</h3>
+<h4 style="color: #51a1fa; background: #f1f9ff;">35% RABATT</h4>
+<figure><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/1_95c27cf9-8392-4f82-a866-d2147e9461a9.jpg?v=1708653449"></figure>
+<p><img>21.4K Bewertungen</p>
+<h5 class="price"><del>22,99 €</del><span>14,99 €</span></h5>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48549121687875"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #107acf;" onclick="add_to_cart('48549121687875')">Jetzt bestellen</button>
+<div class="kore-lock">Gesichert und verschlüsselt<i class="fa fa-lock" style="color: #28a745; font-size: 10px;"></i></div>
+</div>
+</div>
+</div>
+<div class="offerbox_var offersWrapper visible-xs">
+<div class="offerbox box-checked"><input type="checkbox" checked="checked" class="offer-checked" data-id="48549121753411" value="48549121753411" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/3_73518cf7-ec25-4e46-b285-ab07ee6a85eb.jpg?v=1708653449"></figure>
+<div class="offerbox-info">
+<h1>3 Stück</h1>
+<p><span>57% RABATT</span><b>29,99 €</b><del>68,99 €</del></p>
+<input class="kore-variants" type="hidden" value="48549121753411">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+<div class="ribbon green">BESTSELLER</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked"  data-id="48549121720643" value="48549121720643" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/2_714643a3-a059-4ea8-849e-c3a03e922e36.jpg?v=1708653449"></figure>
+<div class="offerbox-info">
+<h1>2 Stück</h1>
+<p><span>50% RABATT</span><b>22,99 €</b><del>45,99 €</del></p>
+<input class="kore-variants" type="hidden" value="48549121720643">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48549121687875" value="48549121687875" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/1_95c27cf9-8392-4f82-a866-d2147e9461a9.jpg?v=1708653449"></figure>
+<div class="offerbox-info">
+<h1>1 Stück</h1>
+<p><span>35% RABATT</span><b>14,99 €</b><del>22,99 €</del></p>
+<input class="kore-variants" type="hidden" value="48549121687875">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+
+
+<div class="clearfix"><a class="kore-order-now kore-buttonBounce kore-mobile-order" style="background: #51a1fa;" onclick="add_to_cart_mb()"> <i class="fa fa-angle-double-right fa_prepended"></i>Jetzt bestellen</a></div>
+</div>
+</div>
+</div>
+<div class="section-4" id="pinglun" style="display: inline-block; width: 100%;">
+<div class="section-row">
+<div class="title">Was sagen unsere Kunden?</div>
+<!-- <p class="common-para" style="text-align: center; margin-bottom: 20px;">Den nyttige gårdslampen vil gi deg et lykkelig humør!</p> -->
+<div class="clearall"></div>
+<div class="text-center"><img style="width: 100%; max-width: 270px;" src="https://cdn.shopify.com/s/files/1/0248/7916/9626/files/8.png?v=1666752626"></div>
+</div>
+<div class="section-4-comment">
+<div class="section-row section-4-grid">
+<div class="comment-item"><!-- <img src="https://cdn.shopify.com/s/files/1/0603/6665/1622/files/1_724c0656-7d12-4471-ae11-2093bd0e3ac4.png?v=1677205428" /> -->
+<div class="text-1">John</div>
+<div class="text-2"><img style="width: 100%; max-width: 45px;" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/1_50484d56-b0e7-4e22-90a4-bd334c2c05e1.png?v=1708653629">
+<div>
+<div>Verified customer</div>
+<img style="width: 100%; max-width: 100px;" src="https://cdn.shopify.com/s/files/1/0248/7916/9626/files/8.png?v=1666752626"></div>
+</div>
+<div class="text-3">Ich liebe es, wie einfach es ist, es mit nur einer Hand anzupassen, während ich fahre. Es hält mein Handy sicher und im perfekten Winkel für die Navigation. Definitiv ein Muss für jede Reise!</div>
+</div>
+<div class="comment-item"><!-- <img src="https://cdn.shopify.com/s/files/1/0603/6665/1622/files/2_a45df719-f58f-4b81-80e6-9e6aefe91b44.png?v=1677205428" /> -->
+<div class="text-1">Victor</div>
+<div class="text-2"><img style="width: 100%; max-width: 45px;" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/3_939eefa5-834d-4c32-a1c6-fae70edccd4e.png?v=1708653629">
+<div>
+<div>Verified customer</div>
+<img style="width: 100%; max-width: 100px;" src="https://cdn.shopify.com/s/files/1/0248/7916/9626/files/8.png?v=1666752626"></div>
+</div>
+<div class="text-3">Ich bin beeindruckt von der Qualität dieses Halters. Er ist robust und hinterlässt keine Spuren auf meinem Armaturenbrett, wenn ich ihn entferne. Perfekt für jemanden wie mich, der immer unterwegs ist!</div>
+</div>
+<div class="comment-item"><!-- <img src="https://cdn.shopify.com/s/files/1/0603/6665/1622/files/3_81428d63-90c3-469c-b7d4-c0e6dc16acb5.png?v=1677205431" /> -->
+<div class="text-1">Sara</div>
+<div class="text-2"><img style="width: 100%; max-width: 45px;" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/4_445cd751-bcf0-43d6-90e1-fd92b37c3add.png?v=1708653629">
+<div>
+<div>Verified customer</div>
+<img style="width: 100%; max-width: 100px;" src="https://cdn.shopify.com/s/files/1/0248/7916/9626/files/8.png?v=1666752626"></div>
+</div>
+<div class="text-3">Ich habe so viele andere ausprobiert, die nicht funktioniert haben, aber dieser hier erledigt den Job perfekt. Er hat meinen täglichen Arbeitsweg so viel einfacher gemacht.</div>
+</div>
+<div class="comment-item"><!-- <img src="https://cdn.shopify.com/s/files/1/0603/6665/1622/files/3_81428d63-90c3-469c-b7d4-c0e6dc16acb5.png?v=1677205431" /> -->
+<div class="text-1">Eva</div>
+<div class="text-2"><img style="width: 100%; max-width: 45px;" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/2_d336853b-8362-49f9-8f06-00a0cda6f7e8.png?v=1708653629">
+<div>
+<div>Verified customer</div>
+<img style="width: 100%; max-width: 100px;" src="https://cdn.shopify.com/s/files/1/0248/7916/9626/files/8.png?v=1666752626"></div>
+</div>
+<div class="text-3">Es hat mir so viel Mühe erspart, mein Handy auszubalancieren oder ständig anzupassen. Außerdem fühlt es sich sehr sicher an, selbst auf holprigen Straßen. Sehr empfehlenswert!</div>
+</div>
+</div>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BIS ZU 57% RABATT<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span><span class="text-span-5">JETZT KAUFEN</span></a>
+<p class="text-day">30 Tage Geld-zurück-Garantie</p>
+</div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div id="ctabtn-mob" style="position: relative;"><a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">BIS ZU 57% RABATT<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> </a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul>
+<li><a href="/pages/faqs">FAQs</a></li>
+<li><a href="/pages/contact">Kontaktieren uns</a></li>
+<li><a href="/pages/datenschutzinformationen">Datenschutzinformationen</a></li>
+<li><a href="/pages/uber-uns">Über uns</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">ZAHLUNGSARTEN</h3>
+<div><span> <img src="https://cdn.shopify.com/s/files/1/0650/7751/0392/files/de.png?v=1695631290" class="credit-cards-image"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GARANTIE</h3>
+<p class="footer-guarantee-content">Wir bieten eine 30-Tage-Geld-zurück-Garantie</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>// <![CDATA[
+function add_to_cart(variant_id){
+          var quantity=$("input[variant_id='"+variant_id+"']").val();
+          location.href="/cart/"+variant_id+":"+quantity
+  }
+function add_to_cart_mb(){
+  var v=$(".offerbox.box-checked input").val();
+  var q=$(".offerbox.box-checked input.box-txtbox").val();
+  location.href="/cart/"+v+":"+q;
+}
+// ]]></script>

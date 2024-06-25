@@ -1,0 +1,685 @@
+<style>
+.announcement-bar {
+        background-color: #020e4c !important;
+    }
+
+    a:not([disabled]):hover,
+    a:focus {
+        color: fff !important;
+    }
+
+    .kore-special-promo,
+    .kore-special-promo h2,
+    .kore-special-promo h3 {
+        color: #fff !important;
+    }
+
+    .kore-special-promo h2 span {
+        background: linear-gradient(transparent 71%,
+                #020e4c 15%,
+                #020e4c 90%,
+                transparent 80%) !important;
+    }
+
+    .kore-review-item {
+        height: 100%;
+    }
+
+    .common-head {
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        color: #191919;
+        font-weight: bold;
+    }
+
+    .comon-bdr {
+        display: inline-block;
+        vertical-align: top;
+        background: #191919;
+        width: 75px;
+        height: 5px;
+        border-radius: 20px;
+        margin-top: 25px;
+    }
+
+    .clearall {
+        clear: both;
+        font-size: 1px;
+        line-height: 1px;
+        height: 1px;
+    }
+
+    .common-para {
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        color: #191919;
+        letter-spacing: 0.5px;
+    }
+
+    @media (min-width: 992px) {
+        .kore-customer-review h2 {
+            margin-bottom: 20px !important;
+            font-size: 34px !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .kore-customer-review h2 {
+            margin: 0px 65px 20px;
+        }
+
+        .current-inner h3 {
+            padding: 20px 5px !important;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .comon-bdr {
+            margin-top: 15px;
+        }
+
+        .common-head {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .new-chamfer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-chamfer>div.col-xs-12:nth-child(1) {
+            order: 2;
+        }
+
+        .new-chamfer>div.col-xs-12:nth-child(2) {
+            order: 1;
+        }
+    }
+
+    *:not(i) {
+        font-family: "Lato", sans-serif !important;
+    }
+
+    @media (min-width: 768px) {
+        .kore-product-name a {
+            text-align: left !important;
+        }
+
+        .kore-product-prices {
+            max-width: 480px !important;
+        }
+    }
+
+    /*! CSS Used from: Embedded */
+    .main-right .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button:after {
+        content: none !important;
+    }
+
+    .main-btn.button {
+        cursor: pointer;
+        padding: 6px 60px;
+        background: #A44CD5;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 20px;
+        box-shadow: 0px 0px 10px 5px rgb(5 5 5 / 19%);
+        color: white;
+        cursor: pointer;
+        line-height: inherit;
+        min-height: inherit;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .main-product {
+        position: relative;
+        margin-top: 10px;
+        padding: 20px;
+        background: white;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .name.bold {
+        color: #191919;
+        font-size: 35px;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .price {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .price span:first-child {
+        font-size: 28px;
+    }
+
+    .price del.p2 {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .price span:last-child {
+        text-decoration: line-through;
+        color: #AAAAAA;
+        font-weight: bold;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+
+    .main-btn {
+        margin-top: 10px;
+    }
+
+    .main-img,
+    .main-right {
+        width: 50%;
+        text-align: center;
+    }
+
+    .sg-price {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .sg-price span {
+        color: #E10000;
+    }
+
+    .price span:first-child {
+        color: #E10000;
+        text-decoration: none;
+    }
+
+    .main-product:nth-of-type(2) .price span:first-child,
+    .main-product:nth-of-type(3) .price span:first-child {}
+
+    .main-product:nth-of-type(2) .name,
+    .main-product:nth-of-type(3) .name {
+        text-transform: uppercase;
+    }
+
+    .main-img img {
+        margin: 0 auto;
+    }
+
+    .main-product:nth-of-type(2) .main-img img {
+        max-width: 85%;
+    }
+
+    img.pro_tips {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 120px;
+    }
+
+    @media (max-width: 767px) {
+        img.pro_tips {
+            max-width: 80px;
+        }
+
+        .main-btn.button {
+            padding: 6px 20px;
+            font-size: 12px;
+        }
+
+        .price {
+            margin: 0;
+        }
+
+        .sg-price {
+            font-size: 18px;
+        }
+
+        .main-product:nth-of-type(2) .name,
+        .main-product:nth-of-type(3) .name {
+            text-transform: uppercase;
+            font-size: 19px;
+        }
+
+        .price span:first-child {
+            font-size: 19px;
+        }
+
+        .price del.p2 {
+            font-size: 19px;
+            margin-left: 10px;
+        }
+
+        .price span:last-child {
+            font-size: 15px;
+        }
+
+        .name.bold {
+            max-width: inherit;
+            font-size: 15px;
+        }
+
+        .flex-wrapper {
+            padding: 10px;
+        }
+
+        .main-product {
+            padding: 0;
+        }
+    }
+
+    @media (max-width:414px) {
+        .name.bold {
+            font-size: 15px;
+        }
+
+        .main-product:nth-of-type(2) .name,
+        .main-product:nth-of-type(3) .name {
+            white-space: nowrap;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width:320px) {
+
+        .main-product:nth-of-type(2) .name,
+        .main-product:nth-of-type(3) .name {
+            white-space: inherit;
+        }
+    }
+
+    /*! CSS Used from: https://furanshop.com/cdn/shop/t/15/assets/component-price.css?v=98846690776184680721715334592 ; media=all */
+    @media all {
+        .price {
+            font-size: 1.6rem;
+            letter-spacing: .1rem;
+            line-height: calc(1 + .5 / var(--font-body-scale));
+            color: rgb(var(--color-foreground));
+        }
+
+        .price>* {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        @media screen and (min-width: 750px) {
+            .price {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .tipss span {
+        z-index: 99999;
+        display: inline-block;
+        position: absolute;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 2rem;
+        margin-top: -16px;
+        left: 30px;
+        text-align: inherit;
+        line-height: 1;
+    }
+
+    @media (max-width:768px) {
+        .tipss span {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2px;
+            left: 25px;
+        }
+    }
+
+    .main-btn.button {
+        background: #020e4c;
+    }
+
+    .popular span {
+        z-index: 99999;
+        display: flex;
+        position: absolute;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 2rem;
+        margin-top: -10px;
+        left: 5rem;
+        text-align: center;
+        line-height: 1;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .popular span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 5px;
+            left: 30px;
+        }
+    }
+</style>
+<div class="kore">
+<div class="kore-body">
+<div style="background-color: #020e4c !important;" class="announcement-bar">
+<p class="announcement-bar__message" style="color: #fff; text-align: center; padding: 10px;">🎉Mis onze promotie niet - vanaf €4,9 per stuk🎁</p>
+</div>
+<a href="#kore-product"> <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/banner1_57bf512b-256d-4526-bbba-712ef4b49946.jpg?v=1718611724" style="width: 100%;" class="img-responsive center-block hidden-xs"> <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/banner1_dbb20c8d-3533-4b56-9150-7f65803f8869.jpg?v=1718611724" style="width: 100%;" class="img-responsive center-block visible-xs"> </a>
+<div style="background-color: #020e4c;" class="kore-wysiwyg-content">
+<div class="container"><img src="https://cdn.shopify.com/s/files/1/0225/4818/5162/files/ia_33.png?v=1618388544" class="img-responsive center-block">
+<p>"Deze Car Scratch Remover is een game-changer! Hij verwijdert moeiteloos krassen, swirls en vlekken, waardoor mijn auto er zo goed als nieuw uitziet." Johannes M.</p>
+</div>
+</div>
+<div class="kore-advantage-block">
+<div class="container">
+<h2>Repareer eenvoudig krassen, swirls of andere vlekken met onze Car Scratch Remover!</h2>
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-1_e5d264e3-7a02-4e60-9170-ec60f2527a5d.png?v=1707208458" class="img-responsive center-block">
+<h3>Kostenefficiënt</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-2_a5726479-8101-4e2f-a9a8-da7f67f051e2.png?v=1707208458" class="img-responsive center-block">
+<h3>Gemak</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-3_53e92c50-51cb-405e-9a47-f0a01aa0fd8d.png?v=1707208459" class="img-responsive center-block">
+<h3>Tijd besparen</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-4_a537d8e6-bc16-4817-8eac-809baac003eb.png?v=1707208459" class="img-responsive center-block">
+<h3>Gemakkelijke kras- en wervelreparatie</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row kore-product-info">
+<div class="col-xs-12 col-sm-6 kore-product-left">
+<div id="gallery">
+<div id="gallery_output"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/61f6ec36f79a3b057de308268480f898.jpg?v=1701079043" class="img-responsive" id="img1"></div>
+<div id="gallery_nav"><a rel="img1" class="on"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/61f6ec36f79a3b057de308268480f898.jpg?v=1701079043" class="img-responsive"></a> <a rel="img2"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/08_fb108143-1829-4cc8-81be-e5e0cdbc2512.jpg?v=1701079043" class="img-responsive"></a> <a rel="img3"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/01_a03443f3-7eec-4054-88fb-7b761ac62cc9.jpg?v=1701079043" class="img-responsive"></a> <a rel="img4"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/02_15158fb4-fcdb-4aea-9484-190c93eb81e9.jpg?v=1701079043" class="img-responsive"></a> <a rel="img5"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/03_5270574a-3eba-49ff-bed7-65dcb867a222.jpg?v=1701079043" class="img-responsive"></a> <a rel="img6"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/06_2c679c79-cf6d-4cb3-976c-566626afcee9.jpg?v=1701079043" class="img-responsive"></a> <a rel="img7"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/07_837d0bda-9834-4553-913b-6fc148f945a6.jpg?v=1701079043" class="img-responsive"></a> <a rel="img8"><img src="https://cdn.shopify.com/s/files/1/0569/2846/9164/files/04_1a16c692-7af5-49dc-b095-6b49663662eb.jpg?v=1701079043" class="img-responsive"></a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 kore-product-right">
+<div>
+<h1 style="font-family: 'helveticaneue-light';" class="kore-product-name"><strong><a>Auto krasverwijderaar</a></strong></h1>
+<div class="kore-product-prices"><span class="kore-product-price">€10,99</span>
+    <span class="kore-discount"><span class="kore-percent">50% RABATT</span></span>
+</div>
+<div class="clearfix"></div>
+<a style="background: #020e4c;" href="#kore-product" class="kore-product-button">JA! IK WIL NU BESTELLEN</a></div>
+<!-- <h1 class="alt-2">1h 32m 55s</h1> --> <!-- <p class="kore-text-sale">Selling Price Back To € 33.99 After Sales End</p> -->
+<p class="kore-text-tip">🔒 Veilig en beveiligd afrekenen<br>📦 Verzekerde verzending<br> ✉️ Klantenservice</p>
+<div class="right-content"><img alt="" class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0079/2467/8703/files/TB2BG.vEN9YBuNjy0FfXXXIsVXa__656133727_large.gif?v=1561602400">
+<ul>
+<li><b>Ultieme verfhersteller: </b>Dit verwijdert niet alleen swirls en krassen, maar herstelt ook de glans van uw lak en brengt deze terug naar zijn oorspronkelijke glans.</li>
+<li><b>Premium chemicaliën: </b> We gebruiken alleen de allerbeste chemicaliën en zorgen ervoor dat er geen onnodige kleurstoffen of geuren zijn.</li>
+<li><b>Veilig voor alle verfkleuren:</b> Onze reparatieset is veilig te gebruiken op alle verven en kleuren. U kunt het veilig gebruiken op elke blanke lak, eenfasige of meerfasige verf.</li>
+<li><b>DIY-reparatie:</b> Door een krasverwijderaar te gebruiken, kunt u kleine cosmetische reparaties zelf uitvoeren zonder afhankelijk te zijn van externe diensten.</li>
+<li><b>Tevredenheid:</b>Als u het uiterlijk van uw auto kunt herstellen en lelijke krassen kunt verwijderen, kunt u een gevoel van voldoening en trots krijgen bij het behouden van de esthetiek van uw auto.</li>
+</ul>
+</div>
+<div class="kore-payment-image"><img src="https://www.finebay.nl/cdn/shop/files/p42.png?v=1696649354" class="img-responsive center-block"></div>
+</div>
+</div>
+</div>
+<!--<div class="container">
+      <div class="gc-headline-divider-container">
+      <div class="gc-divider-style-solid"></div>
+      <div class="headline-divider-block">
+      <h4>AS SEEN IN</h4>
+      </div>
+      <div class="gc-divider-style-solid"></div>
+      </div>
+      <div class="row gc-brand-list">
+      <div class="col-xs-12"><img src="https://cdn.shoplazza.com/347c36125467736ffed54ecdc6db883b.jpg" class="img-responsive center-block"></div>
+      </div>
+      </div>--->
+<div class="container" style="margin-top: 30px; text-align: center;">
+<div class="clearall"></div>
+<div style="margin-bottom: 30px;" class="row"><img style="width: 100%; padding-left: 15px; padding-right: 15px;" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner2_e8cab400-e3b6-4e2e-a609-f98bf86d1c7f.jpg?v=1707208517" class="img-responsive center-block hidden-xs"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner2_e8cab400-e3b6-4e2e-a609-f98bf86d1c7f.jpg?v=1707208517" class="img-responsive center-block visible-xs"></div>
+</div>
+<div id="kore-product" class="kore-buy">
+<div class="container">
+<h3 class="kore-product-title" style="font-weight: 600;">KOOP MEER, BESPAAR MEER!</h3>
+<div class="main-pro-wrap">
+<div class="main-product m1">
+<div class="flex-wrapper">
+<div class="main-img"><img class="main-img3" alt="" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1212.png?v=1718370091"></div>
+<div class="main-right">
+<div class="name bold">Koop 1</div>
+<div class="price flag2"><span class="bold p1">€10,99</span> </div>
+<div class="sg-price">50% <span>RABATT</span></div>
+<a data-no-instant="" data-type="inline" data-src="#pillow-help" data-fancybox="" href="/cart/47425992327513:1" data-id="47425992327513" class="emitCheckout">
+<div class="main-btn button">KOOP NU</div>
+</a></div>
+</div>
+<div class="main-product m2">
+<div class="flex-wrapper">
+<div class="main-img"><img class="main-img3" alt="" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0004__2_1.jpg?v=1718270877"></div>
+<div class="main-right">
+<div class="name bold">Koop 2 Krijg 1 Gratis</div>
+<div class="price flag2"><span class="bold p1">€21,8</span></div>
+<div class="sg-price">vanaf <span>€7,3 </span>per stuk</div>
+<a data-no-instant="" data-type="inline" data-src="#pillow-help" data-fancybox="" href="/cart/47425992393049:1" data-id="47425992393049" class="emitCheckout">
+<div class="main-btn button">KOOP NU</div>
+</a></div>
+</div>
+</div>
+<div class="main-product m3">
+<div class="tipss popular"><span>Meest populair</span><img class="pro_tips" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801"></div>
+<div class="flex-wrapper">
+<div class="main-img"><img class="main-img3" alt="" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0005__3_2.jpg?v=1718270877"></div>
+<div class="main-right">
+<div class="name bold">Koop 3 Krijg 2 Gratis</div>
+<div class="price flag3"><span class="bold p1">€32,7 </span> <span style="color: black;" class="p2"> </span></div>
+<div class="sg-price">vanaf <span>€6,5 </span> per stuk</div>
+<a data-no-instant="" data-type="inline" data-src="#pillow-help" data-fancybox="" href="/cart/48523074175321:1" data-id="48523074175321" class="emitCheckout">
+<div class="main-btn button">KOOP NU</div>
+</a></div>
+</div>
+</div>
+<div class="main-product m3"><!-- <div class="tipss"><span>Best Value</span><img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801" class="pro_tips"></div> -->
+<div class="flex-wrapper">
+<div class="main-img"><img class="main-img3" alt="" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/4_4.jpg?v=1718612827"></div>
+<div class="main-right">
+<div class="name bold">Koop 4 Krijg 4 Gratis</div>
+<div class="price flag3"><span class="bold p1">€43,6 </span> <span class="p2"></span></div>
+<div class="sg-price">vanaf <span>€5,4 </span> per stuk</div>
+<a data-no-instant="" data-type="inline" data-src="#pillow-help" data-fancybox="" href="/cart/48523074208089:1" data-id="48523074208089" class="emitCheckout">
+<div class="main-btn button">KOOP NU</div>
+</a></div>
+</div>
+</div>
+<div class="main-product m2">
+<div class="tipss"><span>Beste waarde</span><img class="pro_tips" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801"></div>
+<div class="flex-wrapper">
+<div class="main-img"><img class="main-img3" alt="" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/5_6_aebdcfef-50bf-4ae9-a039-48cd6fcd2c45.jpg?v=1718612827"></div>
+<div class="main-right">
+<div class="name bold">Koop 5 Krijg 6 Gratis</div>
+<div class="price flag2"><span class="bold p1"> €54,5</span> <span style="color: black;" class="p2"> </span></div>
+<div class="sg-price">vanaf <span>€4,9 </span> per stuk</div>
+<a data-no-instant="" data-type="inline" data-src="#pillow-help" data-fancybox="" href="/cart/48547750216025:1" data-id="48547750216025" class="emitCheckout">
+<div class="main-btn button">KOOP NU</div>
+</a></div>
+</div>
+</div>
+</div>
+<!-- <div style="display: flex; flex-wrap: wrap; justify-content: center;" class="row new-chamfer hidden-xs">
+    <div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+    <div class="kore-inner">
+    <h2 style="background: #020e4c;">HOT TREND</h2>
+    <h3 style="background: #efefef;">1 STUK</h3>
+    <h4 style="background: #efefef;">50% KORTING</h4>
+    <figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0000_1_7ef389cc-4c9d-4a4a-96be-cd55ff318c4e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.5K Anmeldelser</p>
+    <h5><del>€21,98</del><span>€10,99 </span></h5>
+    <input value="47425992327513" type="hidden" class="kore-variants">
+    <div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+    <a style="background: #020e4c;" href="/cart/47425992327513:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Bestel nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+    <div class="kore-lock">Beveiligd en versleuteld<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+    </div>
+    </div>
+    <div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+    <div class="kore-inner">
+    <h2 style="background: #020e4c;">HOT TREND</h2>
+    <h3 style="background: #efefef;">2 STUKS</h3>
+    <h4 style="background: #efefef;">50% KORTING</h4>
+    <figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0001_2_31a4e43a-425d-4d8b-ac18-74f656219b3b.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">20.5K Anmeldelser</p>
+    <h5><del>€39,98</del><span>€19,99 </span></h5>
+    <input value="47425992360281" type="hidden" class="kore-variants">
+    <div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+    <a style="background: #020e4c;" href="/cart/47425992360281:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Bestel nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+    <div class="kore-lock">Beveiligd en versleuteld<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+    </div>
+    </div>
+    <div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+    <div class="kore-inner">
+    <h2 style="background: #020e4c;">HOT TREND</h2>
+    <h3 style="background: #efefef;">3 STUKS</h3>
+    <h4 style="background: #efefef;">50% KORTING</h4>
+    <figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0002_3_726b6fe3-f08b-41fa-81c3-400004e5393e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.3K Anmeldelser</p>
+    <h5><del>€53,98</del><span>€26,99 </span></h5>
+    <input value="47425992393049" type="hidden" class="kore-variants">
+    <div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+    <a style="background: #020e4c;" href="/cart/47425992393049:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Bestel nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+    <div class="kore-lock">Beveiligd en versleuteld<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+    </div>
+    </div>
+    </div>
+    <div class="offersWrapper visible-xs">
+    <div class="offerbox box-checked"><input data-type="shopify" value="47425992327513" data-id="47425992327513" checked="checked" class="offer-checked" type="checkbox">
+    <figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0000_1_7ef389cc-4c9d-4a4a-96be-cd55ff318c4e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <div class="offerbox-info">
+    <h1>1 STUK</h1>
+    <p><span>50% KORTING</span><b>€10,99 </b><del>€21,98</del></p>
+    <div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+    </div>
+    </div>
+    <div class="offerbox"><input data-type="shopify" value="47425992360281" data-id="47425992360281" class="offer-checked" type="checkbox">
+    <figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0001_2_31a4e43a-425d-4d8b-ac18-74f656219b3b.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <div class="offerbox-info">
+    <h1>2 STUKS</h1>
+    <p><span>50% KORTING</span><b>€19,99 </b><del>€39,98</del></p>
+    <div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+    </div>
+    </div>
+    <div class="offerbox"><input data-type="shopify" value="47425992393049" data-id="47425992393049" class="offer-checked" type="checkbox">
+    <figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0002_3_726b6fe3-f08b-41fa-81c3-400004e5393e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+    <div class="offerbox-info">
+    <h1>3 STUKS</h1>
+    <p><span>50% KORTING</span><b>€26,99</b><del>€53,98</del></p>
+    <div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+    </div>
+    </div>
+    <div class="clearfix"><a style="background: #020e4c;" href="/cart/47425992327513:1" class="kore-order-now kore-buttonBounce kore-mobile-order" data-mce-style="background: #020e4c;"> <i class="fa fa-angle-double-right fa_prepended"></i> Bestel nu</a></div>
+    </div> --></div>
+</div>
+<div class="kore-customer-review">
+<div class="container">
+<h2 style="font-weight: 600;">Wat onze klanten zeggen</h2>
+<div class="row" style="display: flex; flex-wrap: wrap; row-gap: 20px;">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_84d8ced8-ce54-4cc3-ba16-ff5eef7bad16.jpg?v=1707208458">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>Ik ben onder de indruk van hoe gemakkelijk het is om de Car Scratch Remover te gebruiken. Het meegeleverde bufferkussen maakt het proces nog soepeler en verwijdert hardnekkige slijtage met minimale inspanning. Het is als een toverstaf voor autolak: een must-have voor elke autobezitter die het onberispelijke uiterlijk van zijn auto wil behouden.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_5c8a8cda-f435-40ca-991f-312c848f0b99.jpg?v=1707208459">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>Ik was eerst sceptisch, maar dit product overtrof mijn verwachtingen. De eenvoudige kras- en swirl-reparatiefunctie deed wonderen voor de lak van mijn auto en herstelde de oorspronkelijke glans. De afwezigheid van onnodige kleurstoffen of geuren is een bonus, waardoor een schoon en efficiënt reparatieproces wordt gegarandeerd.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_ea23e5c2-94e2-476a-b3f8-a356b23fc5f9.jpg?v=1707208459">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img class="img-responsive" src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545"></div>
+<p>Met behulp van het bufferpad is het aanbrengen een fluitje van een cent, waardoor hardnekkige slijtage met minimale inspanning wordt geëlimineerd. De ultieme verfherstelfunctie verwijdert niet alleen krassen, maar brengt ook de glans en glans terug, waardoor mijn auto een showroomafwerking krijgt. Een betrouwbare en effectieve oplossing om de onberispelijke uitstraling van elk voertuig te behouden.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="kore-special-promo" style="background: url('https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner3_9db50572-c65f-4a22-8167-dfec63316003.jpg?v=1707208516') center/cover no-repeat;">
+<div class="container">
+<h2><span>SPECIALE PROMO AANBIEDING NU!</span></h2>
+<h3>BESTEL NU EN ONTVANG 30% KORTING</h3>
+<p>Deze korting is slechts een beperkte tijd geldig.<br>De hoeveelheden zijn beperkt - handel nu!</p>
+<a class="kore-banner-btn snow-banner-btn" href="#kore-product" style="background: #020e4c;"><i class="fa fa-angle-right"></i>Claim uw 50% korting</a>
+<ul>
+<li><strong>Gegarandeerde hoge kwaliteit</strong>We ondersteunen al onze producten met een volledige geld-terug-garantie.</li>
+<li><strong>Probleemloos retourneren</strong>Als u niet 100% tevreden bent met uw bestelling, kunt u deze binnen 30 dagen retourneren voor een volledige terugbetaling.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATIE</h3>
+<ul>
+<li><a href="https://www.finebay.nl/pages/faqs" target="_blank">FAQ</a></li>
+<li><a href="https://www.finebay.nl/pages/about-us" target="_blank">Over ons</a></li>
+<li><a href="https://www.finebay.nl/pages/privacy-policy" target="_blank">Privacybeleid</a></li>
+<li><a href="https://www.finebay.nl/pages/returns-refund-policy" target="_blank">Retourneren &amp; restitutie</a></li>
+<li><a href="https://www.finebay.nl/pages/intellectuele-eigendomsrechten" target="_blank">Intellectuele eigendomsrechten</a></li>
+<li><a href="https://www.finebay.nl/pages/terms-and-conditions" target="_blank">Voorwaarden</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">BETAALMETHODES</h3>
+<div><span> <img class="credit-cards-image" src="https://www.finebay.nl/cdn/shop/files/p42.png?v=1696649354"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GARANTIE</h3>
+<p class="footer-guarantee-content">30-dagen geld terug garantie</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

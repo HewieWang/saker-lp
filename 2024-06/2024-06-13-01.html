@@ -1,0 +1,3110 @@
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/jquery.countdown@1.2.8/jquery.countdown.js"></script> <script src="https://cdn.shopify.com/s/files/1/0572/1944/9041/files/jquery.scroller.js?v=1642734440"></script>
+<style><!--
+  .kore-review-item {
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  .kore-review-item-content {
+    padding: 15px;
+  }
+  .kore-review-star {
+    width: 100px;
+    margin: 5px 0;
+  }
+  .page_template__title,
+  #shoplaza-section-footer,
+  #shoplaza-section-header {
+    display: none;
+  }
+  .tw-mt-10,
+  .page-content {
+    margin-top: 0 !important;
+  }
+  .page_template {
+    padding: 0;
+  }
+  .container.container-page-gap {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .container {
+      width: 1270px;
+    }
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  .gauge img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  .col-xs-12,
+  .col-md-6,
+  .col-md-3,
+  .col-xs-4,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-6,
+  .col-xs-3,
+  .col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .row:after,
+  .row:before {
+    display: table;
+    content: " ";
+  }
+  .row:after {
+    clear: both;
+  }
+  @media (min-width: 992px) {
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+  }
+  @media (min-width: 768px) {
+    .col-sm-3 {
+      width: 25%;
+    }
+    .col-sm-4 {
+      width: 33.33333333%;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }
+    .col-sm-offset-2 {
+      margin-left: 16.66666667%;
+    }
+  }
+  .visible-lg,
+  .visible-md,
+  .visible-sm,
+  .visible-xs {
+    display: none !important;
+  }
+  @media (max-width: 767px) {
+    .hidden-xs {
+      display: none !important;
+    }
+    .visible-xs {
+      display: block !important;
+    }
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .dj_skin_text p:first-child {
+    margin: 0 !important;
+  }
+  .topStrip {
+    background-color: #000000 !important;
+  }
+  .order-btn {
+    background-color: #c4a387 !important;
+  }
+  @media only screen and (max-width: 767px) {
+    .logo {
+      width: 120px !important;
+    }
+  }
+  .jar-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .jar-header .container::before {
+    content: none;
+  }
+  .jar-header .container::after {
+    content: none;
+  }
+  .alt-1 {
+    margin: 0 0 20px 0 !important;
+  }
+  .countdown {
+    padding: 0 !important;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .product-list {
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-item {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 11px;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 17px #bfbfbf, -5px -5px 17px #ffffff;
+  }
+  .product-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 20px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .save_row {
+    width: 100% !important;
+    font-size: 12px;
+  }
+  @media (max-width: 992px) {
+    .product-item {
+      width: 49%;
+    }
+    .product-list {
+      justify-content: space-between;
+    }
+  }
+  .why-choose {
+    position: relative;
+  }
+  .gif-1 {
+    position: absolute;
+    top: 24px;
+    right: 4%;
+    width: 27%;
+  }
+  .gif-2 {
+    position: absolute;
+    right: 4%;
+    width: 27%;
+    bottom: 4px;
+  }
+  @media (min-width: 768px) {
+    .gif-1 {
+      top: 30px;
+      right: 30px;
+      width: 188px;
+    }
+    .gif-2 {
+      top: 222px;
+      right: 30px;
+      width: 188px;
+    }
+  }
+  @media (min-width: 992px) {
+    .gif-1 {
+      top: 34px;
+      right: 40px;
+      width: 244px;
+    }
+    .gif-2 {
+      top: 284px;
+      right: 40px;
+      width: 244px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .gif-1 {
+      position: absolute;
+      top: 36px;
+      right: 76px;
+      width: 280px;
+    }
+    .gif-2 {
+      position: absolute;
+      top: 324px;
+      right: 76px;
+      width: 280px;
+    }
+  }
+  .bnr-left {
+    width: 50% !important;
+    position: absolute;
+    right: 20px;
+  }
+  .cs-percent {
+    width: 20% !important;
+  }
+  .common-head {
+    font-size: 31px !important;
+  }
+  .s2-list p {
+    text-align: left;
+  }
+  @media only screen and (max-width: 767px) {
+    .cs-percent {
+      width: 100% !important;
+    }
+    .bnr-left {
+      width: 100% !important;
+      right: 0;
+    }
+    .common-head {
+      font-size: 21px !important;
+    }
+  }
+  .kore-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .kore-minus_btn {
+    width: 45px;
+    height: 35px;
+    border: 1px solid #d7dbdb;
+    border-right: none;
+    border-radius: 13px 0px 0px 13px;
+    display: block;
+    background: url("https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png")
+      #fff no-repeat center center;
+    float: left;
+    cursor: pointer;
+  }
+  .kore-txtbox {
+    width: 55px;
+    height: 35px;
+    border: 1px solid #d7dbdb;
+    text-align: center;
+    font-size: 14px;
+    color: #333232;
+    padding: 0 5px;
+    font-weight: 900;
+    float: left;
+    display: block;
+    font-style: normal;
+    background: #fff;
+  }
+  .kore-plus_btn {
+    width: 45px;
+    height: 35px;
+    border: 1px solid #d7dbdb;
+    text-align: center;
+    border-radius: 0px 13px 13px 0;
+    display: block;
+    background: url("https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png")
+      #fff no-repeat center center;
+    float: left;
+    border-left: none;
+    cursor: pointer;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  .kore-buttonBounce {
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .old_price {
+    margin-bottom: 8px;
+    color: #d01212;
+    text-align: center;
+    text-decoration: line-through;
+  }
+  .save_row {
+    background-color: #ffc107;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 10px;
+  }
+  .countdown-alt-1 {
+    display: block;
+    font-size: 12px;
+    margin: 0;
+    color: #42251f;
+    text-align: center;
+  }
+  .countdown-alt-1 .item {
+    position: relative;
+  }
+  .countdown-alt-1 .hh-1,
+  .countdown-alt-1 .hh-2,
+  .countdown-alt-1 .mm-1,
+  .countdown-alt-1 .mm-2,
+  .countdown-alt-1 .ss-1,
+  .countdown-alt-1 .ss-2 {
+    font-family: "Righteous", cursive;
+    background: #f6f6f6;
+    display: inline-block;
+    font-size: 40px;
+    min-width: 35px;
+    text-align: center;
+    background: #feea69;
+    background: -moz-linear-gradient(top, #feea69 0%, #e29323 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #feea69),
+      color-stop(100%, #e29323)
+    );
+    background: -webkit-linear-gradient(top, #feea69 0%, #e29323 100%);
+    background: -o-linear-gradient(top, #feea69 0%, #e29323 100%);
+    background: -ms-linear-gradient(top, #feea69 0%, #e29323 100%);
+    background: linear-gradient(to bottom, #feea69 0%, #e29323 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feea69',endColorstr='#e29323',GradientType=0);
+    color: #42251f;
+    border: 2px solid #e29323;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+  }
+  .countdown-alt-1 .hh-1,
+  .countdown-alt-1 .mm-1,
+  .countdown-alt-1 .ss-1 {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 10px;
+    border-right: none;
+  }
+  .countdown-alt-1 .hh-2,
+  .countdown-alt-1 .mm-2,
+  .countdown-alt-1 .ss-2 {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-right: 10px;
+    border-left: none;
+  }
+  .countdown-alt-1 .label {
+    font-style: italic;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 8px;
+    bottom: -44px;
+  }
+  .countdown-alt-1 .separator-dd,
+  .countdown-alt-1 .separator {
+    color: #000;
+    font-size: 27px;
+    position: relative;
+    padding: 10px;
+  }
+  .countdown {
+    display: block;
+    font-size: 35px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+  }
+  .countdown .item {
+    position: relative;
+    padding: 0;
+  }
+  .countdown .hh-1,
+  .countdown .mm-1,
+  .countdown .ss-1 {
+    padding-left: 10px;
+    border-right: none;
+  }
+  .countdown .hh-2,
+  .countdown .mm-2,
+  .countdown .ss-2 {
+    padding-right: 10px;
+    border-left: none;
+  }
+  .countdown .label {
+    font-style: italic;
+    text-transform: capitalize;
+    color: #333;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 5px;
+    bottom: -25px;
+  }
+  #sakerlp {
+    text-align: center;
+    font-family: "Open Sans";
+  }
+  #sakerlp img {
+    border: none;
+    max-width: 100%;
+  }
+  #sakerlp p {
+    margin-bottom: 0;
+  }
+  #sakerlp ul {
+    list-style: none;
+    font-size: 15px;
+  }
+  #sakerlp ul.s2-list,
+  #sakerlp ul.sec4-list,
+  #sakerlp ul.mobilemenu {
+    padding-left: 0;
+  }
+  #sakerlp a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h2.es_variant_title {
+    padding: 0;
+    margin: 0;
+  }
+  a.es_btn-order:hover,
+  a.es_btn-order:active {
+    color: #ffc107;
+  }
+  .topStrip {
+    background: #de7744;
+    width: 100%;
+    padding: 5px 0;
+  }
+  .topStrip p {
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  .topStrip p span {
+    color: #000;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 767px) {
+    .topStrip {
+      height: 32px;
+      padding: 5px 0;
+      overflow: hidden;
+    }
+    @-moz-keyframes caption {
+      0% {
+        margin-left: 100%;
+      }
+      100% {
+        margin-left: -600px;
+      }
+    }
+    @-webkit-keyframes caption {
+      0% {
+        margin-left: 100%;
+      }
+      100% {
+        margin-left: -600px;
+      }
+    }
+    #caption {
+      width: 100%;
+      white-space: nowrap;
+      -moz-animation: caption 15s linear 0s infinite;
+      -webkit-animation: caption 15s linear 0s infinite;
+    }
+    .topStrip p {
+      font-size: 15px;
+    }
+  }
+  .top-fix-bar {
+    width: 100%;
+  }
+  .jar-header {
+    width: 100%;
+    background: #fff;
+    padding: 9px 0;
+    position: relative;
+  }
+  .logo {
+    float: left;
+    margin-top: 3px;
+  }
+  a.nav-btn {
+    float: right;
+    background: #de7744;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    width: 138px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 9px;
+    cursor: pointer;
+  }
+  .show-desk {
+    display: block;
+  }
+  ul.topMenu {
+    float: right;
+    margin: 15px 10px 0 0;
+  }
+  ul.topMenu li {
+    float: left;
+    padding: 3px 18px;
+    position: relative;
+  }
+  ul.topMenu li a {
+    color: #565656;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .show-mob,
+  .show-tab {
+    display: none;
+  }
+  .fixed-nav .jar-header {
+    position: fixed;
+    z-index: 10;
+    -webkit-transition: margin 0.3s ease-out;
+    transition: margin 0.3s ease-out;
+    margin-top: 0;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  ul.topMenu li:after {
+    content: "";
+    width: 1px;
+    background: #a7a7a7;
+    top: 5px;
+    bottom: 5px;
+    position: absolute;
+    right: 0;
+  }
+  ul.topMenu li:last-child:after {
+    display: none;
+  }
+  ul.topMenu li a:hover,
+  ul.topMenu li a.active {
+    color: #de7744;
+  }
+  .jar-header .container {
+    position: relative;
+  }
+  @media only screen and (max-width: 1024px) {
+    .jar-header {
+      border-bottom: 1px solid #ddd;
+    }
+    .show-desk {
+      display: none;
+    }
+    .show-tab {
+      display: block;
+    }
+    .mobilemenu {
+      left: 0;
+      position: fixed;
+      top: 109px;
+      background: rgba(255, 255, 255, 1);
+      z-index: 10;
+      right: 0;
+      bottom: 0;
+      overflow: scroll;
+      display: none;
+    }
+    .mob-mnu-ic {
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 19px;
+      z-index: 16;
+      height: 30px;
+    }
+    .mob-mnu-ic button {
+      outline: none;
+      -webkit-appearance: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      border: none;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      transition: 0.4s;
+      -webkit-border-radius: 2px 2px 2px 2px;
+      border-radius: 2px 2px 2px 2px;
+    }
+    .mobilemenu li {
+      float: left;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #dddddd;
+    }
+    .bar2 {
+      margin: 6px 0;
+    }
+    .mobilemenu li a {
+      float: left;
+      width: 100%;
+      padding: 17px 20px;
+      font-size: 18px;
+      color: #000;
+      cursor: pointer;
+    }
+    .dl-active .bar2 {
+      opacity: 0;
+    }
+    .dl-active .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+      transform: rotate(-45deg) translate(-6px, 5px);
+      background: #000;
+    }
+    .dl-active .bar3 {
+      -webkit-transform: rotate(45deg) translate(-7px, -7px);
+      transform: rotate(45deg) translate(-7px, -7px);
+      background: #000;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .logo {
+      width: 150px;
+    }
+    .show-mob {
+      display: block;
+    }
+    .mob-mnu-ic {
+      top: 10px;
+      right: 10px;
+    }
+    .mobilemenu {
+      top: 88px;
+    }
+    .mobimenu-top {
+      top: 55px;
+    }
+    .hide-mob {
+      display: none;
+    }
+    .top-fix-bar {
+      margin-bottom: 55px;
+    }
+    .jar-header {
+      height: 55px;
+      margin-top: -55px;
+      top: 55px;
+      padding: 6px 0;
+    }
+  }
+  .jar-banner {
+    position: relative;
+  }
+  .bnr-left {
+    float: left;
+    width: 60%;
+    text-align: left;
+    margin-top: 60px;
+  }
+  .bnr-right {
+    width: 32%;
+    float: left;
+    position: relative;
+  }
+  .bnr-head {
+    float: left;
+    width: 100%;
+    font-size: 46px;
+    line-height: 58px;
+    color: #272727;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+  .bnr-para {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    line-height: 26px;
+    color: #363636;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  .clearall {
+    clear: both;
+    font-size: 1px;
+    line-height: 1px;
+    height: 1px;
+  }
+  a.order-btn {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 400px;
+    background: #de7744;
+    text-align: center;
+    height: 85px;
+    line-height: 27px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+    padding: 3px 22px;
+  }
+  .bnr-right:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 538px;
+    height: 528px;
+    top: 0;
+    bottom: 0;
+    background: url(https://cdn.shopify.com/s/files/1/0518/4625/0673/files/01_538X528_f8847123-8509-460c-b8e0-532d7416c99b.png?v=1639473387)
+      no-repeat top left;
+    background-size: cover;
+  }
+  .text-span-4 img {
+    height: 20px;
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  .text-span-5 {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+  .text-day {
+    color: #f00;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  .jar-banner .text-day {
+    width: 400px;
+  }
+  .pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+    }
+  }
+  @media only screen and (max-width: 1187px) {
+    .bnr-left {
+      width: 52%;
+      margin-top: 45px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .bnr-left {
+      width: 53%;
+      margin-top: 55px;
+    }
+    .bnr-right {
+      width: 45%;
+    }
+    .bnr-head {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    .bnr-para {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .bnr-left {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+    .bnr-right {
+      display: none;
+    }
+    .bnr-head {
+      font-size: 34px;
+      line-height: 38px;
+      margin-top: 0;
+    }
+    .mob-bnr {
+      float: left;
+      width: calc(100% + 20px);
+      max-width: none;
+      margin-top: 20px;
+    }
+    .bnr-para {
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+  }
+  .strip-bg {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0 0;
+  }
+  .ftur-hdng {
+    float: left;
+    width: 100%;
+    font-size: 25px;
+    line-height: 22px;
+    color: #272727;
+    text-align: center;
+    background: url(https://cdn.shopify.com/s/files/1/0572/1944/9041/files/futr-line.png?v=1642755981)
+      no-repeat center center;
+  }
+  @media (max-width: 480px) {
+    .ftur-hdng {
+      font-size: 18px;
+    }
+  }
+  ul.strip-list {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #c8c8c8;
+    margin-top: 25px;
+    padding-bottom: 20px;
+  }
+  ul.strip-list li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 16px;
+    width: 16%;
+  }
+  ul.strip-list .iconSec {
+    position: relative;
+  }
+  ul.strip-list .iconSec:before {
+    content: "";
+    border-right: 1px solid #ebebeb;
+    top: 0px;
+    bottom: 15px;
+    right: 0;
+    position: absolute;
+  }
+  ul.strip-list li img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul.strip-list span {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #272727;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .section1 {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 0px 0 70px;
+  }
+  .common-head {
+    width: 100%;
+    font-size: 42px;
+    line-height: 52px;
+    color: #191919;
+    font-weight: bold;
+  }
+  .comon-bdr {
+    display: inline-block;
+    vertical-align: top;
+    background: #191919;
+    width: 75px;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .common-para {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #191919;
+    letter-spacing: 0.5px;
+    margin-top: 22px;
+  }
+  .vid-sec img {
+    max-width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  ul.sec1-list {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0;
+  }
+  ul.sec1-list li {
+    float: left;
+    width: 23%;
+    background: #fff;
+    position: relative;
+    padding: 20px;
+    margin-top: 28px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
+  }
+  ul.sec1-list li img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul.sec1-list li span {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    color: #191919;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  ul.sec1-list li p {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #494949;
+    margin-top: 12px;
+  }
+  .s1-txt {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    color: #272727;
+    font-weight: 600;
+    margin-top: 35px;
+  }
+  .section2 {
+    background: #f5f5f5;
+    float: left;
+    width: 100%;
+    padding: 60px 0 70px;
+  }
+  .common-head {
+    width: 100%;
+    font-size: 42px;
+    line-height: 52px;
+    color: #191919;
+    font-weight: bold;
+  }
+  ul.s2-list {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 10px;
+  }
+  ul.s2-list li {
+    float: left;
+    width: 23%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .s2-bnr-imgs {
+    width: 100%;
+    margin: 0 auto 0;
+    display: block;
+  }
+  .s2-bnr-icn {
+    margin: -24px auto 2px;
+    display: block;
+  }
+  ul.s2-list p {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #191919;
+    padding: 10px;
+  }
+  ul.s2-list span {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+    color: #191919;
+    font-weight: 500;
+  }
+  .section2-3 {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 60px 0 70px;
+  }
+  .section3 {
+    background: #f5f5f5;
+    float: left;
+    width: 100%;
+    padding: 60px 0 70px;
+  }
+  .s3-txt1 {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    color: #191919;
+    font-weight: 600;
+    margin: 30px 0;
+    margin-top: 80px;
+  }
+  .greyBg {
+    background: #f8f8f8;
+    width: 97%;
+    padding: 50px 0px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .application-box {
+    float: left;
+    width: 100%;
+    margin: 0px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  .application-left {
+    width: 24%;
+    position: relative;
+    margin-right: 5px;
+  }
+  .application-left p {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(23, 23, 22, 0.7);
+    color: #fff;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 5px;
+  }
+  .application-middle {
+    width: 24%;
+    margin-right: 5px;
+  }
+  .application-middle ul li {
+    position: relative;
+  }
+  .application-middle p {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background: rgba(23, 23, 22, 0.7);
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    letter-spacing: 0.5px;
+    padding: 5px;
+  }
+  .application-rgt {
+    position: relative;
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .application-rgt p {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background: rgba(23, 23, 22, 0.7);
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    letter-spacing: 0.5px;
+    padding: 5px;
+  }
+  ul.sec3-list {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65%;
+    margin-top: 15px;
+  }
+  ul.sec3-list li {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+  }
+  .icon {
+    width: 16%;
+  }
+  ul.sec3-list li img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul.sec3-list li span {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    color: #1e1e1e;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  ul.sec3-list li p {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1e1e1e;
+    margin-top: 10px;
+  }
+  .section4 {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 60px 0 70px;
+  }
+  ul.sec4-list {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 10px;
+  }
+  ul.sec4-list li {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    padding: 0 45px;
+  }
+  ul.sec4-list li img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  ul.sec4-list li span {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+  ul.sec4-list li p {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1b1b1b;
+    margin-top: 10px;
+  }
+  .section5 {
+    background: #f5f5f5;
+    float: left;
+    width: 100%;
+    padding: 55px 0;
+  }
+  .sec5Cont {
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+  .bdr-bg {
+    background: #c480a8;
+  }
+  ul.s5-list {
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+  }
+  ul.s5-list li {
+    float: left;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding-left: 75px;
+    margin-bottom: 20px;
+  }
+  .s5-list li img {
+    position: absolute;
+    left: 0;
+    top: 0px;
+  }
+  .s5-list li span {
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .s5-list li p {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin-top: 8px;
+  }
+  .section56 {
+    text-align: left;
+    padding: 50px 0px;
+    background: #f5f5f5;
+    float: left;
+    width: 100%;
+  }
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section56 .d-flex {
+    display: flex;
+    align-items: baseline;
+  }
+  .listBox {
+    width: 33.33%;
+    margin-bottom: 40px;
+  }
+  .listBox.Box1 {
+    width: 27%;
+    margin-bottom: 0;
+  }
+  .section56 ul {
+    padding-top: 20px;
+  }
+  .section56 .text-center {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .section56 ul li {
+    position: relative;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .section6 {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 60px 0 70px;
+  }
+  .reviewblk {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 800px;
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .ratingBox {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16%;
+    background: #56a5dd;
+    color: #fff;
+  }
+  .ratingBox p {
+    float: left;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .ratingBox span {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    background: #2b73a7;
+    padding: 3px 0;
+  }
+  .ratingImg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+  }
+  .overall-rating {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+    color: #393737;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0 13px;
+  }
+  .overall-rating img {
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 7px;
+  }
+  .cs-percent {
+    display: inline-block;
+    vertical-align: middle;
+    width: 21%;
+    margin: 0px 12px;
+    color: #393737;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cs-percent span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    float: left;
+    width: 100%;
+  }
+  .testiBox {
+    float: left;
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 40px;
+  }
+  .testi-row {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 105px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  .testi-imgs {
+    position: absolute !important;
+    left: 0;
+    top: 10px;
+  }
+  .testi-star {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .testi-para {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  .usr-name {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+    margin-top: 20px;
+  }
+  .usr-name span {
+    display: inline-block;
+    vertical-align: top;
+    color: #404040;
+    font-weight: normal;
+    border-left: 1px solid #404040;
+    padding-left: 10px;
+    margin-left: 8px;
+  }
+  .jar-footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+  #loading-indicator {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: 1px;
+    height: 100%;
+    left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2147483646;
+  }
+  .customfooter {
+    margin-top: auto;
+    color: #000;
+    background: #f5f5f5;
+    padding: 40px 0px;
+    float: left;
+    width: 100%;
+    line-height: 21px;
+    text-align: left;
+  }
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .footer-col-4 {
+    width: 33.33%;
+  }
+  .footer-row > div {
+    padding: 0px 15px;
+  }
+  .customfooter h3 {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #696868;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color: #000;
+  }
+  .customfooter ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  .customfooter ul li {
+    list-style: none;
+    border: none;
+    color: #000;
+    line-height: 24px !important;
+  }
+  .customfooter a {
+    color: #000;
+    font-size: 12px;
+    padding: 0px !important;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+  }
+  .customfooter h3 {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #696868;
+    padding-bottom: 5px;
+    font-weight: 700;
+    color: #000;
+  }
+  .customfooter .credit-cards-image {
+    width: 100%;
+    max-width: 350px !important;
+  }
+  .customfooter p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 21px !important;
+  }
+  .footerBottom {
+    border-top: 1px solid #696868;
+    margin-top: 15px;
+    padding-top: 15px !important;
+  }
+  .footerBottom p {
+    padding-bottom: 10px;
+  }
+  .footer-image-logo {
+    margin: 0px !important;
+  }
+  .footer-image-logo img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 25px;
+  }
+  .footer-col-12 {
+    width: 100%;
+    text-align: center;
+  }
+  .white {
+    color: #fff;
+  }
+  @media only screen and (max-width: 1187px) {
+    ul.strip-list li {
+      padding: 0 42px;
+    }
+    .application-box {
+      padding: 0 80px;
+    }
+    ul.sec3-list {
+      width: 80%;
+    }
+    ul.s2-list span {
+      font-size: 21px;
+      line-height: 27px;
+    }
+    ul.s2-list p {
+      padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    ul.strip-list li {
+      padding: 0 12px;
+      width: 25%;
+    }
+    .vid-sec {
+      width: 100%;
+    }
+    ul.sec1-list {
+      padding: 0;
+      justify-content: center;
+    }
+    ul.sec1-list li {
+      padding: 20px 8px;
+      width: 31%;
+      margin-right: 16px;
+    }
+    ul.sec1-list li p {
+      font-size: 17px;
+      line-height: 25px;
+    }
+    .s1-txt {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .section1 {
+      padding: 0px 0 60px;
+    }
+    .section2 {
+      padding: 50px 0 60px;
+    }
+    .common-head {
+      font-size: 36px;
+      line-height: 46px;
+    }
+    ul.s2-list li {
+      width: 19.5%;
+    }
+    .section3 {
+      padding: 50px 0 60px;
+    }
+    .greyBg {
+      justify-content: space-between;
+    }
+    .application-box {
+      padding: 0;
+    }
+    ul.sec3-list {
+      width: 100%;
+    }
+    .icon p {
+      font-size: 14px;
+    }
+    .application-left p,
+    .application-middle p,
+    .application-rgt p {
+      font-size: 15px;
+    }
+    .section4 {
+      padding: 50px 0 60px;
+    }
+    ul.sec4-list li {
+      padding: 0 25px;
+    }
+    .section6 {
+      padding: 50px 0 60px;
+    }
+    .cs-percent {
+      margin: 0;
+    }
+    .testiBox {
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    ul.strip-list li {
+      float: left;
+      width: 33.33%;
+      padding: 0;
+      margin-top: 15px;
+    }
+    .vid-sec {
+      margin-top: 20px;
+    }
+    .comon-bdr {
+      margin-top: 15px;
+    }
+    ul.sec1-list {
+      margin-top: 0;
+      padding: 0 20px;
+    }
+    ul.sec1-list li {
+      width: 100%;
+      margin-top: 25px;
+      padding: 20px 25px;
+    }
+    .s1-txt {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 25px;
+    }
+    .section1 {
+      padding: 0px 0 30px;
+    }
+    .section2 {
+      padding: 25px 0 35px;
+    }
+    .common-head {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    ul.s2-list {
+      margin: 0;
+    }
+    ul.s2-list li {
+      width: 100%;
+      margin-top: 25px;
+    }
+    ul.s2-list span {
+      font-size: 21px;
+      line-height: 27px;
+    }
+    ul.s2-list p {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 10px 45px;
+    }
+    .section3 {
+      padding: 25px 0 30px;
+    }
+    .s3-txt1 {
+      margin-top: 15px;
+    }
+    .greyBg {
+      display: block;
+      float: left;
+      margin-top: 0;
+    }
+    .application-box {
+      margin-top: 15px;
+      display: inline-block;
+      width: 100%;
+    }
+    .icon {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    .application-left,
+    .application-middle,
+    .application-rgt {
+      width: 100%;
+      margin: 0;
+    }
+    .application-rgt p,
+    .application-left p,
+    .application-middle p {
+      font-size: 15px;
+    }
+    .application-box img {
+      width: 100%;
+    }
+    ul.sec3-list li {
+      margin-top: 25px;
+    }
+    ul.sec3-list li span {
+      margin-top: 12px;
+    }
+    ul.sec3-list li p {
+      font-size: 17px;
+      line-height: 25px;
+      padding: 0 24px;
+    }
+    .section4 {
+      padding: 25px 0 30px;
+    }
+    ul.sec4-list {
+      margin: 25px 0 0;
+    }
+    ul.sec4-list li {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    ul.sec4-list li img {
+      width: 200px;
+    }
+    ul.sec4-list li span {
+      margin-top: 15px;
+    }
+    ul.sec4-list li p {
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 8px;
+      padding: 0 15px;
+    }
+    .section5 {
+      padding: 25px 0 30px;
+    }
+    .sec5Cont {
+      width: 100%;
+      text-align: center;
+    }
+    ul.s5-list {
+      margin-top: 10px;
+    }
+    ul.s5-list li {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .s5-list li img {
+      position: static;
+      margin: 0 auto 12px;
+      display: block;
+    }
+    .s5-list li p {
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+    .section56 .d-flex {
+      display: block;
+    }
+    .listBox {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .listBox.Box1 {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .section6 {
+      padding: 25px 0 30px;
+    }
+    .reviewblk {
+      max-width: 100%;
+      padding: 0 0 15px;
+      margin-top: 25px;
+      border-radius: 0;
+    }
+    .ratingBox {
+      width: 100%;
+    }
+    .ratingBox {
+      width: 100%;
+    }
+    .ratingImg {
+      margin: 22px 0;
+    }
+    .overall-rating {
+      width: 100%;
+      margin: 0;
+    }
+    .overall-rating img {
+      margin: -10px 0 0;
+      width: 90px;
+    }
+    .cs-percent {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+    .testiBox {
+      margin-top: 30px;
+    }
+    .testi-row {
+      padding-left: 85px;
+      margin-bottom: 30px;
+    }
+    .testi-imgs {
+      width: 75px;
+    }
+    .testi-star {
+      width: 90px;
+    }
+    .testi-para {
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 12px;
+    }
+    .usr-name {
+      margin-top: 15px;
+    }
+    .jar-footer {
+      padding: 0 0 20px;
+    }
+    #ctabtn-mob {
+      background: white;
+      padding: 7px 10px;
+      position: fixed;
+      bottom: 0%;
+      left: auto;
+      z-index: 9;
+      transition: bottom 1s;
+      display: table;
+      width: 100%;
+    }
+    #ctabtn-mob a.order-btn {
+      margin: 0;
+      width: 300px;
+      line-height: 24px;
+      font-size: 15px;
+    }
+    .footer-row {
+      display: block;
+    }
+    .footer-row > div {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .footerLogoHolder,
+    .footerBottom {
+      padding-bottom: 0px !important;
+    }
+    .usr-name span {
+      border-left: none;
+      padding-left: 0;
+      margin-left: 0;
+      padding-top: 5px;
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .new-chamfer {
+      padding-top: 25px;
+    }
+    .current-inner {
+      margin-top: -20px;
+    }
+    .current-inner h3,
+    .current-inner h2 {
+      padding: 10px 5px;
+    }
+    .es_variant_row {
+      padding-top: 50px;
+      padding-bottom: 60px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .es_variant_row .col-xs-12 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .es_variant {
+      border: solid 1px #bfbfbf;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 12px 0 rgb(0 0 0 / 24%);
+      text-align: center;
+    }
+    h2.es_variant_title {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center !important;
+      line-height: 20px;
+    }
+    img.product_img {
+      height: 170px;
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    label.old_price {
+      text-decoration: line-through;
+      font-weight: 300;
+      color: #d01212;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    label.price {
+      color: #000;
+      font-weight: 800;
+      font-size: 24px;
+    }
+    .es_margin_top_10 {
+      margin-top: 2px;
+      font-size: 10px;
+      font-weight: 300;
+    }
+    .es_btn-order {
+      display: block;
+      height: 56px;
+      line-height: 56px;
+      background: #19af42;
+      color: #fff;
+      border: solid 2px #027522;
+      border-radius: 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0px;
+      text-decoration: none;
+      width: 100%;
+    }
+    .es_btn-order:before {
+      content: "";
+      display: inline-block;
+      background-image: url(https://cdn.shopify.com/s/files/1/0572/1944/9041/files/icon_lock.png?v=1642756349);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 18px;
+      position: absolute;
+      margin-top: 18px;
+    }
+    .es_btn-order span {
+      margin-left: 30px;
+    }
+    .es_margin_free {
+      margin-top: 13px;
+      margin-bottom: 4px;
+      font-size: 14px;
+      display: inline-block;
+    }
+    .text-span-31 {
+      margin-left: 6px;
+    }
+    .es_featured_snippet label {
+      margin: 0;
+      position: absolute;
+      color: #fff;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 5px;
+      left: 50%;
+      top: -20px;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .es_big {
+      border: 2px dashed #000 !important;
+      background-color: #fffedb;
+    }
+    .es_featured_snippet {
+      height: 15px;
+    }
+    .es_variant:hover {
+      box-shadow: 2px 2px 15px 0 rgb(0 0 0 / 50%);
+    }
+    .rev-img-div img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .main-sub-heading {
+      font-size: 32px;
+    }
+    .button-2.full-button {
+      padding: 10px 15px;
+      font-size: 20px;
+    }
+    .mid-heading {
+      padding-top: 15px;
+      font-size: 34px;
+      line-height: 40px;
+    }
+    .offerbox_var {
+      padding-top: 15px;
+    }
+    .offerbox {
+      align-items: center;
+      display: flex;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 1px solid #f1f1f1;
+      padding-left: 9px !important;
+      padding-right: 9px !important;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0px 6px 11px #88888826;
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      position: relative;
+    }
+    .offer-check {
+      min-width: 20px;
+      width: 20px;
+      height: 20px;
+      border: solid 1px #cfcfcf;
+      border-radius: 3px;
+      background: #f6f6f6;
+      margin-right: 8px !important;
+    }
+    .es_product_img {
+      width: 65px;
+      margin-right: 5px;
+    }
+    .es_text {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+    }
+    .es_variant_title {
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 600;
+      display: block;
+    }
+    .es_featured-label {
+      text-transform: uppercase;
+      width: 92px;
+      height: 61px;
+      background: #ff3434;
+      transform: rotate(45deg);
+      position: absolute;
+      right: -36px;
+      top: -20px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      font-size: 11px;
+      line-height: 1.2;
+      padding: 32px 20px 10px 20px;
+    }
+    .es_freeshipping_text {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1;
+      color: #000;
+      text-align: left !important;
+      margin-top: 3px;
+      display: inline-block;
+    }
+    .es_price {
+      font-size: 15px;
+      font-weight: 600;
+      text-align: left;
+      margin-top: 3px;
+      float: left;
+      background-color: #0000000d;
+      padding: 5px;
+      border-radius: 10px;
+    }
+    span.free-micros {
+      font-size: 12px !important;
+      display: inline-block;
+    }
+    .es_old_price {
+      margin: 0;
+      font-size: 13px;
+      text-decoration: line-through;
+      color: #de1b1b;
+      font-weight: 400;
+      text-align: right;
+      margin-top: 8px;
+      display: block;
+    }
+    .pricing-info {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .es_total_price {
+      margin: 0;
+      font-size: 13px;
+      color: #000000;
+      font-weight: 400;
+      text-align: right;
+      margin-top: 8px;
+    }
+    .es_btn-order {
+      display: block;
+      height: 56px;
+      line-height: 56px;
+      background: #19af42;
+      color: #fff;
+      border: solid 2px #027522;
+      border-radius: 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0px;
+      text-decoration: none;
+      width: 100%;
+      height: 60px;
+      line-height: 22px;
+      padding-top: 5px;
+      text-decoration: none;
+    }
+    .es_btn-order:before {
+      content: "";
+      display: inline-block;
+      background-image: url(https://cdn.shopify.com/s/files/1/0572/1944/9041/files/icon_lock.png?v=1642756349);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 18px;
+      position: absolute;
+      margin-top: 0;
+    }
+    .offerbox.box-checked {
+      background: #ffc439;
+      border: 1px solid #ffc319;
+    }
+    .es_btn-order span {
+      margin-left: 20px;
+    }
+    .offerbox_var .box-checked input.offer-check[type="checkbox"] {
+      -webkit-appearance: none;
+      background: url(https://cdn.shopify.com/s/files/1/0572/1944/9041/files/checkmark.svg?v=1642756539)
+        #f2f9fd center center/18px 18px no-repeat;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .es_variant_row .col-sm_big {
+      margin-top: 25px;
+    }
+  }
+  @media (max-width: 450px) {
+    #overview ul.sec1-list li {
+      margin-right: 0px;
+    }
+  }
+  .kore-inner {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .kore-inner h2 {
+    text-align: center;
+    background-color: #c73030;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5px;
+  }
+  .kore-inner h3 {
+    text-align: center;
+    background-color: #efe8e0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    color: rgb(108, 117, 125);
+  }
+  .kore-inner h4 {
+    text-align: center;
+    background-color: #efe8e0;
+    font-size: 32px;
+    line-height: 45px;
+    color: rgb(108, 117, 125);
+  }
+  .kore-inner p {
+    color: #6c757d;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .kore-inner p img {
+    height: 16px;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+  }
+  .kore-inner h5 {
+    color: rgb(136, 136, 136);
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .kore-inner h5 span {
+    font-size: 24px;
+    padding-left: 5px;
+    color: #33602c;
+  }
+  .kore-order-now {
+    color: #fff !important;
+    background: #c73030;
+    font-size: 18px;
+    margin-top: 14px;
+    border-radius: 60px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 13px 35px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .kore-qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .kore-qty-box {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .kore-minus_btn {
+    width: 45px;
+    height: 35px;
+    border: 1px solid #d7dbdb;
+    border-right: none;
+    border-radius: 13px 0px 0px 13px;
+    display: block;
+    background: url("https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/minus.png")
+      #fff no-repeat center center;
+    float: left;
+    cursor: pointer;
+  }
+  .kore-plus_btn {
+    width: 45px;
+    height: 35px;
+    border: 1px solid #d7dbdb;
+    text-align: center;
+    border-radius: 0px 13px 13px 0;
+    display: block;
+    background: url("https://cdn.shopify.com/s/files/1/0262/9337/0964/t/3/assets/plus.png")
+      #fff no-repeat center center;
+    float: left;
+    border-left: none;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    .col-md-4 {
+      width: 33%;
+    }
+    .top-fix-bar {
+      padding-bottom: 10px;
+    }
+    .ftur-hdng {
+      padding: 20px !important;
+    }
+  }
+  ul.sec1-list li img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .offerbox-info del {
+      margin-left: 10px;
+      color: gray;
+    }
+    .offerbox-info p b {
+      font-size: 16px;
+    }
+  }
+  .pt-20 {
+    padding-top: 20px;
+  }
+--></style>
+<div id="sakerlp">
+<div class="topStrip">
+<div class="container">
+<p>🌻SUMMER SALE / Free Shipping from $39.99🚀</p>
+</div>
+</div>
+<div class="top-fix-bar">
+<div class="jar-header">
+<div class="container"><img src="https://www.naivetu.com/cdn/shop/files/logo1_550x.png?v=1688114302" style="max-width: 250px;" class="logo">
+<ul class="topMenu show-desk scroller">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#es_buy">Use</a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+<h1 class="alt-1 show-desk">1h 32m 55s</h1>
+<div class="show-mob show-tab">
+<div class="mob-mnu-ic">
+<div class="dl-trigger" id="mobMenuBtn">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<ul class="mobilemenu">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#es_buy">Use</a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jar-banner"><a href="#es_buy" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2;"></a> <img style="width: 100%;" class="hidden-xs" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lp_02.jpg?v=1718170566" alt=""> <img style="width: 100%;" class="visible-xs" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/750_01.jpg?v=1718170565%20" alt=""></div>
+<div class="strip-bg">
+<div class="container">
+<p class="ftur-hdng" style="background-size: cover; font-weight: bold;">Discover the perfect blend of comfort and elegance in our bras.</p>
+</div>
+</div>
+<div class="section1" id="overview">
+<div class="container">
+<div class="clearall"></div>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lp_05.jpg?v=1718170566" alt=""></div>
+<ul class="sec1-list">
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/12.png?v=1718170560" alt="">
+<div class="clearall"></div>
+<strong>V-shape Full Cups </strong>
+<p>Full coverage cups wrap well without tightening and fit your body.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/13.png?v=1718170560" alt="">
+<div class="clearall"></div>
+<strong>High Elasticity </strong>
+<p>Flexible fabric holds its shape over time.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/14.png?v=1718170560" alt="">
+<div class="clearall"></div>
+<strong>Breathable Thin </strong>
+<p>Made of a super-light, ultra-soft fabric that supports without restricting movement.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/15.png?v=1718170560" alt="">
+<div class="clearall"></div>
+<strong>Smooth Fabric </strong>
+<p>The thin and soft daily bras are very smooth, breathable and light as clouds, feel like wearing nothing at all.</p>
+</li>
+</ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">Get 60% OFF Today<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">Order Now</span></a></div>
+</div>
+</div>
+<div class="section2" id="features">
+<div class="container">
+<p class="common-head">Experience the joy of a perfectly fitting bra!</p>
+<div class="comon-bdr"></div>
+<div class="clearall"></div>
+<p class="common-para">This comfortable&nbsp;bra is supportive suitable for all kinds of activities, sleeping, walking, jogging, dancing, yoga, cycling and other outdoor sports.&nbsp;</p>
+<div class="vid-sec"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lp_09.jpg?v=1718170567"></div>
+<ul class="s2-list">
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lQLPJxWdNtbD6knNAUjNAXSwXWj0jy4MN8IGVFuB40f7Ag_372_328.png?v=1718171045" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<!-- <img
+            class="s2-bnr-icn"
+            src="https://cdn.shoplazza.com/3511753bee0ce41223e7c71d353a24fc.png"
+          /> --> <span>Enhanced W-Support Shaper </span>
+<p>Provides 360° breast support, covers side breasts, underarm and back fat, gently lifts and shapes.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lQLPJwcMSTMvqknNAUjNAXSw4jcSo7eMcZoGVFuB40f7AQ_372_328.png?v=1718171046" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<!-- <img
+            class="s2-bnr-icn"
+            src="https://cdn.shoplazza.com/d486eabce93fbf8593af57cd793971e8.png"
+          /> --> <span>Smooth, Seamless Appearance</span>
+<p>Our breathable fabrics are made with advanced bonding technology for a seamless effect that is kinder to sensitive skin.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lQLPJx7QzjS7yknNAUjNAXSw3crENFCXxGcGVFuB4x54AA_372_328.png?v=1718171045" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<!-- <img
+            class="s2-bnr-icn"
+            src="https://cdn.shoplazza.com/cd63da06b89b0054efc61df910bcfa4e.png"
+          /> --> <span>With Semi-Fixed Pads</span>
+<p>Ensure that the fixing part will not turn over or shift during washing, maintaining the shape and aesthetics of the bra.</p>
+</li>
+<li><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lQLPKeJy3qO9mknNAUjNAXSwr22Ukp4NLdMGVFuB40f7AA_372_328.png?v=1718171046" class="s2-bnr-imgs">
+<div class="clearall"></div>
+<!-- <img
+            class="s2-bnr-icn"
+            src="https://cdn.shoplazza.com/911724b6967c649c7ec9eb432e26040f.png"
+          /> --> <span>5 Rows Of Hooks On The Back </span>
+<p>Provides more support and room for adjustment so that the bra better adapts to your breasts and size changes.</p>
+</li>
+</ul>
+<ul class="s2-list"></ul>
+<div class="hide-mob">
+<div class="clearall"></div>
+<a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">Get 60% OFF Today<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">Order Now</span></a></div>
+</div>
+</div>
+<div class="section2-3">
+<div class="container">
+<p class="common-head">Every woman deserves a bra that fits like a dream – find yours today.</p>
+<img class="mt-20 hide-mob" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/lp_14.jpg?v=1718170567%20" alt=""> <img alt="" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/750_03.jpg?v=1718170567%20" class="show-mob mt-20"></div>
+</div>
+<div class="section3">
+<div class="container" id="es_buy">
+<div class="common-head" style="padding: 40px 0 20px 0;">BUY MORE, SAVE MORE!</div>
+<div style="display: flex; justify-content: center; flex-wrap: wrap;" class="row new-chamfer hidden-xs">
+<div class="col-xs-12 col-sm-3 pt-20">
+<div class="kore-inner current-inner">
+<h2 style="background: #82aaca; color: #fff;">Recommend</h2>
+<h3>Grey – Adjustable Shoulder Straps</h3>
+<h4>60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/3_cce909e8-ee25-4c04-b030-6e1d5b7e4b8d.jpg?v=1718170563" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 27.4K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544772391192">5XL</option>
+<option value="48544772358424">4XL</option>
+<option value="48544772325656">3XL</option>
+<option value="48544772292888">2XL</option>
+<option value="48544772260120">XL</option>
+<option value="48544772227352">L</option>
+<option value="48544772194584">M</option>
+<option value="48544772161816">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544772391192"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #82aaca;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner current-inner">
+<h2 style="background: #ef9885; color: #fff;">Best Seller</h2>
+<h3>Pink – Adjustable Shoulder Straps</h3>
+<h4 style="padding: 10px;">60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/4_dfbb8867-fdbd-436f-8b9a-9bd6f36aa6b6.jpg?v=1718170563" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 33.8K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544772653336">5XL</option>
+<option value="48544772620568">4XL</option>
+<option value="48544772587800">3XL</option>
+<option value="48544772555032">2XL</option>
+<option value="48544772522264">XL</option>
+<option value="48544772489496">L</option>
+<option value="48544772456728">M</option>
+<option value="48544772423960">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544772653336"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #ef9885;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner current-inner">
+<h2 style="background: #ef9885; color: #fff;">Hot Pick</h2>
+<h3>Apricot – Adjustable Shoulder Straps</h3>
+<h4 style="padding: 10px;">60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/1_f27a616e-98ed-458d-8f78-66e170fa43cc.jpg?v=1718170563" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 31.6K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544771866904">5XL</option>
+<option value="48544771834136">4XL</option>
+<option value="48544771768600">3XL</option>
+<option value="48544771735832">2XL</option>
+<option value="48544771703064">XL</option>
+<option value="48544771670296">L</option>
+<option value="48544771637528">M</option>
+<option value="48544771604760">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544771866904"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #ef9885;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 pt-20">
+<div class="kore-inner current-inner">
+<h2 style="background: #82aaca; color: #fff;">Recommend</h2>
+<h3>Black – Adjustable Shoulder Straps</h3>
+<h4>60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/2_d8c89ffb-cf44-4d3b-9230-2f295768c716.jpg?v=1718170562" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 25.8K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544772129048">5XL</option>
+<option value="48544772096280">4XL</option>
+<option value="48544772063512">3XL</option>
+<option value="48544772030744">2XL</option>
+<option value="48544771997976">XL</option>
+<option value="48544771965208">L</option>
+<option value="48544771932440">M</option>
+<option value="48544771899672">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544772129048"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #82aaca;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 pt-20">
+<div class="kore-inner current-inner">
+<h2 style="background: #82aaca; color: #fff;">Popular</h2>
+<h3>Grey – Vest style back buckle</h3>
+<h4>60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/5_ff943523-3cc9-4f55-a7e5-913778642c6c.jpg?v=1718170562" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 24.4K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544773636376">5XL</option>
+<option value="48544773603608">4XL</option>
+<option value="48544773570840">3XL</option>
+<option value="48544773538072">2XL</option>
+<option value="48544773505304">XL</option>
+<option value="48544773472536">L</option>
+<option value="48544773439768">M</option>
+<option value="48544773407000">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544773636376"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #82aaca;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-inner current-inner">
+<h2 style="background: #ef9885; color: #fff;">Super Recommend</h2>
+<h3>Apricot – Vest style back buckle</h3>
+<h4 style="padding: 10px;">60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/6_92883f12-316c-47d4-8a56-9878fea8f49c.jpg?v=1718170563" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 30.9K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544773046552">5XL</option>
+<option value="48544773013784">4XL</option>
+<option value="48544772948248">3XL</option>
+<option value="48544772882712">2XL</option>
+<option value="48544772849944">XL</option>
+<option value="48544772784408">L</option>
+<option value="48544772751640">M</option>
+<option value="48544772718872">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544773046552"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #ef9885;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 pt-20">
+<div class="kore-inner current-inner">
+<h2 style="background: #82aaca; color: #fff;">Popular</h2>
+<h3>Black – Vest style back buckle</h3>
+<h4>60% OFF</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/7_fa2ae859-dc1b-44c8-85db-6c93181f2a9a.jpg?v=1718170562" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505"> 25.6K Reviews</p>
+<h5 class="price"><del>$74.99</del><span>$29.99</span></h5>
+<div class="variant"><span style="font-size: 14px;">SIZE:</span><select name="multi-variant">
+<option value="48544773374232">5XL</option>
+<option value="48544773341464">4XL</option>
+<option value="48544773308696">3XL</option>
+<option value="48544773275928">2XL</option>
+<option value="48544773243160">XL</option>
+<option value="48544773210392">L</option>
+<option value="48544773177624">M</option>
+<option value="48544773112088">S</option>
+</select></div>
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input id="quantity" class="kore-txtbox" min="1" name="quantity" type="text" value="1" variant_id="48544773374232"> <a class="kore-plus_btn"></a></div>
+<button class="kore-order-now kore-buttonBounce kore-checkout" style="background: #82aaca;"> Order Now </button>
+<div class="kore-lock">Secured and Encrypted<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offersWrapper visible-xs">
+<div class="offerbox box-checked"><input checked="checked" type="checkbox" class="offer-checked" data-id="48544772653336" value="48544772653336" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/4_dfbb8867-fdbd-436f-8b9a-9bd6f36aa6b6.jpg?v=1718170563"></figure>
+<div class="offerbox-info">
+<h1>Pink – Adjustable Shoulder Straps</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544772653336">5XL</option>
+<option value="48544772620568">4XL</option>
+<option value="48544772587800">3XL</option>
+<option value="48544772555032">2XL</option>
+<option value="48544772522264">XL</option>
+<option value="48544772489496">L</option>
+<option value="48544772456728">M</option>
+<option value="48544772423960">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544772653336">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+<div class="ribbon green">Best Seller</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544771866904" value="48544771866904" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/1_f27a616e-98ed-458d-8f78-66e170fa43cc.jpg?v=1718170563"></figure>
+<div class="offerbox-info">
+<h1>Apricot – Adjustable Shoulder Straps</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544771866904">5XL</option>
+<option value="48544771834136">4XL</option>
+<option value="48544771768600">3XL</option>
+<option value="48544771735832">2XL</option>
+<option value="48544771703064">XL</option>
+<option value="48544771670296">L</option>
+<option value="48544771637528">M</option>
+<option value="48544771604760">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544771866904">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544772391192" value="48544772391192" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/3_cce909e8-ee25-4c04-b030-6e1d5b7e4b8d.jpg?v=1718170563"></figure>
+<div class="offerbox-info">
+<h1>Grey – Adjustable Shoulder Straps</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544772391192">5XL</option>
+<option value="48544772358424">4XL</option>
+<option value="48544772325656">3XL</option>
+<option value="48544772292888">2XL</option>
+<option value="48544772260120">XL</option>
+<option value="48544772227352">L</option>
+<option value="48544772194584">M</option>
+<option value="48544772161816">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544772391192">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544772129048" value="48544772129048" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/2_d8c89ffb-cf44-4d3b-9230-2f295768c716.jpg?v=1718170562"></figure>
+<div class="offerbox-info">
+<h1>Black – Adjustable Shoulder Straps</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544772129048">5XL</option>
+<option value="48544772096280">4XL</option>
+<option value="48544772063512">3XL</option>
+<option value="48544772030744">2XL</option>
+<option value="48544771997976">XL</option>
+<option value="48544771965208">L</option>
+<option value="48544771932440">M</option>
+<option value="48544771899672">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544772129048">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544773046552" value="48544773046552" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/6_92883f12-316c-47d4-8a56-9878fea8f49c.jpg?v=1718170563"></figure>
+<div class="offerbox-info">
+<h1>Apricot – Vest style back buckle</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544773046552">5XL</option>
+<option value="48544773013784">4XL</option>
+<option value="48544772948248">3XL</option>
+<option value="48544772882712">2XL</option>
+<option value="48544772849944">XL</option>
+<option value="48544772784408">L</option>
+<option value="48544772751640">M</option>
+<option value="48544772718872">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544773046552">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544773636376" value="48544773636376" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/5_ff943523-3cc9-4f55-a7e5-913778642c6c.jpg?v=1718170562"></figure>
+<div class="offerbox-info">
+<h1>Grey – Vest style back buckle</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544773636376">5XL</option>
+<option value="48544773603608">4XL</option>
+<option value="48544773570840">3XL</option>
+<option value="48544773538072">2XL</option>
+<option value="48544773505304">XL</option>
+<option value="48544773472536">L</option>
+<option value="48544773439768">M</option>
+<option value="48544773407000">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544773636376">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input type="checkbox" class="offer-checked" data-id="48544773374232" value="48544773374232" data-type="shopify">
+<figure style="width: 170px;"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/7_fa2ae859-dc1b-44c8-85db-6c93181f2a9a.jpg?v=1718170562"></figure>
+<div class="offerbox-info">
+<h1>Black – Vest style back buckle</h1>
+<p><span>60% OFF</span><b>$29.99</b><del>$74.99</del></p>
+<div class="variant"><span>SIZE: </span><select name="multi-variant">
+<option value="48544773374232">5XL</option>
+<option value="48544773341464">4XL</option>
+<option value="48544773308696">3XL</option>
+<option value="48544773275928">2XL</option>
+<option value="48544773243160">XL</option>
+<option value="48544773210392">L</option>
+<option value="48544773177624">M</option>
+<option value="48544773112088">S</option>
+</select></div>
+<input class="kore-variants" type="hidden" value="48544773374232">
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input type="text" id="quantity" name="quantity" class="kore-txtbox box-txtbox" value="1" min="1"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="clearfix"><a class="kore-order-now kore-buttonBounce kore-mobile-order" style="background: #82aaca;"> <i class="fa fa-angle-double-right fa_prepended"></i>Order Now</a></div>
+</div>
+</div>
+</div>
+<div class="section6" id="reviews">
+<div class="container">
+<p class="common-head">What our Customers are Saying</p>
+<div class="comon-bdr bdr-bg"></div>
+<div class="clearall"></div>
+<div style="display: flex; flex-wrap: wrap; row-gap: 20px; margin-top: 20px;" class="row">
+<div class="col-xs-12 col-sm-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/10_9311aa3e-82f1-41c2-b894-b408c3e6dfba.jpg?v=1718170562" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h3>THE BEST BRA.</h3>
+<h4>05/19/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>I never thought I'd find a bra with this much lift, without a underwire. The sides are nice and wide so there are no back fat rolls. This bra is a 10 out 10, great for curvy women like myself.&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/11_577e3ef7-1d7b-4802-b038-0485939be22f.jpg?v=1718170562" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h3>COMFORTABLE</h3>
+<h4>05/28/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>I really, really wanted to love this bra. And there are many things about it that I do love. I love how comfortable it is, how great it feels against my skin. I love how much lift and coverage it provides, I love the convertible, stretchy, adjustable straps.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/8_df5acbf4-83f9-4ca7-88a0-db7abdcaecab.jpg?v=1718170561" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h3>GOOD BRA</h3>
+<h4>06/04/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>I really live how this bra fits so well and smooths out my curves! I had a problem with my old bra that I have stretchables straps but good things this bra has adjustable straps for more relaxed fir and comfort to my breast!</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0782/2629/3016/files/9_e5748bf1-1087-4c12-9f6e-d55171d6fd7e.jpg?v=1718170562" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<h3>ABSOLUTELY THE BEST</h3>
+<h4>04/13/2024</h4>
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>I cant express it enough on how excited i am about this bra. It is absolutely the most comfortable bra i have bought in a long time . I will buy one in every color. My breasts are where they are suposed to be .</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jar-footer">
+<div class="show-mob">
+<div id="ctabtn-mob" style="position: fixed;"><a href="#es_buy" style="padding-top: 15px;" class="order-btn pulse">Get 60% OFF Today<span class="text-span-4"><img src="https://cdn.shopify.com/s/files/1/0518/4625/0673/files/i12.png?v=1632992217%20"><br></span> <span class="text-span-5">Order Now</span></a></div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4 hidden-xs">
+<h3 class="">INFORMATION</h3>
+<ul>
+<li><a href="/pages/faqs">FAQs</a></li>
+<li><a href="/pages/about-us">About Us</a></li>
+<li><a href="/pages/contact">Contact Us</a></li>
+<li><a href="/pages/why-choose-us">Why Choose Us</a></li>
+<li><a href="/pages/shipping">Shipping</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">PAYMENT METHODS</h3>
+<div><span> <img class="credit-cards-image" src="https://www.naivetu.com/cdn/shop/files/11_2907031e-1a3a-40c7-940e-bab1089274e7.png?v=1710492519"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GUARANTEE</h3>
+<p class="footer-guarantee-content">We offer a 30-day money-back guarantee</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="">© 2024 Copyright All Rights Reserved.</p>
+<!-- <div class="footer-image-logo"><img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/guarantee-secure.png?v=1660805040" class="attachment-large size-large" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/dmca_premi_badge_5.png?v=1660804952" alt="" loading="lazy" /> <img src="https://cdn.shopifycdn.net/s/files/1/0556/2348/3564/files/1_9f996ccb-013a-4142-b9cb-ad4275c16efa.webp?v=1660805040" alt="" loading="lazy" /></div> --></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // <![CDATA[
+  jQuery(function ($) {
+    /* order button for pc & mobile */
+    if ($(".order-now-btn").length > 0) {
+      $(".order-now-btn").each(function (i) {
+        $(this).on("click", function () {
+          var type = $(this).data("type"),
+            product_id = $(this).data("id"),
+            variant_id = $(this).data("variant"),
+            quantity = $(this).data("num") || 1,
+            url;
+          if ($(this).hasClass("mobile-checkout")) {
+            var checkedobj = $(".box-checked .offer-check");
+            quantity =
+              checkedobj
+                .parents(".offerbox")
+                .find('input[name="quantity"]')
+                .val() || 1;
+            product_id = checkedobj.data("id");
+            variant_id = checkedobj.data("variant");
+            type = checkedobj.data("type");
+            $(this).attr("data-num", quantity);
+            $(this).attr("data-id", product_id);
+            $(this).attr("data-variant", variant_id);
+            $(this).attr("data-type", type);
+          }
+          if (variant_id) {
+            url = "/cart/" + variant_id + ":" + quantity;
+            window.location.href = url;
+          } else {
+            console.log("no variant_id");
+          }
+        });
+      });
+    }
+
+    /* change qty for product */
+    if ($(".gc-qty a").length > 0) {
+      $(".gc-qty a").each(function (i) {
+        $(this).on("click", function () {
+          var qty = $(this)
+            .parents(".gc-qty")
+            .find('input[name="quantity"]')
+            .val();
+          if ($(this).hasClass("gc-plus_btn")) {
+            qty++;
+          }
+          if ($(this).hasClass("gc-minus_btn")) {
+            qty--;
+          }
+          if (qty < 1) {
+            qty = 1;
+          }
+          $(this).parents(".gc-qty").find('input[name="quantity"]').val(qty);
+          $(this)
+            .parents(".product-box")
+            .find(".pc-checkout")
+            .attr("data-num", qty);
+        });
+      });
+    }
+
+    /* choose product by select */
+    if ($(".kore-select").length > 0) {
+      $(".kore-select").each(function (i) {
+        $(this).on("change", function () {
+          var qty = $(this).val();
+          $(this)
+            .parents(".kore-inner")
+            .find(".pc-checkout")
+            .attr("data-num", qty);
+        });
+      });
+    }
+
+    /* choose product by checkbox */
+    if ($(".offerbox").length > 0) {
+      $(".offerbox").each(function (i) {
+        $(this).on("click", function () {
+          $(".offerbox").removeClass("box-checked");
+          $(".offer-check").removeAttr("checked");
+          $(this).find("input.offer-check").attr("checked", "checked");
+          $(this).addClass("box-checked");
+          $(this)
+            .parents(".offersWrapper")
+            .find(".mobile-checkout")
+            .attr("data-num", $(this).find('input[name="quantity"]').val());
+          $(this)
+            .parents(".offersWrapper")
+            .find(".mobile-checkout")
+            .attr("data-id", $(this).find("input.offer-check").data("id"));
+          $(this)
+            .parents(".offersWrapper")
+            .find(".mobile-checkout")
+            .attr(
+              "data-variant",
+              $(this).find("input.offer-check").data("variant")
+            );
+          $(this)
+            .parents(".offersWrapper")
+            .find(".mobile-checkout")
+            .attr("data-type", $(this).find("input.offer-check").data("type"));
+        });
+      });
+    }
+
+    /* gallery for product */
+    if ($("#gallery_nav a").length > 0) {
+      $("#gallery_nav a:first").addClass("on");
+      $("#gallery_nav a").each(function (i) {
+        $(this).on("click", function () {
+          $("#gallery_output img").attr("src", $(this).find("img").attr("src"));
+          $("#gallery_nav a").removeClass("on");
+          $(this).addClass("on");
+        });
+      });
+    }
+
+    /* countdown below product title */
+    if ($("h1").hasClass("alt-1")) {
+      $(".alt-1").countDown({
+        css_class: "countdown",
+      });
+    }
+
+    /* slide for testimanals */
+    if ($(".slick").length > 0) {
+      $(".slick").slick({
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            },
+          },
+        ],
+      });
+    }
+
+    /* the day before yesterday on news page */
+    if ($("span.datetime").length > 0) {
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var startdate = moment();
+      var day = startdate.subtract(2, "days");
+      var m = months[day.format("M") - 1];
+      var d = day.format("DD");
+      var y = day.format("YYYY");
+      $("span.datetime").html(m + " " + d + ", " + y);
+    }
+  });
+  // ]]>
+</script>

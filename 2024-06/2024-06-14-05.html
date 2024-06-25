@@ -1,0 +1,525 @@
+<style>
+.announcement-bar {
+    background-color: #020e4c !important;
+  }
+  a:not([disabled]):hover,
+  a:focus {
+    color: unset !important;
+  }
+  .kore-special-promo,
+  .kore-special-promo h2,
+  .kore-special-promo h3 {
+    color: #fff !important;
+  }
+  .kore-special-promo h2 span {
+    background: linear-gradient(
+      transparent 71%,
+      #020e4c 15%,
+      #020e4c 90%,
+      transparent 80%
+    ) !important;
+  }
+  .kore-review-item {
+    height: 100%;
+  }
+  .common-head {
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    color: #191919;
+    font-weight: bold;
+  }
+  .comon-bdr {
+    display: inline-block;
+    vertical-align: top;
+    background: #191919;
+    width: 75px;
+    height: 5px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .clearall {
+    clear: both;
+    font-size: 1px;
+    line-height: 1px;
+    height: 1px;
+  }
+  .common-para {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #191919;
+    letter-spacing: 0.5px;
+  }
+  @media (min-width: 992px) {
+    .kore-customer-review h2 {
+      margin-bottom: 20px !important;
+      font-size: 34px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .kore-customer-review h2 {
+      margin: 0px 65px 20px;
+    }
+    .current-inner h3 {
+      padding: 20px 5px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .comon-bdr {
+      margin-top: 15px;
+    }
+    .common-head {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .new-chamfer {
+      display: flex;
+      flex-direction: column;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(1) {
+      order: 2;
+    }
+    .new-chamfer > div.col-xs-12:nth-child(2) {
+      order: 1;
+    }
+  }
+  *:not(i) {
+    font-family: "Lato", sans-serif !important;
+  }
+  @media (min-width: 768px) {
+    .kore-product-name a {
+      text-align: left !important;
+    }
+    .kore-product-prices {
+      max-width: 480px !important;
+    }
+  }
+  /*! CSS Used from: Embedded */
+.main-right .price{display:flex;align-items:center;justify-content:center;}
+.button:after{content:none!important;}
+.main-btn.button{cursor:pointer;padding:6px 60px;background:#A44CD5;color:white;border-radius:5px;text-transform:uppercase;font-size:20px;box-shadow:0px 0px 10px 5px rgb(5 5 5 / 19%);color:white;cursor:pointer;line-height:inherit;min-height:inherit; width: fit-content;margin: 0 auto;}
+img{max-width:100%;display:block;}
+.bold{font-weight:bold;}
+.main-product{position:relative;margin-top:10px;padding:20px;background:white;}
+.flex-wrapper{display:flex;align-items:center;}
+.name.bold{color:#191919;font-size:35px;text-align:center;max-width:500px;margin:0 auto;}
+.price{text-align:center;margin:10px 0;}
+.price span:first-child{font-size:28px;}
+.price span:last-child{text-decoration:line-through;color:#AAAAAA;font-weight:bold;margin-left:5px;font-size:25px;}
+.main-btn{margin-top:10px;}
+.main-img,.main-right{width:50%;text-align:center;}
+.sg-price{font-size:25px;text-align:center;font-weight:bold;text-transform:uppercase;}
+.sg-price span{color:#E10000;}
+.price span:first-child{color:#E10000;text-decoration:none;}
+.main-product:nth-of-type(2) .price span:first-child,.main-product:nth-of-type(3) .price span:first-child{}
+.main-product:nth-of-type(2) .name,.main-product:nth-of-type(3) .name{text-transform:uppercase;}
+.main-img img{margin:0 auto;}
+.main-product:nth-of-type(2) .main-img img{max-width:85%;}
+img.pro_tips{position:absolute;left:0;top:0;max-width:120px;}
+@media (max-width: 767px){
+img.pro_tips{max-width:80px;}
+.main-btn.button{padding:6px 20px;font-size:12px;}
+.price{margin:0;}
+.sg-price{font-size:18px;}
+.main-product:nth-of-type(2) .name,.main-product:nth-of-type(3) .name{text-transform:uppercase;font-size:19px;}
+.price span:first-child{font-size:19px;}
+.price span:last-child{font-size:15px;}
+.name.bold{max-width:inherit;font-size:15px;}
+.flex-wrapper{padding:10px;}
+.main-product{padding:0;}
+}
+@media (max-width:414px){
+.name.bold{font-size:15px;}
+.main-product:nth-of-type(2) .name,.main-product:nth-of-type(3) .name{white-space:nowrap;font-size:15px;}
+}
+@media (max-width:320px){
+.main-product:nth-of-type(2) .name,.main-product:nth-of-type(3) .name{white-space:inherit;}
+}
+/*! CSS Used from: https://furanshop.com/cdn/shop/t/15/assets/component-price.css?v=98846690776184680721715334592 ; media=all */
+@media all{
+.price{font-size:1.6rem;letter-spacing:.1rem;line-height:calc(1 + .5 / var(--font-body-scale));color:rgb(var(--color-foreground));}
+.price>*{display:inline-block;vertical-align:top;}
+@media screen and (min-width: 750px){
+.price{margin-bottom:0;}
+}
+}
+.tipss span{
+    z-index: 99999;
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 2rem;
+    margin-top: -16px;
+    left: 30px;
+    text-align: inherit;
+    line-height: 1;
+}
+@media (max-width:768px){
+    .tipss span{
+            font-size: 1.4rem;
+    font-weight: 600;    margin-top: 2px;
+    left: 25px;
+    } 
+}   
+.main-btn.button{
+    background:#020e4c;
+}
+.popular span{
+  z-index: 99999;
+    display: flex;
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 2rem;
+    margin-top: -10px;
+    left: 5rem;
+    text-align: center;
+    line-height: 1;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .popular span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 5px;
+        left: 30px;
+    }
+}
+</style>
+<div class="kore">
+<div class="kore-body">
+<div class="announcement-bar" style="background-color: #020e4c !important;">
+<p style="color: #fff; text-align: center; padding: 10px;" class="announcement-bar__message">🎉Missa inte vår kampanj - från 49,9kr per styck🎁</p>
+</div>
+<a href="#kore-product"> <img class="img-responsive center-block hidden-xs" style="width: 100%;" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/banner1_b6a2d4cc-c9da-47c0-9e7e-8a87caf1e269.jpg?v=1718270653"> <img class="img-responsive center-block visible-xs" style="width: 100%;" src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/banner1_0c6ec5ba-b8d9-476a-8201-5d51724fb57c.jpg?v=1718270653"> </a>
+<div class="kore-wysiwyg-content" style="background-color: #020e4c;">
+<div class="container"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0225/4818/5162/files/ia_33.png?v=1618388544">
+<p>"Den här repborttagaren för bilar förändrar allt! Den tar enkelt itu med repor, virvlar och märken och gör att min bil ser ut som ny." John M.</p>
+</div>
+</div>
+<div class="kore-advantage-block">
+<div class="container">
+<h2>Fixa enkelt repor, virvlar eller andra märken med vår repborttagare för bilar!</h2>
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-1_e5d264e3-7a02-4e60-9170-ec60f2527a5d.png?v=1707208458">
+<h3>Kostnadseffektivt</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-2_a5726479-8101-4e2f-a9a8-da7f67f051e2.png?v=1707208458">
+<h3>Bekvämlighet</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-3_53e92c50-51cb-405e-9a47-f0a01aa0fd8d.png?v=1707208459">
+<h3>Tidsbesparande</h3>
+</div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3">
+<div class="kore-advantage-item"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/icon-4_a537d8e6-bc16-4817-8eac-809baac003eb.png?v=1707208459">
+<h3>Enkel reparation av repor och virvlar</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row kore-product-info">
+<div class="col-xs-12 col-sm-6 kore-product-left">
+<div id="gallery">
+<div id="gallery_output"><img id="img1" class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/61f6ec36f79a3b057de308268480f898.jpg?v=1701079040"></div>
+<div id="gallery_nav"><a class="on" rel="img1"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/61f6ec36f79a3b057de308268480f898.jpg?v=1701079040"></a> <a rel="img2"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/08_bc142faa-c303-4ea4-ba6b-b3383dc833c6.jpg?v=1701079040"></a> <a rel="img3"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/01_d10d2ee2-42ab-4af2-a72e-78bcace6a10e.jpg?v=1701079040"></a> <a rel="img4"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/02_994eb25b-4b3d-4758-aab1-33cb3c330c6f.jpg?v=1701079040"></a> <a rel="img5"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/03_c2879888-6460-4604-aa6b-9527e4c664ed.jpg?v=1701079040"></a> <a rel="img6"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/07_952de4d9-3edc-4654-97bb-74c7db2ad2ec.jpg?v=1701079040"></a> <a rel="img7"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/04_61b0c8fc-a18f-47d0-9793-c83a3794ee21.jpg?v=1701079040"></a> <a rel="img8"><img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/products/2_ca6bb58a-143e-431a-aa7b-19bbf5425496.jpg?v=1701079040"></a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 kore-product-right">
+<div>
+<h1 class="kore-product-name" style="font-family: 'helveticaneue-light';"><strong><a>Bilskrapborttagare</a></strong></h1>
+<div class="kore-product-prices"><span class="kore-product-compare-price">258 kr</span><span class="kore-product-price">129 kr</span><span class="kore-discount"><span class="kore-percent">50% RABATT</span></span></div>
+<div class="clearfix"></div>
+<a class="kore-product-button" href="#kore-product" style="background: #020e4c;">JA! JEG VIL BESTILLE NÅ</a></div>
+<!-- <h1 class="alt-2">1h 32m 55s</h1> --> <!-- <p class="kore-text-sale">Selling Price Back To € 33.99 After Sales End</p> -->
+<p class="kore-text-tip">🔒 Säkra och trygga betalningar<br>📦 Försäkrad frakt<br> ✉️ Kundsupport</p>
+<div class="right-content"><img src="https://cdn.shopify.com/s/files/1/0079/2467/8703/files/TB2BG.vEN9YBuNjy0FfXXXIsVXa__656133727_large.gif?v=1561602400" class="img-responsive center-block" alt="">
+<ul>
+<li><b>Den ultimata återställaren av färg: </b>Den tar inte bara bort virvlar och repor, utan återställer även lackens glans och lyster så att den återfår sin ursprungliga glans.</li>
+<li><b>Förstklassiga kemikalier: </b> Vi använder bara de absolut bästa kemikalierna och ser till att det inte finns några onödiga färgämnen eller dofter.</li>
+<li><b>Säker för alla lackfärger:</b> Vår reparationssats är säker att använda på alla lacker och färger. Du kan använda den säkert på alla klarlacker, enstegstvättade och flerstegstvättade lacker.</li>
+<li><b>Gör-det-själv-reparation:</b> Med en repborttagare kan du ta kontroll över mindre kosmetiska reparationer utan att vara beroende av externa tjänster.</li>
+<li><b>Tillfredsställelse:</b>Att kunna återställa din bils utseende och ta bort fula repor kan ge en känsla av tillfredsställelse och stolthet över att underhålla ditt fordons estetik.</li>
+</ul>
+</div>
+<div class="kore-payment-image"><img class="img-responsive center-block" src="https://cdn.shopify.com/s/files/1/0519/0723/1915/files/8AC6FFC7-600C-4B40-BCAD-DABC12A58802-9136-0000048321E29E9F.png?v=1697770278"></div>
+</div>
+</div>
+</div>
+<!--<div class="container">
+  <div class="gc-headline-divider-container">
+  <div class="gc-divider-style-solid"></div>
+  <div class="headline-divider-block">
+  <h4>AS SEEN IN</h4>
+  </div>
+  <div class="gc-divider-style-solid"></div>
+  </div>
+  <div class="row gc-brand-list">
+  <div class="col-xs-12"><img src="https://cdn.shoplazza.com/347c36125467736ffed54ecdc6db883b.jpg" class="img-responsive center-block"></div>
+  </div>
+  </div>--->
+<div style="margin-top: 30px; text-align: center;" class="container">
+<div class="clearall"></div>
+<div class="row" style="margin-bottom: 30px;"><img class="img-responsive center-block hidden-xs" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner2_e8cab400-e3b6-4e2e-a609-f98bf86d1c7f.jpg?v=1707208517" style="width: 100%; padding-left: 15px; padding-right: 15px;"><img class="img-responsive center-block visible-xs" src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner2_e8cab400-e3b6-4e2e-a609-f98bf86d1c7f.jpg?v=1707208517"></div>
+</div>
+<div class="kore-buy" id="kore-product">
+<div class="container">
+<h3 style="font-weight: 600;" class="kore-product-title">VÄLJ EN FÄRG DU GILLAR!</h3>
+<div class="main-pro-wrap">
+                <div class="main-product m2">
+                    <div class="flex-wrapper">
+                        <div class="main-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0004__2_1.jpg?v=1718270877" alt="" class="main-img3">
+                        </div>
+                        <div class="main-right">
+                            <div class="name bold"> Köp 2 Få 1 Gratis</div>
+                           <div class="price flag2">
+                                <span class="bold p1">259kr</span>
+                                
+                            </div>
+                            <div class="sg-price"> från   <span>86,33kr  </span>per styck</div>
+                          
+                          
+                                <a class="emitCheckout" data-id="44222480613568" href="/cart/44222480613568:1" data-fancybox="" data-src="#pillow-help" data-type="inline" data-no-instant="">
+                                    <div class="main-btn button">
+                                       KÖP NU
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                
+              <div class="main-product m3">
+                  <div class="tipss popular">
+<span>Mest populär</span><img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801" class="pro_tips">
+</div>
+                    <div class="flex-wrapper">
+                        <div class="main-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0005__3_2.jpg?v=1718270877" alt="" class="main-img3">
+                        </div>
+                        <div class="main-right">
+                            <div class="name bold"> Köp 3 Få 2 Gratis</div>
+                            <div class="price flag3">
+                                <span class="bold p1">329 kr </span>
+                                <span class="p2" style="color:black">
+                                 </span>
+                            </div>
+                            <div class="sg-price">från   <span>65,8kr </span> per styck</div>
+                          
+                                <a class="emitCheckout" data-id="45257185034432" href="/cart/45257185034432:1" data-fancybox="" data-src="#pillow-help" data-type="inline" data-no-instant="">
+                                 <div class="main-btn button">
+                                       KÖP NU
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main-product m3">
+                  <!-- <div class="tipss"><span>Best Value</span><img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801" class="pro_tips"></div> -->
+                    <div class="flex-wrapper">
+                        <div class="main-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0006__5_3.jpg?v=1718270877" alt="" class="main-img3">
+                        </div>
+                        <div class="main-right">
+                            <div class="name bold"> Köp 5 Få 3 Gratis</div>
+                            <div class="price flag3">
+                                <span class="bold p1">439 kr</span>
+                                <span class="p2"></span>
+                            </div>
+                            <div class="sg-price">från   <span>54,87kr </span> per styck</div>
+                          
+                                <a class="emitCheckout" data-id="45257185067200" href="/cart/45257185067200:1" data-fancybox="" data-src="#pillow-help" data-type="inline" data-no-instant="">
+                                 <div class="main-btn button">
+                                       KÖP NU
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-product m2">
+                  <div class="tipss">
+<span>Bästa värdet</span><img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0.png?v=1718270801" class="pro_tips">
+</div>
+                    <div class="flex-wrapper">
+                        <div class="main-img">
+                            <img src="https://cdn.shopify.com/s/files/1/0554/6406/7257/files/0007__6_4.jpg?v=1718270877" alt="" class="main-img3">
+                        </div>
+                        <div class="main-right">
+                            <div class="name bold"> Köp 6 Få 4 Gratis</div>
+                            <div class="price flag2">
+                                <span class="bold p1">499 kr</span>
+                                <span class="p2" style="color:black"> </span>
+                            </div>
+                            <div class="sg-price">från   <span>49,9kr </span> per styck</div>
+                          
+                                <a class="emitCheckout" data-id="45257185099968" href="/cart/45257185099968:1" data-fancybox="" data-src="#pillow-help" data-type="inline" data-no-instant="">
+                                 <div class="main-btn button">
+                                      KÖP NU
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- <div style="display: flex; flex-wrap: wrap; justify-content: center;" class="row new-chamfer hidden-xs">
+<div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #020e4c;">HET REA</h2>
+<h3 style="background: #efefef;">1 PCS</h3>
+<h4 style="background: #efefef;">50% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0000_1_7ef389cc-4c9d-4a4a-96be-cd55ff318c4e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.5K Anmeldelser</p>
+<h5><del>258 kr</del><span>129 kr </span></h5>
+<input value="44222480548032" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #020e4c;" href="/cart/44222480548032:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Beställ nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Säkrad och krypterad<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #020e4c;">HET REA</h2>
+<h3 style="background: #efefef;">2 PCS</h3>
+<h4 style="background: #efefef;">50% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0001_2_31a4e43a-425d-4d8b-ac18-74f656219b3b.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">20.5K Anmeldelser</p>
+<h5><del>378 kr</del><span>189 kr </span></h5>
+<input value="44222480580800" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #020e4c;" href="/cart/44222480580800:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Beställ nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Säkrad och krypterad<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+<div style="padding-top: 20px;" class="col-xs-12 col-sm-4">
+<div class="kore-inner">
+<h2 style="background: #020e4c;">HET REA</h2>
+<h3 style="background: #efefef;">3 PCS</h3>
+<h4 style="background: #efefef;">50% RABATT</h4>
+<figure><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0002_3_726b6fe3-f08b-41fa-81c3-400004e5393e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/five_stars.png?v=1619589505">19.3K Anmeldelser</p>
+<h5><del>498 kr</del><span>249 kr </span></h5>
+<input value="44222480613568" type="hidden" class="kore-variants">
+<div class="kore-qty"><a class="kore-minus_btn"></a> <input value="1" type="text" name="quantity" min="1" class="kore-txtbox" id="quantity"> <a class="kore-plus_btn"></a></div>
+<a style="background: #020e4c;" href="/cart/44222480613568:1" class="kore-order-now kore-buttonBounce kore-checkout"> <i class="fa fa-angle-double-right fa_prepended"></i> Beställ nu<i class="fa fa_appended fas fa-angle-double-left"></i> </a>
+<div class="kore-lock">Säkrad och krypterad<i style="color: #28a745; font-size: 10px;" class="fa fa-lock"></i></div>
+</div>
+</div>
+</div>
+<div class="offersWrapper visible-xs">
+<div class="offerbox box-checked"><input data-type="shopify" value="44222480548032" data-id="44222480548032" checked="checked" class="offer-checked" type="checkbox">
+<figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0000_1_7ef389cc-4c9d-4a4a-96be-cd55ff318c4e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>1 PCS</h1>
+<p><span>50% RABATT</span><b>129 kr </b><del>258 kr</del></p>
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="44222480580800" data-id="44222480580800" class="offer-checked" type="checkbox">
+<figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0001_2_31a4e43a-425d-4d8b-ac18-74f656219b3b.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>2 PCS</h1>
+<p><span>50% RABATT</span><b>189 kr </b><del>378 kr</del></p>
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="offerbox"><input data-type="shopify" value="44222480613568" data-id="44222480613568" class="offer-checked" type="checkbox">
+<figure style="width: 170px;" data-mce-style="width: 170px;"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/sku_0002_3_726b6fe3-f08b-41fa-81c3-400004e5393e.jpg?v=1707208459" class="img-responsive center-block"></figure>
+<div class="offerbox-info">
+<h1>3 PCS</h1>
+<p><span>50% RABATT</span><b>249 kr</b><del>498 kr</del></p>
+<div class="kore-qty-box"><a class="kore-minus-btn"></a> <input min="1" value="1" class="kore-txtbox box-txtbox" name="quantity" id="quantity" type="text"> <a class="kore-plus-btn"></a></div>
+</div>
+</div>
+<div class="clearfix"><a style="background: #020e4c;" href="/cart/44222480548032:1" class="kore-order-now kore-buttonBounce kore-mobile-order" data-mce-style="background: #020e4c;"> <i class="fa fa-angle-double-right fa_prepended"></i> Beställ nu</a></div>
+</div> -->
+
+</div>
+</div>
+<div class="kore-customer-review">
+<div class="container">
+<h2 style="font-weight: 600;">Vad våra kunder säger</h2>
+<div style="display: flex; flex-wrap: wrap; row-gap: 20px;" class="row">
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/2_84d8ced8-ce54-4cc3-ba16-ff5eef7bad16.jpg?v=1707208458" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>Jag är imponerad av hur lätt det är att använda Car Scratch Remover. Den medföljande buffertdynan gör processen ännu smidigare och suddar ut envisa repor med minimal ansträngning. Det är som ett trollspö för billack - ett måste för alla bilägare som vill att deras fordon ska behålla sitt ursprungliga utseende.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/3_5c8a8cda-f435-40ca-991f-312c848f0b99.jpg?v=1707208459" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>Jag var skeptisk till en början, men den här produkten överträffade mina förväntningar. Den enkla reparationsfunktionen för repor och virvlar gjorde underverk på min bils lack och återställde dess ursprungliga glans. Frånvaron av onödiga färgämnen eller dofter är en bonus, vilket säkerställer en ren och effektiv reparationsprocess.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4">
+<div class="kore-review-item"><img src="https://cdn.shopify.com/s/files/1/0685/0225/7938/files/1_ea23e5c2-94e2-476a-b3f8-a356b23fc5f9.jpg?v=1707208459" class="img-responsive center-block">
+<div class="kore-review-item-content">
+<div class="kore-review-star"><img src="https://cdn.shopifycdn.net/s/files/1/0225/4818/5162/files/stars_5blk.png?v=1618388545" class="img-responsive"></div>
+<p>Att använda buffertdynan gjorde appliceringen till en barnlek och suddade ut envis slitage med minimal ansträngning. Den ultimata lackåterställningsfunktionen tar inte bara bort repor utan ger också tillbaka glansen och glansen, vilket ger min bil en utställningsfinish. En pålitlig och effektiv lösning för att bibehålla det ursprungliga utseendet på alla fordon.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="background: url('https://cdn.shopify.com/s/files/1/0685/0225/7938/files/banner3_9db50572-c65f-4a22-8167-dfec63316003.jpg?v=1707208516') center/cover no-repeat;" class="kore-special-promo">
+<div class="container">
+<h2><span>SPECIALKAMPANJ NU ERBJUDANDE!</span></h2>
+<h3>BESTÄLL IDAG OCH FÅ 50% RABATT</h3>
+<p>Denna rabatt gäller endast tillfälligt.<br>Kvantiteterna är begränsade - agera nu.</p>
+<a style="background: #020e4c;" href="#kore-product" class="kore-banner-btn snow-banner-btn"><i class="fa fa-angle-right"></i>Få 50% rabatt på din beställning</a>
+<ul>
+<li><strong>Garanterad hög kvalitet</strong>Vi garanterar att alla våra produkter är fullt återbetalningsbara.</li>
+<li><strong>Retur utan krångel</strong>Om du inte är 100% nöjd med din beställning kan du returnera den inom 60 dagar för full återbetalning.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="customfooter">
+<div class="footer-container">
+<div class="footer-row">
+<div class="footer-col-4">
+<h3 class="">INFORMATION</h3>
+<ul>
+<li><a href="https://www.lyckrea.se/pages/allmanna-villkor" target="_blank">Villkor</a></li>
+<li><a href="https://www.lyckrea.se/pages/sekretesspolicy" target="_blank">Sekretesspolicy</a></li>
+<li><a href="https://www.lyckrea.se/pages/aterbetalningspolicy" target="_blank">Återbetalningspolicy</a></li>
+<li><a href="https://www.lyckrea.se/pages/varfor-valja-oss" target="_blank">Varför välja oss</a></li>
+<li><a href="https://www.lyckrea.se/pages/kontakta-oss" target="_blank">Kontakta oss</a></li>
+<li><a href="https://www.lyckrea.se/pages/om-oss" target="_blank">Om oss</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h3 class="">BETALNINGSMETODER</h3>
+<div><span> <img class="credit-cards-image" src="https://cdn.shopify.com/s/files/1/0520/0556/8704/files/210b5d7f2d9170b1bcce17fb16abd6cd.png?v=1633762068"> </span></div>
+</div>
+<div class="footer-col-4">
+<h3 class="">GARANTI</h3>
+<p class="footer-guarantee-content">Vi erbjuder en 30-dagars pengarna-tillbaka-garanti</p>
+</div>
+</div>
+<div class="footer-row">
+<div class="footer-col-12 footerBottom">
+<p class="text-white">© 2024 Copyright All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
